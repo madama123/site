@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 699.97 399.97">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 66.67px;
+      }
+    </style>
+  </defs>
+  <g id="Complete">
+    <g id="arrow-left">
+      <g>
+        <polyline id="Right-2" class="cls-1" points="203.33 33.33 33.33 199.93 203.33 366.63"/>
+        <line class="cls-1" x1="666.63" y1="199.93" x2="110.03" y2="199.93"/>
+      </g>
+    </g>
+  </g>
+</svg>

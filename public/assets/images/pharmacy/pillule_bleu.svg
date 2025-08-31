@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 105.84 65.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+        mix-blend-mode: color-dodge;
+      }
+
+      .cls-6 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: #cff0ff;
+      }
+
+      .cls-4 {
+        fill: url(#Dégradé_sans_nom_86);
+      }
+
+      .cls-4, .cls-5 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-5 {
+        fill: url(#Dégradé_sans_nom_87);
+      }
+    </style>
+    <linearGradient id="Dégradé_sans_nom_86" data-name="Dégradé sans nom 86" x1="-161.37" y1="73.69" x2="-161.37" y2="140.03" gradientTransform="translate(212.48 139.44) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9ec7f6"/>
+      <stop offset=".73" stop-color="#0c3ea8"/>
+      <stop offset=".83" stop-color="#0d3fa8"/>
+      <stop offset=".87" stop-color="#1544a9"/>
+      <stop offset=".89" stop-color="#214dac"/>
+      <stop offset=".92" stop-color="#325aaf"/>
+      <stop offset=".94" stop-color="#496bb4"/>
+      <stop offset=".96" stop-color="#6580b9"/>
+      <stop offset=".97" stop-color="#8799c0"/>
+      <stop offset=".99" stop-color="#acb5c8"/>
+      <stop offset="1" stop-color="#cfcfcf"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient" x1="-110.26" y1="74.97" x2="-110.26" y2="140.72" gradientTransform="translate(212.48 139.44) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#304f5e"/>
+      <stop offset=".15" stop-color="#516e7c"/>
+      <stop offset=".31" stop-color="#6b8794"/>
+      <stop offset=".45" stop-color="#7b96a2"/>
+      <stop offset=".56" stop-color="#819ca8"/>
+      <stop offset=".64" stop-color="#7b97a3"/>
+      <stop offset=".75" stop-color="#6c8895"/>
+      <stop offset=".87" stop-color="#54717e"/>
+      <stop offset=".99" stop-color="#31505f"/>
+      <stop offset="1" stop-color="#304f5e"/>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_87" data-name="Dégradé sans nom 87" x1="-113.98" y1="106.57" x2="-106.75" y2="106.57" gradientTransform="translate(212.48 139.44) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5e99ea"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-159.36" y1="95.87" x2="-159.36" y2="73.94" gradientTransform="translate(212.48 139.44) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#080808"/>
+      <stop offset="1" stop-color="#292929"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-6">
+    <g id="Calque_1" data-name="Calque 1">
+      <g>
+        <path class="cls-3" d="m98.61,32.53c0,.12,0,.23,0,.34,0,.12,0,.23,0,.34.03,20.92,2.41,32.53,3.61,32.53H32.88C14.72,65.75,0,51.03,0,32.88,0,14.72,14.72,0,32.88,0h69.34c-1.21,0-3.59,11.62-3.61,32.53Z"/>
+        <path class="cls-4" d="m102.22,0H32.87C14.72,0,0,14.72,0,32.88c0,5.71,1.46,11.08,4.02,15.76,5.58,10.2,16.41,17.11,28.86,17.12h69.35c-.84,0-2.27-5.72-3.06-16.37-.33-4.52-.55-9.93-.56-16.17v-.69c.01-10.46.61-18.59,1.36-24.11C100.72,2.9,101.62,0,102.22,0Z"/>
+        <path class="cls-1" d="m102.22,65.75h0c-1.21,0-3.59-11.62-3.61-32.53,0-.11,0-.23,0-.34,0-.12,0-.23,0-.34C98.63,11.62,101.01,0,102.22,0h0c1.21,0,3.62,11.74,3.62,32.88,0,21.14-2.4,32.88-3.62,32.88Z"/>
+        <path class="cls-5" d="m102.22,65.75h0c-1.21,0-3.59-11.62-3.61-32.53,0-.11,0-.23,0-.34,0-.12,0-.23,0-.34C98.63,11.62,101.01,0,102.22,0h0c1.21,0,3.62,11.74,3.62,32.88,0,21.14-2.4,32.88-3.62,32.88Z"/>
+        <path class="cls-2" d="m102.22,65.75c-.84,0-2.27-5.72-3.06-16.37l-.56-1.03H29.98s-3.2-3.93-3.2-3.93c0,0-15.7-5.89-22.76,4.2,5.58,10.2,16.41,17.11,28.86,17.12h69.35Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

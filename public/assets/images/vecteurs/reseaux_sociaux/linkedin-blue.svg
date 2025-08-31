@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.93 35">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #134888;
+      }
+
+      .cls-4, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-5 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-3 {
+        font-family: Raleway-Bold, Raleway;
+        font-size: 18px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="instagram">
+    <g id="Ekose_RX" data-name="Ekose RX" class="cls-4">
+      <text class="cls-3" transform="translate(44 22.4)"><tspan x="0" y="0">E</tspan><tspan class="cls-6" x="10.82" y="0">k</tspan><tspan x="20.38" y="0">ose R</tspan><tspan class="cls-5" x="67.25" y="0">X</tspan></text>
+    </g>
+    <g id="linkedin-svgrepo-com">
+      <path id="Tracé_401" data-name="Tracé 401" class="cls-1" d="m8.75,11.14c1.32,0,2.39-1.07,2.39-2.39,0-1.32-1.07-2.39-2.39-2.39-1.32,0-2.39,1.07-2.39,2.39,0,1.32,1.07,2.39,2.39,2.39h0Z"/>
+      <path id="Tracé_402" data-name="Tracé 402" class="cls-1" d="m6.36,14.32c0-.88.71-1.59,1.59-1.59h1.59c.88,0,1.59.71,1.59,1.59v12.73c0,.88-.71,1.59-1.59,1.59h-1.59c-.88,0-1.59-.71-1.59-1.59v-12.73Z"/>
+      <path id="Tracé_403" data-name="Tracé 403" class="cls-1" d="m15.91,28.64h1.59c.88,0,1.59-.71,1.59-1.59v-7.16c0-2.39,4.77-3.98,4.77-.8v7.95c0,.88.71,1.59,1.59,1.59h1.59c.88,0,1.59-.71,1.59-1.59v-9.54c0-3.18-2.39-4.77-5.57-4.77-1.7-.14-3.3.82-3.98,2.39v-.8c0-.88-.71-1.59-1.59-1.59h-1.59c-.88,0-1.59.71-1.59,1.59v12.73c0,.88.71,1.59,1.59,1.59Z"/>
+      <path id="Tracé_404" data-name="Tracé 404" class="cls-2" d="m30.23,0c2.64,0,4.77,2.14,4.77,4.77,0,0,0,0,0,0v25.45c0,2.64-2.14,4.77-4.77,4.77H4.77c-2.64,0-4.77-2.14-4.77-4.77h0V4.77C0,2.14,2.14,0,4.77,0h25.45Zm0,3.18c.88,0,1.59.71,1.59,1.59h0v25.45c0,.88-.71,1.59-1.59,1.59H4.77c-.88,0-1.59-.71-1.59-1.59V4.77c0-.88.71-1.59,1.59-1.59h25.45Z"/>
+    </g>
+  </g>
+</svg>

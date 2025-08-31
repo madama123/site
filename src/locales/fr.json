@@ -1,0 +1,334 @@
+{
+  "header": {
+    "home": "Accueil",
+    "teleconsultation": "Téléconsultation",
+    "emergency": "Urgences",
+    "appointments": "Rendez-vous",
+    "plans": "Plans & Tarifs",
+    "about": "À propos",
+    "services": "Services",
+    "blog": "Blog"
+  },
+
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "pricing": "Plans & Tarifs",
+    "blog": "Blog",
+    "services_label": "Services",
+    "login": "Connexion",
+    "services": {
+      "teleconsultation": "Téléconsultation",
+      "appointments": "Rendez-vous",
+      "emergency": "Urgences",
+      "pharmacies": "Pharmacies"
+    }
+  },
+
+  "inscription": {
+    "titreHero": "Rejoignez Nous!",
+    "text": "Vous êtes médecin ou pharmacien et vous souhaitez rendre vos services plus accessibles à vos patients ?Rejoignez-nous dès maintenant !",
+    "prestataire1": "Medecins",
+    "doctorText": "Rejoignez notre plateforme et étendez votre portée ! Inscrivez-vous dès aujourd'hui pour offrir vos services à un plus grand nombre de patients, simplifier vos consultations, et gérer vos rendez-vous en toute simplicité. Transformez votre pratique avec la téléconsultation et connectez-vous avec vos patients où qu'ils soient.",
+    "pharmacieText": "Donnez une nouvelle dimension à vos services ! Inscrivez-vous sur notre plateforme pour permettre à vos clients de commander leurs médicaments en ligne et de se faire livrer rapidement. Rejoignez-nous dès aujourd'hui pour rendre votre pharmacie plus accessible, simplifier la gestion des prescriptions, et offrir une expérience pratique et moderne à vos patients.",
+    "bouton": "Inscription"
+  },
+  "carossel": {
+    "titreHero": "Voici ce que les gens disent de nous",
+    "temoins1": "❝ Prendre rendez-vous avec mon médecin via Ekose RX est un jeu d'enfant. Plus besoin d'appeler ou de me déplacer pour m'assurer d'un créneau. Un vrai service moderne",
+    "temoins2": "❝ Ekose RX a révolutionné ma pratique. La gestion des rendez-vous est plus simple, et la téléconsultation me permet de mieux suivre mes patients, où qu'ils soient.",
+    "temoins3": "❝ Quand j'ai eu besoin d'une ambulance en urgence, Ekose RX a été une vraie bénédiction. Le service était rapide et efficace.",
+    "temoins4": "❝ C'est incroyable de pouvoir accéder à des médecins compétents depuis mon téléphone. Ekose RX m'a beaucoup aidé.",
+    "temoins5": "❝ Grâce à Ekose RX, j'ai pu consulter un médecin rapidement sans quitter ma maison. C'est simple, pratique, et rassurant !",
+    "temoins6": "❝ L'intégration des ordonnances dans l'application est géniale. Je peux facilement consulter mes prescriptions et les envoyer à ma pharmacie sans aucun problème."
+  },
+
+  "HomePage": {
+    "hero": {
+      "titreHero": "Gérez tout votre parcours de santé depuis une seule application ",
+      "paraph": "Simplifiez votre accès aux soins et prenez le contrôle de votre bien-être",
+      "recherche": "Vous recherchez:",
+      "medecin": "Un Médecin ",
+      "consultation": "Une Consultation ",
+      "ambulance": "Une Ambulance ",
+      "pharmacie": "Une Pharmacie",
+      "securite": "Sécurité ",
+      "textSecure": "Vos informations sont protégées par des technologies de sécurité de pointe",
+      "service": "24/7 Service",
+      "serviceText": "Nous sommes disponibles quand vous le souhaitez "
+    },
+    "meta": {
+      "title": "Bienvenue sur Ekose RX",
+      "description": "Gérez tout votre parcours de santé depuis une seule application."
+    },
+    "titleConsultVisio": {
+      "En": "En ",
+      "Visio": "visio ",
+      "Ou": "ou en ",
+      "Pres": "presentiel, ",
+      "Faistoi": "fais toi consulter par ",
+      "specialiste": "des spécialistes "
+    },
+    "textConsultVisio": {
+      "Aveclappl": "Avec l'application ",
+      "Ekose": "Ekose RX ",
+      "texte": "vous pouvez consulter un médecin depuis le confort de votre maison, grâce à une simple connexion internet et obtenir un accès immédiat aux soins où que vous soyez. Vous pouvez également prendre rendez-vous, choisir l'horaire qui vous convient, et rencontrer un spécialiste pour une consultation physique. "
+    },
+    "titreSecurite": "Votre Sécurité Avant Tout",
+    "textSecurite": "La protection de vos données est notre priorité. Nous utilisons des technologies de sécurité avancées pour garantir que toutes vos informations médicales et personnelles sont strictement confidentielles et protégées.",
+    "trouverPharmacie": "Trouvez des pharmacies près de chez vous",
+    "trouverPharmacieTexte": "Recherchez facilement les pharmacies à proximité grâce à notre application.",
+    "commanderAmbulance": "Commandez une ambulance",
+    "commanderAmbulanceTexte": "Commandez une ambulance en toute urgence.",
+    "decouvrerVideo": "Découvrez des vidéos de conseils santé",
+    "decouvrerVideoTexte": "Nous partageons régulièrement des conseils de santé pour aider nos patients à adopter de bonnes habitudes et à rester en forme..",
+    "cliquerIciPour": "Cliquez ci dessous pour télécharger ",
+    "section2": {
+      "titre": "Découvrez nos spécialités",
+      "paraph1": "Nous offrons une large gamme de services pour répondre à vos besoins.",
+      "paraph2": " +100. 000 personnens utilisent déjà l'application Ekose RX dans le monde",
+      "Pédiatrie": "Pédiatrie",
+      "Cardiologie": "Cardiologie",
+      "Physchiatrie": "Physchiatrie",
+      "Urologie": "Urologie",
+      "Ophtalmologie": "Ophtalmologie",
+      "Gastro-entérologie": "Gastro-entérologie",
+      "Et plus": "Et plus"
+    },
+    "joinCommunity": {
+      "title": "Rejoignez notre communauté",
+      "description": "Partagez vos expériences et connectez-vous avec d'autres utilisateurs pour améliorer votre santé.",
+      "button": "Rejoindre maintenant",
+      "learnMore": "En savoir plus"
+    }
+  },
+  "footer": {
+    "liensUtiles": "Liens Utiles",
+    "securite": "Sécurité",
+    "legal": "Legal / Informations légales",
+    "reseauxSociaux": "Réseaux sociaux",
+    "politique": "Politique de Confidentialité",
+    "conditions": "Conditions d'utilisation",
+    "letterTitle": "Abonnez vous à notre newsletter",
+    "letterPara": "Recevez les meilleurs conseils santé, les dernières nouveautés, et des offres exclusives directement dans votre boîte mail.",
+    "mail": "Entrez votre adresse mail",
+    "souscrire": "Souscrire",
+    "connecter": "Connectez-vous à une santé meilleure !",
+    "about": "À propos",
+    "description": "Ekose-Rx est une plateforme de santé en ligne qui connecte les patients avec des professionnels de santé qualifiés.",
+    "services": "Services",
+    "teleconsultation": "Téléconsultation",
+    "urgences": "Urgences",
+    "rendezvous": "Rendez-vous",
+    "contact": "Contact",
+    "contactInfo": "Pour toute question, contactez-nous à contact@ekose-rx.com",
+    "rights": "Tous droits réservés",
+    "company": "Entreprise",
+    "careers": "Carrières",
+    "press": "Presse",
+    "support": "Support",
+    "help": "Aide",
+    "faq": "FAQ",
+    "privacy": "Politique de Confidentialité"
+  },
+  "pharmacies": {
+    "hero": {
+      "title": "Trouvez les Pharmacies les Plus Proches de Vous",
+      "paraph": "En quelques secondes, repérez les pharmacies ouvertes à proximité, consultez leurs horaires et services, et obtenez l'itinéraire pour vous y rendre rapidement. Profitez d'un accès facilité aux soins de santé, où vous soyez et à toute heure."
+    },
+    "section2": {
+      "titre": "Fini le stress lors de l'achat de vos medicaments",
+      "paraph": "Ekose-RX vous met directement en relation avec les pharmacies pour faciliter l'acquisition de médicaments.",
+      "liste1": "Localisez les pharmacies à proximité de votre position",
+      "liste2": "Voir la disponibilité des pharmacies (de garde, horaires d'ouverture)",
+      "liste3": "Fiche de pharmacie détaillée, avec des informations et des options d'action (appeler, itinéraire)",
+      "liste4": "Vérifier la disponibilité des médicaments",
+      "telecharger": "Télécharger l'application maintenant",
+      "paraph2": "Trouvez facilement les pharmacies les plus proches grâce à notre système de géolocalisation intégré. L'application vous indique en temps réel les pharmacies ouvertes à proximité, leurs horaires, ainsi que les services disponibles. Simplifiez vos recherches et accédez rapidement aux médicaments dont vous avez besoin, où que vous soyez."
+    },
+    "title": "Pharmacies",
+    "comingSoon": "Bientôt disponible",
+    "description": "La liste des pharmacies sera bientôt disponible ici."
+  },
+
+  "rdv": {
+    "hero": {
+      "titreHero": "Réservez Votre Consultation EnQuelques Clics ! Simplifiez Votre Parcours De Soins Avec Ekose",
+      "paraph": "choisissez votre médecin, sélectionnez un créneau horaire confirmez votre rendez-vous, le tout depuis le confort de votre maison.",
+      "telecharger": "cliquez ci dessous pour télécharger "
+    },
+    "section2": {
+      "titre": "Comment prendre rendez-vous",
+      "paraph1": "Téléchargez l'application",
+      "paraph2": "Ouvrez l'application et inscrivez-vous",
+      "paraph3": "Recherchez un spécialiste près de vous",
+      "paraph4": "Effectuez une réservation"
+    },
+    "commentaires": {
+      "Fatima": "Je suis vraiment contente de cette application. Prendre rendez-vous avec mon médecin a été un jeu d'enfant, et tout était très bien organisé. Bravo à l'équipe !",
+      "Marie": "Une application révolutionnaire ! J'ai pu prendre rendez-vous avec mon médecin en quelques minutes. Tout était clair, et le jour J, aucune mauvaise surprise. Merci pour cette facilité !",
+      "Ahmed": "Avec cette application, fini les longues attentes au téléphone. J'ai trouvé un spécialiste en quelques clics et pris rendez-vous directement. Tout s'est bien déroulé, je recommande !",
+      "Chloe": "Un grand merci pour cette application ! J'ai pu trouver un médecin disponible près de chez moi en quelques minutes. Je suis très satisfaite du service",
+      "Julie": "L'application m'a permis de gérer mes rendez-vous médicaux sans stress. Tout était bien expliqué, et j'ai obtenu un créneau adapté à mon emploi du temps. Très satisfait !",
+      "Emilie": "Très pratique pour organiser mes consultations médicales. J'ai particulièrement apprécié les rappels avant le rendez-vous. Un vrai gain de temps et d'efficacité."
+    },
+    "section3": {
+      "titre": "Rencontrez Des Médecins Qualifiés Près De Chez Vous",
+      "paraph": "Accédez à un vaste réseau de médecins qualifiés et expérimentés, prêts à vous accompagner. Grâce à notre plateforme, trouvez rapidement et facilement le médecin idéal près de chez vous, pour des consultations adaptées à vos disponibilités et à vos préférences. Simplifiez votre accès aux soins et bénéficiez d'un soutien médical fiable, où que vous soyez."
+    },
+    "rendezvous": {
+      "title": "Rendez-vous",
+      "imageAlt": "Image de la page Rendez-vous",
+      "comingSoon": "Fonctionnalité de prise de rendez-vous bientôt disponible",
+      "description": "La possibilité de prendre rendez-vous directement via l'application sera bientôt active. Restez à l'écoute !",
+      "noAppointments": "Aucun rendez-vous à afficher pour le moment.",
+      "addPlaceholder": "Ajouter un nouveau rendez-vous...",
+      "addButton": "Ajouter Rendez-vous"
+    }
+  },
+
+  "UrgencesPage": {
+    "consultationImmediate": {
+      "besoin": "Besoin d'aide ",
+      "immediat": "immédiate ?",
+      "nousSommes": "Nous sommes là pour vous !",
+      "texte": "Réservez une ambulance en quelques secondes grâce à Ekose. Accédez à une assistance rapide et sécurisée pour vous ou vos proches.",
+      "besoinAide": "Besoin d'aide ? Cliquez ici",
+      "fiabilite": "Fiabilité",
+      "rapidite": "Rapidité",
+      "securite": "Sécurité",
+      "telecharger": "Télécharger l'application "
+    },
+    "Cards": {
+      "Simplicite": "Simplicité de réservation",
+      "SimpliciteTexte": "Réservez une ambulance en quelques clics et laissez notre système géolocaliser votre position pour envoyer l'ambulance la plus proche.",
+      "Securite": "Suivi en Temps Réel",
+      "SecuriteTexte": "Suivez l'arrivée de l'ambulance sur une carte interactive en temps réel.",
+      "Intervention": "Intervention 24/7",
+      "InterventionTexte": "Notre plateforme est conçue pour être disponible à tout moment et pour tout le monde, quel que soit l'endroit."
+    },
+    "reservezUne": "Réservez une Ambulance à tout Moment, en TempsRéel",
+    "reservezUneTexte": "Besoin d'une ambulance en urgence ? Réservez la plus proche en quelques secondes grâce à Ekose. Accédez à une assistance rapide et sécurisée pour vous ou vos proches."
+  },
+
+  "about": {
+    "hero": {
+      "titre1": "NOUS PRENONS SOIN",
+      "titre2": "DE VOTRE SANTÉ",
+      "service": "Nous sommes à votre service 24h/24, 7j/7",
+      "paraph": "Ensemble, créons un avenir où la santé est à portée de clic !"
+    },
+    "history": {
+      "titre": "Notre Histoire",
+      "paraph": "D'une tragédie évitable à une révolution dans le domaine de la santé : la perte tragique d'un patient diabétique de 47 ans au Cameroun en raison de retards critiques et du manque de fournitures médicales essentielles. Malgré l'aggravation de son état, l'hôpital n'a pas pu fournir de l'insuline à action rapide à temps en raison de pénuries de stock et de problèmes de communication. Les inefficacités systémiques dans le système de santé se manifestent par des retards dans l'enregistrement et des dossiers médicaux égarés, le manque de médicaments essentiels comme l'insuline, un personnel hospitalier débordé et sous-doté, ainsi qu'une mauvaise coordination. Une tragédie qui n'est pas rare au Cameroun, et dans de nombreux pays à faibles ressources en Afrique francophone, où les patients souffrant de maladies chroniques sont régulièrement confrontés à ces obstacles. La mort évitable de ce patient est, tristement, une histoire partagée par beaucoup. « Inspirés par cette tragédie, nous avons su qu'il fallait agir. Ekose-Rx est passé d'un simple système de commande de pharmacie à un agrégateur de soins de santé complet."
+    },
+    "mission": {
+      "mission": "Notre mission",
+      "soins": "Fournir Des Soins Personnalisés",
+      "paraph": "En simplifiant le processus de recherche et d'accès aux soins, Ekose vise à améliorer l'expérience des patients et des professionnels de santé, à renforcer l'accès à des soins de qualité et à rationaliser l'ensemble du parcours de santé.",
+      "confort": "Depuis le confort de votre maison",
+      "rdv": "Sur rendez-vous",
+      "patient": "patients satisfaits"
+    },
+    "partners": {
+      "titre": "Des partenaires de qualité nous soutiennent ",
+      "paraph": "Ekose-RX est soutenu par des partenaires de qualité, engagés à améliorer l'accès et la qualité des soins grâce à des solutions de santé innovantes et accessibles."
+    },
+    "solutions": {
+      "titre": " Solutions Proposées ",
+      "titreCard1": "Innovation et Technologie ",
+      "paraphCard1": "Ekose-Rx mise sur des technologies avancées et innovantes pour créer des solutions performantes, intuitives et adaptées aux besoins modernes, assurant efficacité et simplicité.",
+      "titreCard2": "Modèle de Soins en Équipe et Télémédecine ",
+      "paraphCard2": "Ekose-Rx favorise la collaboration entre professionnels de la santé grâce à des outils numériques intégrés et la télémédecine, simplifiant l'accès aux soins.",
+      "titreCard3": "Suivi Automatisé et Gestion des Soins Basée sur les Données ",
+      "paraphCard3": "Ekose-Rx optimise la prise en charge avec un suivi automatisé et des analyses de données précises, pour des soins personnalisés et efficaces.",
+      "titreCard4": "Encouragement à l'Engagement des Patients",
+      "paraphCard4": "Ekose-Rx valorise l'implication des patients en leur fournissant des outils interactifs et éducatifs pour participer activement à leur parcours de soins.",
+      "titreCard5": "Gestion des Dossiers Médicaux et Coordination des Soins ",
+      "paraphCard5": "Ekose-Rx centralise les dossiers médicaux pour une accessibilité optimale, facilitant la coordination entre professionnels et assurant une prise en charge fluide",
+      "titreCard6": "Sécurité et Confidentialité ",
+      "paraphCard6": "Vos informations personnelles et médicales restent protégées."
+    },
+    "contact": {
+      "paraph": "Laissez nous un message si vous avez des questions concernant l'application Ekose RX, un agent entrera en contact avez vous sous peu.",
+      "nom": "Votre nom",
+      "prenom": "Votre prénom ",
+      "email": "Votre adresse E-mail",
+      "message": "message",
+      "soumettre": "Soumettre",
+      "adressemail": "Adresse E-mail ",
+      "tel": "Telephone",
+      "Adresse": "Adresse"
+    }
+  },
+
+  "teleconsultation": {
+    "hero": {
+      "titreHero": "Consultez un médecin en ligne,  n'importe où, n'importe quand",
+      "paraph": "Plus besoin de vous déplacer pour consulter un médecin.  Avec notre service de téléconsultation, accédez à  des conseils médicaux fiables et des soins personnalisés  depuis le confort de votre domicile, à tout moment.",
+      "telecharger": "cliquez ci dessous pour télécharger "
+    },
+    "section2": {
+      "comment": "Comment ça marche ?",
+      "telecharger": "Télécharger l'application",
+      "inscrivez": "Inscrivez-vous ou connectez-vous",
+      "plani": "Choisissez un médecin ou une spécialité",
+      "choisissez": "Planifiez votre consultation",
+      "discutez": "Discutez avec votre médecin",
+      "recevez": "Recevez vos prescriptions"
+    },
+    "Cards": {
+      "LesAvantages": "Les Avantages De La Téléconsultation",
+      "Accessibilite": "Accessibilité Simplifiée",
+      "AccessibiliteTexte": "Nous plaçons les besoins de nos utilisateurs au cœur de notre démarche.   ",
+      "Gain": "Gain de Temps",
+      "GainTexte": "Plus besoin d'attendre des heures en salle d'attente. Prenez un rendez-vous à l'heure qui vous convient.",
+      "Suivi": "Suivi Personnalisé",
+      "SuiviTexte": "Bénéficiez d'un suivi médical adapté à vos besoins et à votre état de santé.",
+      "Reduction": "Réduction des Délais",
+      "ReductionTexte": "Obtenez un avis médical rapidement sans les délais d'attente habituels."
+    }
+  },
+  "login": {
+    "signIn": "Connexion",
+    "title": "Connexion à votre compte"
+  },
+  "register": {
+    "submit": "S'inscrire"
+  },
+  "download": {
+    "button": "Télécharger l'application",
+    "cta": "Cliquez ici pour télécharger Ekose RX et simplifiez votre accès aux soins."
+  },
+  "joinCommunity": {
+    "title": "Rejoignez notre communauté",
+    "description": "Partagez vos expériences et connectez-vous avec d'autres utilisateurs pour améliorer votre santé.",
+    "button": "Rejoindre maintenant",
+    "learnMore": "En savoir plus"
+  },
+  "blog": {
+    "title": "Bienvenue sur notre Blog",
+    "comingSoon": "Bientôt disponible",
+    "description": "Restez à l'écoute pour des articles passionnants et des mises à jour."
+  },
+  "consultationDetails": {
+    "title": "Détails de la consultation",
+    "symptoms": "Symptômes",
+    "notes": "Notes",
+    "typeMessage": "Écrivez un message..."
+  },
+  "consultations": {
+    "title": "Consultations",
+    "newConsultation": "Nouvelle consultation",
+    "searchPlaceholder": "Rechercher une consultation...",
+    "allTypes": "Tous les types",
+    "teleconsultation": "Téléconsultation",
+    "physical": "Présentiel",
+    "patient": "Patient",
+    "type": "Type",
+    "dateTime": "Date & Heure",
+    "symptoms": "Symptômes",
+    "status": "Statut",
+    "actions": "Actions"
+  }
+}

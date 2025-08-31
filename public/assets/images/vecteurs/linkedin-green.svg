@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 134.6 118.6">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath-20);
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath-11);
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-16);
+      }
+
+      .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #32e800;
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-33);
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath-41);
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath-32);
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-10 {
+        clip-path: url(#clippath-13);
+      }
+
+      .cls-11 {
+        clip-path: url(#clippath-37);
+      }
+
+      .cls-12 {
+        clip-path: url(#clippath-25);
+      }
+
+      .cls-13 {
+        clip-path: url(#clippath-15);
+      }
+
+      .cls-14 {
+        clip-path: url(#clippath-6);
+      }
+
+      .cls-15 {
+        clip-path: url(#clippath-40);
+      }
+
+      .cls-16 {
+        clip-path: url(#clippath-26);
+      }
+
+      .cls-17 {
+        clip-path: url(#clippath-7);
+      }
+
+      .cls-18 {
+        clip-path: url(#clippath-21);
+      }
+
+      .cls-19 {
+        clip-path: url(#clippath-34);
+      }
+
+      .cls-20 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-21 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-22 {
+        clip-path: url(#clippath-38);
+      }
+
+      .cls-23 {
+        clip-path: url(#clippath-36);
+      }
+
+      .cls-24 {
+        clip-path: url(#clippath-27);
+      }
+
+      .cls-25 {
+        clip-path: url(#clippath-12);
+      }
+
+      .cls-26 {
+        clip-path: url(#clippath-24);
+      }
+
+      .cls-27 {
+        clip-path: url(#clippath-30);
+      }
+
+      .cls-28 {
+        clip-path: url(#clippath-22);
+      }
+
+      .cls-29 {
+        clip-path: url(#clippath-9);
+      }
+
+      .cls-30 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-31 {
+        clip-path: url(#clippath-39);
+      }
+
+      .cls-32 {
+        clip-path: url(#clippath-19);
+      }
+
+      .cls-33 {
+        clip-path: url(#clippath-31);
+      }
+
+      .cls-34 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-35 {
+        clip-path: url(#clippath-8);
+      }
+
+      .cls-36 {
+        clip-path: url(#clippath-29);
+      }
+
+      .cls-37 {
+        clip-path: url(#clippath-18);
+      }
+
+      .cls-38 {
+        clip-path: url(#clippath-14);
+      }
+
+      .cls-39 {
+        clip-path: url(#clippath-17);
+      }
+
+      .cls-40 {
+        clip-path: url(#clippath-5);
+      }
+
+      .cls-41 {
+        clip-path: url(#clippath-10);
+      }
+
+      .cls-42 {
+        clip-path: url(#clippath-23);
+      }
+
+      .cls-43 {
+        clip-path: url(#clippath-28);
+      }
+
+      .cls-44 {
+        clip-path: url(#clippath-35);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-4" x="126" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-4" x="126" y="22" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-4" x="126" y="44" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect class="cls-4" x="126" y="66" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <rect class="cls-4" x="126" y="88" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-5">
+      <rect class="cls-4" x="126" y="110" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-6">
+      <rect class="cls-4" x="105" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-7">
+      <rect class="cls-4" x="105" y="22" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-8">
+      <rect class="cls-4" x="105" y="44" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-9">
+      <rect class="cls-4" x="105" y="66" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-10">
+      <rect class="cls-4" x="105" y="88" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-11">
+      <rect class="cls-4" x="105" y="110" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-12">
+      <rect class="cls-4" x="84" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-13">
+      <rect class="cls-4" x="84" y="22" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-14">
+      <rect class="cls-4" x="84" y="44" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-15">
+      <rect class="cls-4" x="84" y="66" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-16">
+      <rect class="cls-4" x="84" y="88" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-17">
+      <rect class="cls-4" x="84" y="110" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-18">
+      <rect class="cls-4" x="63" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-19">
+      <rect class="cls-4" x="63" y="22" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-20">
+      <rect class="cls-4" x="63" y="44" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-21">
+      <rect class="cls-4" x="63" y="66" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-22">
+      <rect class="cls-4" x="63" y="88" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-23">
+      <rect class="cls-4" x="63" y="110" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-24">
+      <rect class="cls-4" x="42" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-25">
+      <rect class="cls-4" x="42" y="22" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-26">
+      <rect class="cls-4" x="42" y="44" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-27">
+      <rect class="cls-4" x="42" y="66" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-28">
+      <rect class="cls-4" x="42" y="88" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-29">
+      <rect class="cls-4" x="42" y="110" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-30">
+      <rect class="cls-4" x="21" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-31">
+      <rect class="cls-4" x="21" y="22" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-32">
+      <rect class="cls-4" x="21" y="44" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-33">
+      <rect class="cls-4" x="21" y="66" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-34">
+      <rect class="cls-4" x="21" y="88" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-35">
+      <rect class="cls-4" x="21" y="110" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-36">
+      <rect class="cls-4" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-37">
+      <rect class="cls-4" y="22" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-38">
+      <rect class="cls-4" y="44" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-39">
+      <rect class="cls-4" y="66" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-40">
+      <rect class="cls-4" y="88" width="8.6" height="8.6"/>
+    </clipPath>
+    <clipPath id="clippath-41">
+      <rect class="cls-4" y="110" width="8.6" height="8.6"/>
+    </clipPath>
+  </defs>
+  <g id="halftone_2" data-name="halftone 2">
+    <g id="halftone">
+      <g id="Groupe_202" data-name="Groupe 202">
+        <g>
+          <rect class="cls-5" x="126" width="8.6" height="8.6"/>
+          <g class="cls-30">
+            <g id="Groupe_201" data-name="Groupe 201">
+              <path id="Tracé_356" data-name="Tracé 356" class="cls-4" d="m126,4.3C126,1.93,127.92,0,130.3,0s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357" data-name="Tracé 357" class="cls-4" d="m126,21.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-2">
+      <g id="Groupe_202-2" data-name="Groupe 202-2">
+        <g>
+          <rect class="cls-5" x="126" y="22" width="8.6" height="8.6"/>
+          <g class="cls-20">
+            <g id="Groupe_201-2" data-name="Groupe 201-2">
+              <path id="Tracé_356-2" data-name="Tracé 356-2" class="cls-4" d="m126,26.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-2" data-name="Tracé 357-2" class="cls-4" d="m126,43.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-3">
+      <g id="Groupe_202-3" data-name="Groupe 202-3">
+        <g>
+          <rect class="cls-5" x="126" y="44" width="8.6" height="8.6"/>
+          <g class="cls-9">
+            <g id="Groupe_201-3" data-name="Groupe 201-3">
+              <path id="Tracé_356-3" data-name="Tracé 356-3" class="cls-4" d="m126,48.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-3" data-name="Tracé 357-3" class="cls-4" d="m126,65.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-4">
+      <g id="Groupe_202-4" data-name="Groupe 202-4">
+        <g>
+          <rect class="cls-5" x="126" y="66" width="8.6" height="8.6"/>
+          <g class="cls-34">
+            <g id="Groupe_201-4" data-name="Groupe 201-4">
+              <path id="Tracé_356-4" data-name="Tracé 356-4" class="cls-4" d="m126,70.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-4" data-name="Tracé 357-4" class="cls-4" d="m126,87.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-5">
+      <g id="Groupe_202-5" data-name="Groupe 202-5">
+        <g>
+          <rect class="cls-5" x="126" y="88" width="8.6" height="8.6"/>
+          <g class="cls-21">
+            <g id="Groupe_201-5" data-name="Groupe 201-5">
+              <path id="Tracé_356-5" data-name="Tracé 356-5" class="cls-4" d="m126,92.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-5" data-name="Tracé 357-5" class="cls-4" d="m126,109.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-6">
+      <g id="Groupe_202-6" data-name="Groupe 202-6">
+        <g>
+          <rect class="cls-5" x="126" y="110" width="8.6" height="8.6"/>
+          <g class="cls-40">
+            <g id="Groupe_201-6" data-name="Groupe 201-6">
+              <path id="Tracé_356-6" data-name="Tracé 356-6" class="cls-4" d="m126,114.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-7">
+      <g id="Groupe_202-7" data-name="Groupe 202-7">
+        <g>
+          <rect class="cls-5" x="105" width="8.6" height="8.6"/>
+          <g class="cls-14">
+            <g id="Groupe_201-7" data-name="Groupe 201-7">
+              <path id="Tracé_356-7" data-name="Tracé 356-7" class="cls-4" d="m105,4.3C105,1.93,106.92,0,109.3,0s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-7" data-name="Tracé 357-7" class="cls-4" d="m105,21.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-8">
+      <g id="Groupe_202-8" data-name="Groupe 202-8">
+        <g>
+          <rect class="cls-5" x="105" y="22" width="8.6" height="8.6"/>
+          <g class="cls-17">
+            <g id="Groupe_201-8" data-name="Groupe 201-8">
+              <path id="Tracé_356-8" data-name="Tracé 356-8" class="cls-4" d="m105,26.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-8" data-name="Tracé 357-8" class="cls-4" d="m105,43.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-9">
+      <g id="Groupe_202-9" data-name="Groupe 202-9">
+        <g>
+          <rect class="cls-5" x="105" y="44" width="8.6" height="8.6"/>
+          <g class="cls-35">
+            <g id="Groupe_201-9" data-name="Groupe 201-9">
+              <path id="Tracé_356-9" data-name="Tracé 356-9" class="cls-4" d="m105,48.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-9" data-name="Tracé 357-9" class="cls-4" d="m105,65.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-10">
+      <g id="Groupe_202-10" data-name="Groupe 202-10">
+        <g>
+          <rect class="cls-5" x="105" y="66" width="8.6" height="8.6"/>
+          <g class="cls-29">
+            <g id="Groupe_201-10" data-name="Groupe 201-10">
+              <path id="Tracé_356-10" data-name="Tracé 356-10" class="cls-4" d="m105,70.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-10" data-name="Tracé 357-10" class="cls-4" d="m105,87.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-11">
+      <g id="Groupe_202-11" data-name="Groupe 202-11">
+        <g>
+          <rect class="cls-5" x="105" y="88" width="8.6" height="8.6"/>
+          <g class="cls-41">
+            <g id="Groupe_201-11" data-name="Groupe 201-11">
+              <path id="Tracé_356-11" data-name="Tracé 356-11" class="cls-4" d="m105,92.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-11" data-name="Tracé 357-11" class="cls-4" d="m105,109.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-12">
+      <g id="Groupe_202-12" data-name="Groupe 202-12">
+        <g>
+          <rect class="cls-5" x="105" y="110" width="8.6" height="8.6"/>
+          <g class="cls-2">
+            <g id="Groupe_201-12" data-name="Groupe 201-12">
+              <path id="Tracé_356-12" data-name="Tracé 356-12" class="cls-4" d="m105,114.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-13">
+      <g id="Groupe_202-13" data-name="Groupe 202-13">
+        <g>
+          <rect class="cls-5" x="84" width="8.6" height="8.6"/>
+          <g class="cls-25">
+            <g id="Groupe_201-13" data-name="Groupe 201-13">
+              <path id="Tracé_356-13" data-name="Tracé 356-13" class="cls-4" d="m84,4.3C84,1.93,85.92,0,88.3,0s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-13" data-name="Tracé 357-13" class="cls-4" d="m84,21.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-14">
+      <g id="Groupe_202-14" data-name="Groupe 202-14">
+        <g>
+          <rect class="cls-5" x="84" y="22" width="8.6" height="8.6"/>
+          <g class="cls-10">
+            <g id="Groupe_201-14" data-name="Groupe 201-14">
+              <path id="Tracé_356-14" data-name="Tracé 356-14" class="cls-4" d="m84,26.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-14" data-name="Tracé 357-14" class="cls-4" d="m84,43.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-15">
+      <g id="Groupe_202-15" data-name="Groupe 202-15">
+        <g>
+          <rect class="cls-5" x="84" y="44" width="8.6" height="8.6"/>
+          <g class="cls-38">
+            <g id="Groupe_201-15" data-name="Groupe 201-15">
+              <path id="Tracé_356-15" data-name="Tracé 356-15" class="cls-4" d="m84,48.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-15" data-name="Tracé 357-15" class="cls-4" d="m84,65.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-16">
+      <g id="Groupe_202-16" data-name="Groupe 202-16">
+        <g>
+          <rect class="cls-5" x="84" y="66" width="8.6" height="8.6"/>
+          <g class="cls-13">
+            <g id="Groupe_201-16" data-name="Groupe 201-16">
+              <path id="Tracé_356-16" data-name="Tracé 356-16" class="cls-4" d="m84,70.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-16" data-name="Tracé 357-16" class="cls-4" d="m84,87.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-17">
+      <g id="Groupe_202-17" data-name="Groupe 202-17">
+        <g>
+          <rect class="cls-5" x="84" y="88" width="8.6" height="8.6"/>
+          <g class="cls-3">
+            <g id="Groupe_201-17" data-name="Groupe 201-17">
+              <path id="Tracé_356-17" data-name="Tracé 356-17" class="cls-4" d="m84,92.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-17" data-name="Tracé 357-17" class="cls-4" d="m84,109.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-18">
+      <g id="Groupe_202-18" data-name="Groupe 202-18">
+        <g>
+          <rect class="cls-5" x="84" y="110" width="8.6" height="8.6"/>
+          <g class="cls-39">
+            <g id="Groupe_201-18" data-name="Groupe 201-18">
+              <path id="Tracé_356-18" data-name="Tracé 356-18" class="cls-4" d="m84,114.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-19">
+      <g id="Groupe_202-19" data-name="Groupe 202-19">
+        <g>
+          <rect class="cls-5" x="63" width="8.6" height="8.6"/>
+          <g class="cls-37">
+            <g id="Groupe_201-19" data-name="Groupe 201-19">
+              <path id="Tracé_356-19" data-name="Tracé 356-19" class="cls-4" d="m63,4.3C63,1.93,64.92,0,67.3,0s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-19" data-name="Tracé 357-19" class="cls-4" d="m63,21.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-20">
+      <g id="Groupe_202-20" data-name="Groupe 202-20">
+        <g>
+          <rect class="cls-5" x="63" y="22" width="8.6" height="8.6"/>
+          <g class="cls-32">
+            <g id="Groupe_201-20" data-name="Groupe 201-20">
+              <path id="Tracé_356-20" data-name="Tracé 356-20" class="cls-4" d="m63,26.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-20" data-name="Tracé 357-20" class="cls-4" d="m63,43.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-21">
+      <g id="Groupe_202-21" data-name="Groupe 202-21">
+        <g>
+          <rect class="cls-5" x="63" y="44" width="8.6" height="8.6"/>
+          <g class="cls-1">
+            <g id="Groupe_201-21" data-name="Groupe 201-21">
+              <path id="Tracé_356-21" data-name="Tracé 356-21" class="cls-4" d="m63,48.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-21" data-name="Tracé 357-21" class="cls-4" d="m63,65.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-22">
+      <g id="Groupe_202-22" data-name="Groupe 202-22">
+        <g>
+          <rect class="cls-5" x="63" y="66" width="8.6" height="8.6"/>
+          <g class="cls-18">
+            <g id="Groupe_201-22" data-name="Groupe 201-22">
+              <path id="Tracé_356-22" data-name="Tracé 356-22" class="cls-4" d="m63,70.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-22" data-name="Tracé 357-22" class="cls-4" d="m63,87.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-23">
+      <g id="Groupe_202-23" data-name="Groupe 202-23">
+        <g>
+          <rect class="cls-5" x="63" y="88" width="8.6" height="8.6"/>
+          <g class="cls-28">
+            <g id="Groupe_201-23" data-name="Groupe 201-23">
+              <path id="Tracé_356-23" data-name="Tracé 356-23" class="cls-4" d="m63,92.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-23" data-name="Tracé 357-23" class="cls-4" d="m63,109.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-24">
+      <g id="Groupe_202-24" data-name="Groupe 202-24">
+        <g>
+          <rect class="cls-5" x="63" y="110" width="8.6" height="8.6"/>
+          <g class="cls-42">
+            <g id="Groupe_201-24" data-name="Groupe 201-24">
+              <path id="Tracé_356-24" data-name="Tracé 356-24" class="cls-4" d="m63,114.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-25">
+      <g id="Groupe_202-25" data-name="Groupe 202-25">
+        <g>
+          <rect class="cls-5" x="42" width="8.6" height="8.6"/>
+          <g class="cls-26">
+            <g id="Groupe_201-25" data-name="Groupe 201-25">
+              <path id="Tracé_356-25" data-name="Tracé 356-25" class="cls-4" d="m42,4.3C42,1.93,43.92,0,46.3,0s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-25" data-name="Tracé 357-25" class="cls-4" d="m42,21.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-26">
+      <g id="Groupe_202-26" data-name="Groupe 202-26">
+        <g>
+          <rect class="cls-5" x="42" y="22" width="8.6" height="8.6"/>
+          <g class="cls-12">
+            <g id="Groupe_201-26" data-name="Groupe 201-26">
+              <path id="Tracé_356-26" data-name="Tracé 356-26" class="cls-4" d="m42,26.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-26" data-name="Tracé 357-26" class="cls-4" d="m42,43.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-27">
+      <g id="Groupe_202-27" data-name="Groupe 202-27">
+        <g>
+          <rect class="cls-5" x="42" y="44" width="8.6" height="8.6"/>
+          <g class="cls-16">
+            <g id="Groupe_201-27" data-name="Groupe 201-27">
+              <path id="Tracé_356-27" data-name="Tracé 356-27" class="cls-4" d="m42,48.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-27" data-name="Tracé 357-27" class="cls-4" d="m42,65.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-28">
+      <g id="Groupe_202-28" data-name="Groupe 202-28">
+        <g>
+          <rect class="cls-5" x="42" y="66" width="8.6" height="8.6"/>
+          <g class="cls-24">
+            <g id="Groupe_201-28" data-name="Groupe 201-28">
+              <path id="Tracé_356-28" data-name="Tracé 356-28" class="cls-4" d="m42,70.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-28" data-name="Tracé 357-28" class="cls-4" d="m42,87.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-29">
+      <g id="Groupe_202-29" data-name="Groupe 202-29">
+        <g>
+          <rect class="cls-5" x="42" y="88" width="8.6" height="8.6"/>
+          <g class="cls-43">
+            <g id="Groupe_201-29" data-name="Groupe 201-29">
+              <path id="Tracé_356-29" data-name="Tracé 356-29" class="cls-4" d="m42,92.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-29" data-name="Tracé 357-29" class="cls-4" d="m42,109.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-30">
+      <g id="Groupe_202-30" data-name="Groupe 202-30">
+        <g>
+          <rect class="cls-5" x="42" y="110" width="8.6" height="8.6"/>
+          <g class="cls-36">
+            <g id="Groupe_201-30" data-name="Groupe 201-30">
+              <path id="Tracé_356-30" data-name="Tracé 356-30" class="cls-4" d="m42,114.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-31">
+      <g id="Groupe_202-31" data-name="Groupe 202-31">
+        <g>
+          <rect class="cls-5" x="21" width="8.6" height="8.6"/>
+          <g class="cls-27">
+            <g id="Groupe_201-31" data-name="Groupe 201-31">
+              <path id="Tracé_356-31" data-name="Tracé 356-31" class="cls-4" d="m21,4.3C21,1.93,22.92,0,25.3,0s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-31" data-name="Tracé 357-31" class="cls-4" d="m21,21.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-32">
+      <g id="Groupe_202-32" data-name="Groupe 202-32">
+        <g>
+          <rect class="cls-5" x="21" y="22" width="8.6" height="8.6"/>
+          <g class="cls-33">
+            <g id="Groupe_201-32" data-name="Groupe 201-32">
+              <path id="Tracé_356-32" data-name="Tracé 356-32" class="cls-4" d="m21,26.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-32" data-name="Tracé 357-32" class="cls-4" d="m21,43.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-33">
+      <g id="Groupe_202-33" data-name="Groupe 202-33">
+        <g>
+          <rect class="cls-5" x="21" y="44" width="8.6" height="8.6"/>
+          <g class="cls-8">
+            <g id="Groupe_201-33" data-name="Groupe 201-33">
+              <path id="Tracé_356-33" data-name="Tracé 356-33" class="cls-4" d="m21,48.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-33" data-name="Tracé 357-33" class="cls-4" d="m21,65.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-34">
+      <g id="Groupe_202-34" data-name="Groupe 202-34">
+        <g>
+          <rect class="cls-5" x="21" y="66" width="8.6" height="8.6"/>
+          <g class="cls-6">
+            <g id="Groupe_201-34" data-name="Groupe 201-34">
+              <path id="Tracé_356-34" data-name="Tracé 356-34" class="cls-4" d="m21,70.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-34" data-name="Tracé 357-34" class="cls-4" d="m21,87.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-35">
+      <g id="Groupe_202-35" data-name="Groupe 202-35">
+        <g>
+          <rect class="cls-5" x="21" y="88" width="8.6" height="8.6"/>
+          <g class="cls-19">
+            <g id="Groupe_201-35" data-name="Groupe 201-35">
+              <path id="Tracé_356-35" data-name="Tracé 356-35" class="cls-4" d="m21,92.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+              <path id="Tracé_357-35" data-name="Tracé 357-35" class="cls-4" d="m21,109.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-36">
+      <g id="Groupe_202-36" data-name="Groupe 202-36">
+        <g>
+          <rect class="cls-5" x="21" y="110" width="8.6" height="8.6"/>
+          <g class="cls-44">
+            <g id="Groupe_201-36" data-name="Groupe 201-36">
+              <path id="Tracé_356-36" data-name="Tracé 356-36" class="cls-4" d="m21,114.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0c-2.37,0-4.3-1.93-4.3-4.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-37">
+      <g id="Groupe_202-37" data-name="Groupe 202-37">
+        <g>
+          <rect class="cls-5" width="8.6" height="8.6"/>
+          <g class="cls-23">
+            <g id="Groupe_201-37" data-name="Groupe 201-37">
+              <path id="Tracé_356-37" data-name="Tracé 356-37" class="cls-4" d="m0,4.3C0,1.93,1.92,0,4.3,0s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0C1.92,8.6,0,6.67,0,4.3"/>
+              <path id="Tracé_357-37" data-name="Tracé 357-37" class="cls-4" d="m0,21.3C0,18.93,1.92,17,4.3,17s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0C1.92,25.6,0,23.67,0,21.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-38">
+      <g id="Groupe_202-38" data-name="Groupe 202-38">
+        <g>
+          <rect class="cls-5" y="22" width="8.6" height="8.6"/>
+          <g class="cls-11">
+            <g id="Groupe_201-38" data-name="Groupe 201-38">
+              <path id="Tracé_356-38" data-name="Tracé 356-38" class="cls-4" d="m0,26.3C0,23.93,1.92,22,4.3,22s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0C1.92,30.6,0,28.67,0,26.3"/>
+              <path id="Tracé_357-38" data-name="Tracé 357-38" class="cls-4" d="m0,43.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0C1.92,47.6,0,45.67,0,43.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-39">
+      <g id="Groupe_202-39" data-name="Groupe 202-39">
+        <g>
+          <rect class="cls-5" y="44" width="8.6" height="8.6"/>
+          <g class="cls-22">
+            <g id="Groupe_201-39" data-name="Groupe 201-39">
+              <path id="Tracé_356-39" data-name="Tracé 356-39" class="cls-4" d="m0,48.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0C1.92,52.6,0,50.67,0,48.3"/>
+              <path id="Tracé_357-39" data-name="Tracé 357-39" class="cls-4" d="m0,65.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0C1.92,69.6,0,67.67,0,65.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-40">
+      <g id="Groupe_202-40" data-name="Groupe 202-40">
+        <g>
+          <rect class="cls-5" y="66" width="8.6" height="8.6"/>
+          <g class="cls-31">
+            <g id="Groupe_201-40" data-name="Groupe 201-40">
+              <path id="Tracé_356-40" data-name="Tracé 356-40" class="cls-4" d="m0,70.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0C1.92,74.6,0,72.67,0,70.3"/>
+              <path id="Tracé_357-40" data-name="Tracé 357-40" class="cls-4" d="m0,87.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0C1.92,91.6,0,89.67,0,87.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-41">
+      <g id="Groupe_202-41" data-name="Groupe 202-41">
+        <g>
+          <rect class="cls-5" y="88" width="8.6" height="8.6"/>
+          <g class="cls-15">
+            <g id="Groupe_201-41" data-name="Groupe 201-41">
+              <path id="Tracé_356-41" data-name="Tracé 356-41" class="cls-4" d="m0,92.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0C1.92,96.6,0,94.67,0,92.3"/>
+              <path id="Tracé_357-41" data-name="Tracé 357-41" class="cls-4" d="m0,109.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0C1.92,113.6,0,111.67,0,109.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="halftone-42">
+      <g id="Groupe_202-42" data-name="Groupe 202-42">
+        <g>
+          <rect class="cls-5" y="110" width="8.6" height="8.6"/>
+          <g class="cls-7">
+            <g id="Groupe_201-42" data-name="Groupe 201-42">
+              <path id="Tracé_356-42" data-name="Tracé 356-42" class="cls-4" d="m0,114.3c0-2.37,1.93-4.3,4.3-4.3s4.3,1.93,4.3,4.3-1.93,4.3-4.3,4.3h0C1.92,118.6,0,116.67,0,114.3"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

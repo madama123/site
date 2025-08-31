@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 508.75 60.21">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-2 {
+        fill: #0c6c30;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-4 {
+        fill: #28a737;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-3" width="508.75" height="60.21"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-3" y="0" width="508.75" height="60.21"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-3" y="24.78" width="441.33" height="34.03"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect class="cls-3" y="0" width="508.75" height="60.21"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <rect class="cls-3" x="439.24" width="69.51" height="60.21"/>
+    </clipPath>
+  </defs>
+  <g class="cls-7">
+    <g id="Groupe_892" data-name="Groupe 892">
+      <g id="Groupe_886" data-name="Groupe 886">
+        <g class="cls-5">
+          <g id="Groupe_885" data-name="Groupe 885">
+            <g id="Groupe_884" data-name="Groupe 884">
+              <g id="Groupe_883" data-name="Groupe 883">
+                <g class="cls-1">
+                  <g id="Groupe_882" data-name="Groupe 882">
+                    <path id="Tracé_773" data-name="Tracé 773" class="cls-4" d="m441.33,58.8H34.03L0,24.78h429.1v11.64l12.23,22.39Z"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <path id="Tracé_774" data-name="Tracé 774" class="cls-2" d="m429.1,20.74v17.07h-129.76l-12.27-12.27v-4.81h142.03Z"/>
+      <g id="Groupe_891" data-name="Groupe 891">
+        <g class="cls-8">
+          <g id="Groupe_890" data-name="Groupe 890">
+            <g id="Groupe_889" data-name="Groupe 889">
+              <g id="Groupe_888" data-name="Groupe 888">
+                <g class="cls-6">
+                  <g id="Groupe_887" data-name="Groupe 887">
+                    <path id="Tracé_775" data-name="Tracé 775" class="cls-4" d="m491.37,60.21l17.39-30.11L491.37,0h-34.75l-17.37,30.1,17.37,30.11h34.75Z"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

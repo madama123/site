@@ -1,0 +1,268 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "plans": "Plans & Pricing",
+    "teleconsultation": "Teleconsultation",
+    "appointments": "Appointments",
+    "emergency": "Emergency",
+    "services": "Services",
+    "blog": "Blog"
+  },
+
+  "HomePage": {
+    "hero": {
+      "titreHero": "Manage Your Entire Healthcare Journey from a Single App",
+      "paraph": "Simplify your access to care and take control of your well-being",
+      "recherche": "You are looking for:",
+      "medecin": "A Doctor",
+      "consultation": "A Consultation",
+      "ambulance": "An Ambulance",
+      "pharmacie": "A Pharmacy",
+      "securite": "Security",
+      "textSecure": "Your information is protected by advanced security technologies",
+      "service": "24/7 Service",
+      "serviceText": "We are available whenever you need us"
+    },
+    "titleConsultVisio": {
+      "En": "By ",
+      "Visio": "video ",
+      "Ou": "or ",
+      "Pres": "face-to-face, ",
+      "Faistoi": "get consulted by ",
+      "specialiste": "specialists "
+    },
+    "textConsultVisio": {
+      "Aveclappl": "With the ",
+      "Ekose": "Ekose RX ",
+      "texte": "application you can consult a doctor from the comfort of your home, thanks to a simple internet connection and obtain immediate access to care wherever you are. You can also make an appointment, choose the time that suits you, and meet a specialist for a physical consultation. "
+    },
+    "titreSecurite": "Your Safety First",
+    "textSecurite": "Protecting your data is our priority. We use advanced security technologies to ensure that all your medical and personal information is kept strictly confidential and protected.",
+    "trouverPharmacie": "Find pharmacies near you",
+    "trouverPharmacieTexte": "Easily search for nearby pharmacies using our app.",
+    "commanderAmbulance": "Order an ambulance",
+    "commanderAmbulanceTexte": "Order an ambulance urgently.",
+    "decouvrerVideo": "Discover health advice videos",
+    "decouvrerVideoTexte": "We regularly share health tips to help our patients adopt good habits and stay fit..",
+    "cliquerIciPour": "Click below to download",
+
+    "section2": {
+      "titre": "Consult the best doctors online",
+      "paraph1": "Wherever you are, our doctors are available online to provide fast, effective, and personalized care tailored to your needs.",
+      "telecharger": "Download the app now",
+      "paraph2": "+100,000 people are already using the Ekose RX app worldwide",
+      "Pédiatrie": "Pediatrics",
+      "Cardiologie": "Cardiology",
+      "Physchiatrie": "Psychiatry",
+      "Urologie": "Urology",
+      "Ophtalmologie": "Ophthalmology",
+      "Gastro-entérologie": "Gastroenterology",
+      "Et plus": "And more"
+    },
+    "joinCommunity": {
+      "title": "Join our community",
+      "description": "Share your experiences and connect with other users to improve your health.",
+      "button": "Join now"
+    }
+  },
+  "footer": {
+    "liensUtiles": "Useful Links",
+    "securite": "Security",
+    "legal": "Legal",
+    "reseauxSociaux": "Social Medias",
+    "politique": "Privacy Policy",
+    "conditions": "Terms of Use",
+    "letterTitle": "Subscribe to our Newsletter",
+    "letterPara": "Receive the best health tips, the latest news, and exclusive offers directly in your inbox.",
+    "mail": "Enter your email address",
+    "souscrire": "Subscribe",
+    "connecter": "Connect to Better Health!"
+  },
+  "pharmacies": {
+    "hero": {
+      "title": "Find the Closest Pharmacies Near You",
+      "paraph": "In just seconds, locate nearby open pharmacies, check their hours and services, and get directions to reach them quickly. Enjoy easy access to healthcare, wherever you are and at any time."
+    },
+    "section2": {
+      "titre": "Say Goodbye to Stress When Buying Your Medications",
+      "paraph": "Ekose-RX directly connects you with pharmacies to simplify the process of acquiring medications.",
+      "liste1": "Locate pharmacies near your location",
+      "liste2": "Check pharmacy availability (on duty, opening hours)",
+      "liste3": "Detailed pharmacy profile with information and action options (call, directions)",
+      "liste4": "Verify medication availability",
+      "telecharger": "Download the app now",
+      "paraph2": "Easily find the closest pharmacies with our integrated geolocation system. The app provides real-time information on nearby open pharmacies, their hours, and the services they offer. Simplify your search and quickly access the medications you need, wherever you are."
+    }
+  },
+  "inscription": {
+    "titreHero": "Join Us!",
+    "text": "Are you a doctor or pharmacist and want to make your services more accessible to your patients? Join us now!",
+    "prestataire1": "Doctors",
+    "doctorText": "Join our platform and expand your reach! Sign up today to offer your services to more patients, simplify your consultations, and manage your appointments with ease. Transform your practice with teleconsultation and connect with your patients wherever they are.",
+    "pharmacieText": "Give a new dimension to your services! Sign up on our platform to allow your customers to order their medications online and receive fast delivery. Join us today to make your pharmacy more accessible, simplify prescription management, and offer a convenient and modern experience to your patients.",
+    "bouton": "Sign Up"
+  },
+
+  "carossel": {
+    "titreHero": "Here is what people say about us",
+    "temoins1": "❝ Making an appointment with my doctor through Ekose RX is a breeze. No more calling or traveling to secure an appointment slot. A truly modern service",
+    "temoins2": "❝ Ekose RX has revolutionized my practice. Appointment management is simpler, and teleconsultation allows me to better follow up with my patients, no matter where they are.",
+    "temoins3": "❝ When I needed an ambulance in an emergency, Ekose RX was a real blessing. The service was fast and efficient.",
+    "temoins4": "❝ It's amazing to be able to access skilled doctors from my phone. Ekose RX has helped me a lot.",
+    "temoins5": "❝ Thanks to Ekose RX, I was able to consult a doctor quickly without leaving my home. It's simple, convenient, and reassuring!",
+    "temoins6": "❝ The integration of prescriptions in the app is great. I can easily view my prescriptions and send them to my pharmacy without any issues"
+  },
+
+  "rdv": {
+    "hero": {
+      "titreHero": "Book Your Consultation in Just a Few Clicks! Simplify Your Healthcare Journey with Ekose",
+      "paraph": "Choose your doctor, select a time slot, and confirm your appointment, all from the comfort of your home.",
+      "telecharger": "Click below to download"
+    },
+    "section2": {
+      "titre": "How to Make an Appointment",
+      "paraph1": "Download the app",
+      "paraph2": "Open the app and register",
+      "paraph3": "Search for a specialist near you",
+      "paraph4": "Make a reservation"
+    },
+    "commentaires": {
+      "Fatima": "I am really happy with this app. Booking an appointment with my doctor was a breeze, and everything was well-organized. Kudos to the team!",
+      "Marie": "A revolutionary app! I was able to book an appointment with my doctor in just a few minutes. Everything was clear, and on the day of the appointment, there were no surprises. Thank you for making this so easy!",
+      "Ahmed": "With this app, no more long waits on the phone. I found a specialist in just a few clicks and booked an appointment directly. Everything went smoothly, I highly recommend it!",
+      "Chloe": "A big thank you for this app! I was able to find a doctor near me in just a few minutes. I am very satisfied with the service.",
+      "Julie": "This app allowed me to manage my medical appointments without stress. Everything was well explained, and I got a slot that suited my schedule. Very satisfied!",
+      "Emilie": "Very convenient for organizing my medical consultations. I particularly appreciated the reminders before the appointment. A real time saver and very efficient."
+    },
+    "section3": {
+      "titre": "Meet Qualified Doctors Near You",
+      "paraph": "Access a vast network of qualified and experienced doctors ready to assist you. With our platform, quickly and easily find the ideal doctor near you for consultations tailored to your schedule and preferences. Simplify your access to healthcare and enjoy reliable medical support, wherever you are."
+    }
+  },
+  "UrgencesPage": {
+    "consultationImmediate": {
+      "besoin": "Need ",
+      "immediat": "immediate help ?",
+      "nousSommes": "We are here for you !",
+      "texte": "book an ambulance in seconds with Ekose. Access fast and secure assistance for you or your loved ones",
+      "besoinAide": "Need help ? Click here",
+      "fiabilite": "Reliability",
+      "rapidite": "Speed",
+      "securite": "Security",
+      "telecharger": "Download the app "
+    },
+    "Cards": {
+      "Simplicite": "Ease of booking",
+      "SimpliciteTexte": "Book an ambulance in just a few clicks and let our system geolocate your location to send the nearest ambulance.",
+      "Securite": "Real-Time Tracking",
+      "SecuriteTexte": "Follow the arrival of the ambulance on an interactive map in real time.",
+      "Intervention": "24/7 response",
+      "InterventionTexte": "Our platform is designed to be available anytime and to everyone, regardless of location."
+    },
+    "reservezUne": "Book an Ambulance at Any Time, in Real Time",
+    "reservezUneTexte": "Need an emergency ambulance? Book the nearest one in seconds thanks to Ekose. Access fast and secure assistance for you or your loved ones."
+  },
+
+  "about": {
+    "hero": {
+      "titre1": "WE TAKE CARE",
+      "titre2": "OF YOUR HEALTH",
+      "service": "We are at your service 24/7",
+      "paraph": "Together, let's create a future where health is just a click away!"
+    },
+    "history": {
+      "titre": "Our History",
+      "paraph": "From an avoidable tragedy to a revolution in healthcare: the tragic loss of a 47-year-old diabetic patient in Cameroon due to critical delays and the lack of essential medical supplies. Despite the worsening of his condition, the hospital was unable to provide fast-acting insulin on time due to stock shortages and communication issues. Systemic inefficiencies in the healthcare system are evident through delays in registration and misplaced medical records, the lack of essential medications like insulin, overwhelmed and understaffed hospital personnel, as well as poor coordination. A tragedy that is not uncommon in Cameroon, and in many low-resource countries in Francophone Africa, where patients with chronic diseases regularly face these challenges. The preventable death of this patient is, sadly, a story shared by many. \"Inspired by this tragedy, we knew we had to act. Ekose-Rx evolved from a simple pharmacy ordering system to a comprehensive healthcare aggregator.\""
+    },
+    "mission": {
+      "mission": "Our Mission",
+      "soins": "Providing Personalized Care",
+      "paraph": "By simplifying the process of finding and accessing care, Ekose aims to enhance the experience for patients and healthcare professionals, improve access to quality care, and streamline the entire healthcare journey.",
+      "confort": "From the Comfort of Your Home",
+      "rdv": "By Appointment",
+      "patient": "Satisfied Patients"
+    },
+    "partners": {
+      "titre": "Quality partners support us",
+      "paraph": "Ekose-RX is supported by quality partners committed to improving access to and quality of care through innovative and accessible healthcare solutions."
+    },
+    "solutions": {
+      "titre": "Proposed Solutions",
+      "titreCard1": "Innovation and Technology",
+      "paraphCard1": "Ekose-Rx relies on advanced and innovative technologies to create high-performance, intuitive solutions that meet modern needs, ensuring efficiency and simplicity.",
+      "titreCard2": "Team-Based Care Model and Telemedicine",
+      "paraphCard2": "Ekose-Rx promotes collaboration among healthcare professionals through integrated digital tools and telemedicine, simplifying access to care.",
+      "titreCard3": "Automated Monitoring and Data-Driven Care Management",
+      "paraphCard3": "Ekose-Rx optimizes care with automated monitoring and precise data analysis, ensuring personalized and effective treatment.",
+      "titreCard4": "Encouragement of Patient Engagement",
+      "paraphCard4": "Ekose-Rx values patient involvement by providing interactive and educational tools to actively participate in their care journey.",
+      "titreCard5": "Medical Record Management and Care Coordination",
+      "paraphCard5": "Ekose-Rx centralizes medical records for optimal accessibility, facilitating coordination among professionals and ensuring smooth care delivery.",
+      "titreCard6": "Security and Confidentiality",
+      "paraphCard6": "Your personal and medical information remains protected."
+    },
+    "contact": {
+      "paraph": "Leave us a message if you have any questions regarding the Ekose RX app, an agent will get in touch with you shortly.",
+      "nom": "Your name",
+      "prenom": "Your first name",
+      "email": "Your email address",
+      "message": "Message",
+      "soumettre": "Submit",
+      "adressemail": "Email Address",
+      "tel": "Phone Number",
+      "Adresse": "Address"
+    }
+  },
+
+  "teleconsultation": {
+    "hero": {
+      "titreHero": "Consult a doctor online, anywhere, anytime",
+      "paraph": "No need to travel to see a doctor anymore.  With our teleconsultation service, access reliable medical advice and personalized care from the comfort of your home, at any time.",
+      "telecharger": "click below to download "
+    },
+    "section2": {
+      "comment": "How does it work ?",
+      "telecharger": "Download the app",
+      "inscrivez": "Register or log in",
+      "plani": "Choose a doctor or specialty",
+      "choisissez": "Schedule your consultation",
+      "discutez": "Schedule your consultation",
+      "recevez": "Receive your prescriptions"
+    },
+
+    "Cards": {
+      "LesAvantages": "The Advantages of Teleconsultation",
+      "Accessibilite": "Simplified Accessibility",
+      "AccessibiliteTexte": "We place the needs of our users at the heart of our approach.",
+      "Gain": "Saving Time",
+      "GainTexte": "No more waiting for hours in the waiting room. Make an appointment at a time that suits you.",
+      "Suivi": "Continuous and Rapid Monitoring",
+      "SuiviTexte": "Quickly access your prescriptions and benefit from personalized monitoring without leaving your home.",
+      "Reduction": "Cost Reduction",
+      "ReductionTexte": "Reduce costs related to travel and physical consultations"
+    }
+  },
+  "login": {
+    "signIn": "Accounte",
+    "title": "Login to your account"
+  },
+  "register": {
+    "submit": "Register"
+  },
+  "download": {
+    "button": "Download the app",
+    "cta": "Click here to download Ekose RX and simplify your access to care."
+  },
+  "joinCommunity": {
+    "title": "Join our community",
+    "description": "Share your experiences and connect with other users to improve your health.",
+    "button": "Join now",
+    "learnMore": "Learn more"
+  },
+  "blog": {
+    "title": "Welcome to our Blog",
+    "comingSoon": "Coming Soon",
+    "description": "Stay tuned for exciting articles and updates."
+  }
+}

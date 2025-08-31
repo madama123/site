@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.56 33.83">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+
+      .cls-3, .cls-2 {
+        fill: #134888;
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-2 {
+        font-family: Raleway-Bold, Raleway;
+        font-size: 18px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="facebook">
+    <path id="facebook-svgrepo-com" class="cls-3" d="m29.65,0c2.57-.02,4.66,2.05,4.68,4.61,0,0,0,0,0,0v24.6c-.02,2.57-2.11,4.63-4.68,4.61H4.68c-2.56.02-4.66-2.04-4.68-4.61V4.61C.02,2.05,2.11-.02,4.68,0h0s24.96,0,24.96,0Zm0,3.08c.86,0,1.55.68,1.56,1.54h0v24.6c0,.86-.7,1.54-1.56,1.54h-7.8v-10.76h3.24c.67,0,1.26-.42,1.48-1.05l.69-2.04c.2-.61-.13-1.26-.74-1.46-.12-.04-.25-.06-.37-.06h-4.3v-3.08c.06-.83.73-1.49,1.56-1.54h3.12c.86,0,1.55-.68,1.56-1.54h0v-1.05c0-.5-.33-.94-.81-1.07-1.27-.32-2.57-.5-3.88-.53-3.9,0-6.24,2.66-6.24,4.96v3.84h-3.12c-.86,0-1.55.68-1.56,1.54,0,0,0,0,0,0v1.54c0,.86.7,1.54,1.56,1.54h3.12v10.76H4.68c-.86,0-1.55-.68-1.56-1.54,0,0,0,0,0,0V4.61c0-.86.7-1.54,1.56-1.54,0,0,0,0,0,0h24.96Z"/>
+    <g id="Ekose_RX" data-name="Ekose RX" class="cls-1">
+      <text class="cls-2" transform="translate(44.63 23)"><tspan x="0" y="0">E</tspan><tspan class="cls-5" x="10.82" y="0">k</tspan><tspan x="20.38" y="0">ose R</tspan><tspan class="cls-4" x="67.25" y="0">X</tspan></text>
+    </g>
+  </g>
+</svg>

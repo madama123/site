@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1366 2387" style="enable-background:new 0 0 1366 2387;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.6;}
+	.st1{clip-path:url(#SVGID_00000098927821139382721270000010457801785636995499_);}
+	.st2{fill:url(#Rectangle_73_00000097458083247402712430000008184573926636012200_);}
+</style>
+<g class="st0">
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" y="0" width="1366" height="2387"/>
+			</defs>
+			<clipPath id="SVGID_00000088815456896362609210000014393487039655349950_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_00000088815456896362609210000014393487039655349950_);">
+				<g id="Groupe_251">
+					
+						<radialGradient id="Rectangle_73_00000083801837729870966410000002912799807017956749_" cx="1540.2924" cy="1.7446" r="1.18" gradientTransform="matrix(911.12 0 0 -1592.13 -1402938.5 5969.1934)" gradientUnits="userSpaceOnUse">
+						<stop  offset="0" style="stop-color:#FFFFFF"/>
+						<stop  offset="0.19" style="stop-color:#FCFDFA"/>
+						<stop  offset="0.38" style="stop-color:#F3F7ED"/>
+						<stop  offset="0.58" style="stop-color:#E6F0D9"/>
+						<stop  offset="0.78" style="stop-color:#D3E5BC"/>
+						<stop  offset="0.98" style="stop-color:#BAD796"/>
+						<stop  offset="1" style="stop-color:#B9D591"/>
+					</radialGradient>
+					
+						<rect id="Rectangle_73" y="0" style="fill:url(#Rectangle_73_00000083801837729870966410000002912799807017956749_);" width="1366" height="2387"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #15a30f;
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #101010;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        isolation: isolate;
+        opacity: .7;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_1324" data-name="Groupe 1324">
+    <circle id="Ellipse_23" data-name="Ellipse 23" class="cls-2" cx="23" cy="23" r="23"/>
+    <circle id="Ellipse_22" data-name="Ellipse 22" class="cls-1" cx="23" cy="23" r="17"/>
+    <g id="success-svgrepo-com">
+      <path id="Tracé_905" data-name="Tracé 905" class="cls-3" d="m32.72,16l-12.14,13.65-7.58-6.07"/>
+    </g>
+  </g>
+</svg>
