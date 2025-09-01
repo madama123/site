@@ -4,12 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently --names \"🌐SITE,📱APP\" --prefix-colors \"green,blue\" \"vite\" \"npm run dev --prefix App\"",
-    "dev:backend": "echo \"⚠️  Backend EKOSE-API tourne dans Docker sur http://localhost:3000\"",
-    "dev:app": "npm run dev --prefix App",
-    "dev:site": "vite",
-    "dev:web": "npm run dev --prefix App",
-    "stop": "taskkill /F /IM node.exe 2>nul || echo ✅ Services arrêtés",
+    "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
