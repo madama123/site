@@ -26,22 +26,22 @@ const Section3 = () => {
       </div>
       <div className="justify-center mx-auto 16 sm:flex py-2 items-center">
         <div className="lg:w-2/5 md:w-1/2 pt-3 w-full hidden md:flex md:flex-col md:justify-center ">
-          <p className="text-[#F5F5F5] xl:text-[40px] font-bold  xl:leading-[47px] lg:mr-[10px] lg:text-[30px] lg:leading-[35px] md:text-[25px] md:leading-[30px] md:mr-[5px] sm:text-[22px] sm:leading-[30px]">
+          <p className="text-white dark:text-gray-100 xl:text-[40px] font-bold  xl:leading-[47px] lg:mr-[10px] lg:text-[30px] lg:leading-[35px] md:text-[25px] md:leading-[30px] md:mr-[5px] sm:text-[22px] sm:leading-[30px]">
             {t("HomePage.titleConsultVisio.En")}
-            <span className="text-[#32E800]">
+            <span className="text-primary-green dark:text-green-400">
               {t("HomePage.titleConsultVisio.Visio")}
             </span>
             {t("HomePage.titleConsultVisio.Ou")}
-            <span className="text-[#32E800]">
+            <span className="text-primary-green dark:text-green-400">
               {t("HomePage.titleConsultVisio.Pres")}
             </span>
             {t("HomePage.titleConsultVisio.Faistoi")}
-            <span className="text-[#32E800]">
+            <span className="text-primary-green dark:text-green-400">
               {t("HomePage.titleConsultVisio.specialiste")}
             </span>
           </p>
-          <p className="text-[#F5F5F5] lg:text-[18px] font-medium mt-[15px] lg:mt-[28px] leading-[22px] md:mr-[30px] lg:mr-[50px] md:text-[14px] ">
-            {t("HomePage.textConsultVisio.Aveclappl")}<span className="text-[#32E800]">{t("HomePage.textConsultVisio.Ekose")}</span>
+          <p className="text-white dark:text-gray-200 lg:text-[18px] font-medium mt-[15px] lg:mt-[28px] leading-[22px] md:mr-[30px] lg:mr-[50px] md:text-[14px] ">
+            {t("HomePage.textConsultVisio.Aveclappl")}<span className="text-primary-green dark:text-green-400">{t("HomePage.textConsultVisio.Ekose")}</span>
             {t("HomePage.textConsultVisio.texte")}
           </p>
         </div>
