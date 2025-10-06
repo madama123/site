@@ -7,9 +7,7 @@ interface User {
   password?: string;
 }
 
-interface SignupProps {}
-
-const Signup: React.FC<SignupProps> = () => {
+const Signup = () => {
     const [formData, setFormData] = useState<Partial<User>>({
         email: '',
         password: '',

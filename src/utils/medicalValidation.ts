@@ -222,7 +222,7 @@ const validateConsultationData = (data: ConsultationData): { errors: string[]; w
 
 // Fonction principale de validation
 export const validateMedicalData = (
-  data: any, 
+  data: PatientData | PrescriptionData | ConsultationData, 
   type: 'patient-info' | 'prescription' | 'consultation'
 ): ValidationResult => {
   let errors: string[] = [];
@@ -230,23 +230,26 @@ export const validateMedicalData = (
 
   try {
     switch (type) {
-      case 'patient-info':
+      case 'patient-info': {
         const patientValidation = validatePatientData(data as PatientData);
         errors = patientValidation.errors;
         warnings = patientValidation.warnings;
         break;
+      }
 
-      case 'prescription':
+      case 'prescription': {
         const prescriptionValidation = validatePrescriptionData(data as PrescriptionData);
         errors = prescriptionValidation.errors;
         warnings = prescriptionValidation.warnings;
         break;
+      }
 
-      case 'consultation':
+      case 'consultation': {
         const consultationValidation = validateConsultationData(data as ConsultationData);
         errors = consultationValidation.errors;
         warnings = consultationValidation.warnings;
         break;
+      }
 
       default:
         errors.push('Type de validation non reconnu');

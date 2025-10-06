@@ -1,41 +1,126 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, LogIn, Sun, Moon, Globe, UserCheck } from 'lucide-react';
-import { useTheme } from '../../../shared/providers/ThemeProvider';
-import { useLanguage } from '../../../shared/providers/LanguageProvider';
+import { useTheme } from '../../../shared/providers/ThemeContext';
+import { useLanguage } from '../../../shared/hooks/useLanguage';
+import { useTranslation } from 'react-i18next';
 
-const Navigation: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+// --- Sous-composants réutilisables ---
+
+const ThemeToggler = ({ className = '' }: { className?: string }) => {
+  const { theme, toggleTheme } = useTheme();
+  return (
+    <div className={className}>
+      <button
+        onClick={toggleTheme}
+        aria-label={theme === 'dark' ? 'Passer en mode clair' : 'Passer en mode sombre'}
+        className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+      >
+        {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+      </button>
+    </div>
+  );
+};
+
+const LanguageSelector = ({ className = '' }: { className?: string }) => {
   const [showLangMenu, setShowLangMenu] = useState(false);
   const langMenuRef = useRef<HTMLDivElement>(null);
-  const { theme, toggleTheme } = useTheme();
   const { language, changeLanguage } = useLanguage();
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (langMenuRef.current && !langMenuRef.current.contains(event.target as Node)) {
+        setShowLangMenu(false);
+      }
+    };
+
+    if (showLangMenu) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [showLangMenu]);
+
+  return (
+    <div className={`relative ${className}`} ref={langMenuRef}>
+      <button
+        aria-label="Changer de langue"
+        className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+        onClick={() => setShowLangMenu((v) => !v)}
+      >
+        <Globe size={20} />
+      </button>
+      {showLangMenu && (
+        <div className="absolute right-0 mt-2 bg-white dark:bg-gray-900 shadow rounded z-50 min-w-[120px]">
+          <button
+            onClick={() => { changeLanguage('fr'); setShowLangMenu(false); }}
+            className={`block px-4 py-2 w-full text-left hover:bg-gray-100 dark:hover:bg-gray-800 ${language === 'fr' ? 'font-bold text-primary-600' : ''}`}
+          >
+            Français
+          </button>
+          <button
+            onClick={() => { changeLanguage('en'); setShowLangMenu(false); }}
+            className={`block px-4 py-2 w-full text-left hover:bg-gray-100 dark:hover:bg-gray-800 ${language === 'en' ? 'font-bold text-primary-600' : ''}`}
+          >
+            English
+          </button>
+        </div>
+      )}
+    </div>
+  );
+};
+
+const AuthButtons = ({ isMobile, onLinkClick }: { isMobile?: boolean; onLinkClick?: () => void; }) => {
+  const { t } = useTranslation();
+
+  if (isMobile) {
+    return (
+      <div className="flex flex-col space-y-2 pt-2">
+        <Link to="/login" className="flex items-center w-full px-3 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition" onClick={onLinkClick}>
+          <LogIn className="h-5 w-5 mr-2" />
+          <span>{t('nav.login')}</span>
+        </Link>
+        <Link to="/register" className="flex items-center w-full px-3 py-2 bg-primary-100 text-primary-700 rounded-md hover:bg-primary-200 transition border border-primary-600" onClick={onLinkClick}>
+          <UserCheck className="h-5 w-5 mr-2" />
+          <span>{t('nav.register')}</span>
+        </Link>
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex items-center space-x-2">
+      <Link to="/login" className="flex items-center space-x-2 bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition ml-2">
+        <LogIn className="h-5 w-5" />
+        <span>{t('nav.login')}</span>
+      </Link>
+      <Link to="/register" className="flex items-center space-x-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-md hover:bg-primary-200 transition ml-2 border border-primary-600">
+        <UserCheck className="h-5 w-5" />
+        <span>{t('nav.register')}</span>
+      </Link>
+    </div>
+  );
+};
+
+
+// --- Composant Navigation principal refactorisé ---
+
+const Navigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const closeMenu = () => setIsMenuOpen(false);
 
   const navLinks = [
-    { href: '/teleconsultation', label: 'Téléconsultation' },
-    { href: '/plans-tarifs', label: 'Abonnements' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/pharmacies', label: 'Pharmacies' },
-    { href: '/urgences', label: 'Urgences' },
-    { href: '/about', label: 'À propos' },
+    { href: '/teleconsultation', label: t('nav.services.teleconsultation') },
+    { href: '/plans-tarifs', label: t('nav.pricing') },
+    { href: '/blog', label: t('nav.blog') },
+    { href: '/pharmacies', label: t('nav.services.pharmacies') },
+    { href: '/urgences', label: t('nav.services.emergency') },
+    { href: '/about', label: t('nav.about') },
   ];
-
-  // Fermer le menu langue si on clique en dehors
-  React.useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (langMenuRef.current && !langMenuRef.current.contains(event.target as Node)) {
-        setShowLangMenu(false);
-      }
-    }
-    if (showLangMenu) {
-      document.addEventListener('mousedown', handleClickOutside);
-    } else {
-      document.removeEventListener('mousedown', handleClickOutside);
-    }
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [showLangMenu]);
 
   return (
     <nav className="bg-transparent backdrop-blur shadow-md fixed w-full z-50 border-b border-gray-100 dark:border-gray-800">
@@ -43,6 +128,7 @@ const Navigation: React.FC = () => {
         <Link to="/" className="flex items-center group" aria-label="Accueil Ekose-Rx">
           <img src="/assets/images/logos/logo.svg" alt="Ekose-Rx" className="h-8 w-auto mr-2 transition-transform group-hover:scale-105" />
         </Link>
+
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-4">
           {navLinks.map((link) => (
@@ -55,53 +141,11 @@ const Navigation: React.FC = () => {
               {link.label}
             </Link>
           ))}
-          {/* Switch thème */}
-          <button
-            onClick={toggleTheme}
-            aria-label={theme === 'dark' ? 'Passer en mode clair' : 'Passer en mode sombre'}
-            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-          >
-            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
-          {/* Sélecteur de langue */}
-          <div className="relative" ref={langMenuRef}>
-            <button
-              aria-label="Changer de langue"
-              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-              onClick={() => setShowLangMenu((v) => !v)}
-            >
-              <Globe size={20} />
-            </button>
-            {showLangMenu && (
-              <div className="absolute right-0 mt-2 bg-white dark:bg-gray-900 shadow rounded z-50 min-w-[120px]">
-                <button
-                  onClick={() => { changeLanguage('fr'); setShowLangMenu(false); }}
-                  className={`block px-4 py-2 w-full text-left hover:bg-gray-100 dark:hover:bg-gray-800 ${language === 'fr' ? 'font-bold text-primary-600' : ''}`}
-                >Français</button>
-                <button
-                  onClick={() => { changeLanguage('en'); setShowLangMenu(false); }}
-                  className={`block px-4 py-2 w-full text-left hover:bg-gray-100 dark:hover:bg-gray-800 ${language === 'en' ? 'font-bold text-primary-600' : ''}`}
-                >English</button>
-              </div>
-            )}
-          </div>
-          <button
-            className="flex items-center space-x-2 bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition ml-2"
-            onClick={() => window.location.href = 'http://localhost:5173/login'}
-            aria-label="Connexion"
-          >
-            <LogIn className="h-5 w-5" />
-            <span>Connexion</span>
-          </button>
-          <button
-            className="flex items-center space-x-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-md hover:bg-primary-200 transition ml-2 border border-primary-600"
-            onClick={() => window.location.href = 'http://localhost:5173/register'}
-            aria-label="Inscription"
-          >
-            <UserCheck className="h-5 w-5" />
-            <span>Inscription</span>
-          </button>
+          <ThemeToggler />
+          <LanguageSelector />
+          <AuthButtons />
         </div>
+
         {/* Mobile menu button */}
         <div className="md:hidden flex items-center">
           <button
@@ -113,6 +157,7 @@ const Navigation: React.FC = () => {
           </button>
         </div>
       </div>
+
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden bg-white/10 dark:bg-gray-900/10 backdrop-blur shadow-lg border-t border-gray-100 dark:border-gray-800 animate-fade-in">
@@ -128,52 +173,11 @@ const Navigation: React.FC = () => {
                 {link.label}
               </Link>
             ))}
-            {/* Switch thème mobile */}
-            <button
-              onClick={toggleTheme}
-              aria-label={theme === 'dark' ? 'Passer en mode clair' : 'Passer en mode sombre'}
-              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors mt-2"
-            >
-              {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
-            {/* Sélecteur de langue mobile */}
-            <div className="relative" ref={langMenuRef}>
-              <button
-                aria-label="Changer de langue"
-                className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors mt-2"
-                onClick={() => setShowLangMenu((v) => !v)}
-              >
-                <Globe size={20} />
-              </button>
-              {showLangMenu && (
-                <div className="absolute right-0 mt-2 bg-white dark:bg-gray-900 shadow rounded z-50 min-w-[120px]">
-                  <button
-                    onClick={() => { changeLanguage('fr'); setShowLangMenu(false); }}
-                    className={`block px-4 py-2 w-full text-left hover:bg-gray-100 dark:hover:bg-gray-800 ${language === 'fr' ? 'font-bold text-primary-600' : ''}`}
-                  >Français</button>
-                  <button
-                    onClick={() => { changeLanguage('en'); setShowLangMenu(false); }}
-                    className={`block px-4 py-2 w-full text-left hover:bg-gray-100 dark:hover:bg-gray-800 ${language === 'en' ? 'font-bold text-primary-600' : ''}`}
-                  >English</button>
-                </div>
-              )}
+            <div className="flex items-center justify-start space-x-4 pt-2">
+              <ThemeToggler />
+              <LanguageSelector />
             </div>
-            <button
-              className="flex items-center w-full px-3 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition mt-2"
-              onClick={() => { closeMenu(); window.location.href = 'http://localhost:5173/login'; }}
-              aria-label="Connexion"
-            >
-              <LogIn className="h-5 w-5 mr-2" />
-              <span>Connexion</span>
-            </button>
-            <button
-              className="flex items-center w-full px-3 py-2 bg-primary-100 text-primary-700 rounded-md hover:bg-primary-200 transition mt-2 border border-primary-600"
-              onClick={() => { closeMenu(); window.location.href = 'http://localhost:5173/register'; }}
-              aria-label="Inscription"
-            >
-              <UserCheck className="h-5 w-5 mr-2" />
-              <span>Inscription</span>
-            </button>
+            <AuthButtons isMobile onLinkClick={closeMenu} />
           </div>
         </div>
       )}

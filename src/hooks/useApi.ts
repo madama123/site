@@ -6,7 +6,7 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
 interface ApiConfig {
   headers?: Record<string, string>;
   method?: 'GET' | 'POST' | 'PUT' | 'DELETE';
-  body?: any;
+  body?: unknown;
 }
 
 async function fetchApi<T>(endpoint: string, config: ApiConfig = {}): Promise<T> {
@@ -46,7 +46,7 @@ export function useApiMutation<T, V>(
   options?: Omit<UseMutationOptions<T, Error, V>, 'mutationFn'>
 ) {
   return useMutation<T, Error, V>({
-    mutationFn: (variables) => fetchApi<T>(endpoint, { method: 'POST', body: variables }),
+    mutationFn: (variables: V) => fetchApi<T>(endpoint, { method: 'POST', body: variables }),
     ...options,
   });
 } 
