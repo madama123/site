@@ -13,12 +13,14 @@ Ekose RX est une plateforme complète de santé numérique qui permet aux patien
 
 ## 🤝 Partenaires
 
-### FasterCapital
+### FasterCapitala
+
 - **Programme EquityPilot** : Ekose Holdings Sarl accepté
 - **Financement** : Recherche de capital $250,000
 - **Site web** : https://www.fastercapital.com
 
 ### INTERACT
+
 - **Rôle** : Partenaire technologique et développement
 - **Services** : Développement web, design UX/UI, architecture technique
 
