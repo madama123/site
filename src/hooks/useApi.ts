@@ -46,7 +46,7 @@ export function useApiMutation<T, V>(
   options?: Omit<UseMutationOptions<T, Error, V>, 'mutationFn'>
 ) {
   return useMutation<T, Error, V>({
-    mutationFn: (variables) => fetchApi<T>(endpoint, { method: 'POST', body: variables }),
+    mutationFn: (variables: V) => fetchApi<T>(endpoint, { method: 'POST', body: variables }),
     ...options,
   });
 } 

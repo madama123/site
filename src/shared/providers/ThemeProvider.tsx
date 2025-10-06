@@ -3,6 +3,8 @@ import { ThemeContext } from './ThemeContext';
 
 type Theme = 'light' | 'dark';
 
+export { ThemeContext };
+
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState<Theme>(() => {
     if (typeof window !== 'undefined') {
