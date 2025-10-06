@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
 
 const Register: React.FC = () => {
   const [name, setName] = useState('');
@@ -44,6 +45,17 @@ const Register: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
+        {/* Bouton retour à l'accueil */}
+        <div className="mb-6">
+          <Link 
+            to="/" 
+            className="inline-flex items-center text-slate-300 hover:text-white transition-colors duration-200 group"
+          >
+            <ArrowLeft size={20} className="mr-2 group-hover:-translate-x-1 transition-transform duration-200" />
+            Retour à l'accueil
+          </Link>
+        </div>
+
         <div className="text-center mb-8">
           <img 
             src="/assets/images/logos/logo.svg" 
