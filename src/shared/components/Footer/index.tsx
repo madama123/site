@@ -132,7 +132,7 @@ export const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
           <p className="text-center text-gray-600 dark:text-gray-300 text-sm">
-            © {new Date().getFullYear()} Ekose-Rx. {t('footer.rights')}
+            © {new Date().getFullYear()} Ekose-Rx. {t('footer.rights')} | Développé par <span className="text-blue-primary dark:text-blue-400 font-medium">Interact</span>
           </p>
         </div>
       </div>
