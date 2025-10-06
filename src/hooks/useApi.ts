@@ -6,7 +6,7 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
 interface ApiConfig {
   headers?: Record<string, string>;
   method?: 'GET' | 'POST' | 'PUT' | 'DELETE';
-  body?: any;
+  body?: unknown;
 }
 
 async function fetchApi<T>(endpoint: string, config: ApiConfig = {}): Promise<T> {

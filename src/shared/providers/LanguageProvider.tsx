@@ -1,14 +1,6 @@
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { useState, useEffect, ReactNode } from 'react';
 import i18n from 'i18next';
-
-type Language = 'fr' | 'en';
-
-interface LanguageContextProps {
-  language: Language;
-  changeLanguage: (lang: Language) => void;
-}
-
-const LanguageContext = createContext<LanguageContextProps | undefined>(undefined);
+import { LanguageContext, Language } from './LanguageContext';
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<Language>(() => {
@@ -30,10 +22,4 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       {children}
     </LanguageContext.Provider>
   );
-};
-
-export const useLanguage = () => {
-  const context = useContext(LanguageContext);
-  if (!context) throw new Error('useLanguage must be used within a LanguageProvider');
-  return context;
 };

@@ -17,6 +17,7 @@
     "blog": "Blog",
     "services_label": "Services",
     "login": "Connexion",
+    "register": "Inscription",
     "services": {
       "teleconsultation": "Téléconsultation",
       "appointments": "Rendez-vous",
@@ -330,5 +331,6 @@
     "symptoms": "Symptômes",
     "status": "Statut",
     "actions": "Actions"
-  }
+  },
+  "loading": "Chargement..."
 }

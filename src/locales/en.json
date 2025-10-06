@@ -9,6 +9,21 @@
     "services": "Services",
     "blog": "Blog"
   },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "pricing": "Plans & Pricing",
+    "blog": "Blog",
+    "services_label": "Services",
+    "login": "Login",
+    "register": "Register",
+    "services": {
+      "teleconsultation": "Teleconsultation",
+      "appointments": "Appointments",
+      "emergency": "Emergency",
+      "pharmacies": "Pharmacies"
+    }
+  },
 
   "HomePage": {
     "hero": {
@@ -264,5 +279,6 @@
     "title": "Welcome to our Blog",
     "comingSoon": "Coming Soon",
     "description": "Stay tuned for exciting articles and updates."
-  }
+  },
+  "loading": "Loading..."
 }
