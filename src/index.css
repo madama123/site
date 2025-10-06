@@ -14,12 +14,17 @@
   --ekose-blue-light: #1e3a5f;
 }
 
-/* Styles de base avec dégradé bleu subtil */
+/* Styles de base avec dégradé turquoise subtil */
 body {
-  @apply bg-gradient-to-br from-white via-blue-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900;
-  @apply text-gray-900 dark:text-gray-100;
+  background: linear-gradient(135deg, #FAFAFA 0%, #E0F7FA 50%, #FAFAFA 100%);
+  @apply text-gray-900;
   transition: background 0.5s ease, color 0.3s ease;
   min-height: 100vh;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d4d4d 50%, #1a1a1a 100%);
+  @apply text-gray-100;
 }
 
 /* Background avec dégradé bleu pour les sections */

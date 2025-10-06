@@ -92,10 +92,18 @@ const Section1 = () => {
         variants={itemVariants}
       >
         <div className="w-full h-full relative">
+          {/* Image principale de téléconsultation */}
+          <img
+            src="/assets/images/HomePage/Hero.png"
+            alt="Téléconsultation en cours"
+            className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+          />
+          
+          {/* Petite image en coin */}
           <img
             src="/assets/images/HomePage/hero 2.jpg"
             alt="client"
-            className="absolute top-4 right-3 rounded-lg w-[100px] md:h-[90px] md:w-[150px] h-[50px] object-cover"
+            className="absolute top-4 right-3 rounded-lg w-[100px] md:h-[90px] md:w-[150px] h-[50px] object-cover shadow-lg z-10"
           />
           <div className=" absolute bottom-4 left-1/2 -translate-x-1/2 flex justify-center items-center gap-6">
 
