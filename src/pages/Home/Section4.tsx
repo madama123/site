@@ -19,7 +19,7 @@ const FonctionnalitesApp = ({
     </span>
     <span className="flex ml-[56px]">
       <img
-        src="/assets/images/Vecteurs/Ellipse_vert.png"
+        src="/assets/images/vecteurs/Ellipse_vert.png"
         alt="elipse"
         className="h-2 w-2 mt-[6px] "
       />

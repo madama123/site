@@ -103,14 +103,13 @@ const Home = () => {
         </div>
         <div className="flex-1 flex justify-center mt-12 md:mt-0">
           <motion.img
-            src="/assets/images/HomePage/hero-illustration.svg"
+            src="/assets/images/HomePage/phone.png"
             alt="Illustration Ekose RX"
-            className="w-80 h-auto drop-shadow-xl bg-white dark:bg-gray-800 rounded-xl"
+            className="w-80 h-auto drop-shadow-xl"
             loading="lazy"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            onError={(e) => { e.currentTarget.src = '/assets/images/HomePage/phone.png'; }}
           />
         </div>
       </section>

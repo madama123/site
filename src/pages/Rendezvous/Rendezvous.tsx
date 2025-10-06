@@ -23,7 +23,7 @@ const Rendezvous: React.FC = () => {
           {/* Placeholder pour la prise de rendez-vous */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <img
-              src="/assets/images/prise de redez vous/placeholder.png"
+              src="/assets/images/prise de redez vous/hero.png"
               alt={t('rendezvous.imageAlt')}
               className="mb-4 w-full h-32 object-cover rounded"
             />
