@@ -5,20 +5,47 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Couleurs principales Ekose RX (basées sur le logo)
         'blue-primary': '#134888',
         'blue-header': '#0A458E',
         'primary-green': '#32E800',
+        'ekose': {
+          blue: {
+            50: '#E8F1FF',
+            100: '#D1E3FF',
+            200: '#A3C7FF',
+            300: '#75ABFF',
+            400: '#478FFF',
+            500: '#134888',  // Couleur principale du logo
+            600: '#0F3A6E',
+            700: '#0A2C54',
+            800: '#061E3A',
+            900: '#031020',
+          },
+          green: {
+            50: '#F0FFE6',
+            100: '#E1FFCD',
+            200: '#C3FF9B',
+            300: '#A5FF69',
+            400: '#87FF37',
+            500: '#32E800',  // Couleur principale du logo
+            600: '#28BA00',
+            700: '#1E8C00',
+            800: '#145E00',
+            900: '#0A2F00',
+          },
+        },
         primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
+          50: '#E8F1FF',
+          100: '#D1E3FF',
+          200: '#A3C7FF',
+          300: '#75ABFF',
+          400: '#478FFF',
+          500: '#134888',
+          600: '#0F3A6E',
+          700: '#0A2C54',
+          800: '#061E3A',
+          900: '#031020',
         },
         secondary: {
           50: '#f8fafc',
@@ -36,6 +63,18 @@ export default {
           50: '#f0fdf4',
           500: '#22c55e',
           700: '#15803d',
+        },
+        turquoise: {
+          50: '#E0F7FA',
+          100: '#B2EBF2',
+          200: '#80DEEA',
+          300: '#4DD0E1',
+          400: '#26C6DA',
+          500: '#00BCD4',
+          600: '#00ACC1',
+          700: '#0097A7',
+          800: '#00838F',
+          900: '#006064',
         },
         error: {
           50: '#fef2f2',

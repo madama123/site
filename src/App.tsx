@@ -25,7 +25,12 @@ const App = () => {
   const { t } = useTranslation();
 
   return (
-    <Router>
+    <Router
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}
+    >
       <LanguageProvider>
         <ThemeProvider>
           <Suspense fallback={<div className="text-center py-10">{t('loading')}</div>}>

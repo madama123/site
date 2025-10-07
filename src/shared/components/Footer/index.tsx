@@ -129,10 +129,47 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Copyright */}
+        {/* Section Partenaires */}
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
-          <p className="text-center text-gray-600 dark:text-gray-300 text-sm">
-            © {new Date().getFullYear()} Ekose-Rx. {t('footer.rights')}
+          <div className="text-center mb-8">
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">
+              Nos Partenaires
+            </h3>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+              {/* FasterCapital */}
+              <div className="flex flex-col items-center space-y-3">
+                <a
+                  href="https://www.fastercapital.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center space-y-2 hover:opacity-80 transition-opacity"
+                >
+                  <img
+                    src="/assets/images/fasterCap.jpg"
+                    alt="FasterCapital"
+                    className="h-16 w-auto object-contain rounded-lg shadow-md"
+                  />
+                  <span className="text-blue-primary dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors font-medium text-lg">
+                    FasterCapital
+                  </span>
+                </a>
+                <p className="text-xs text-gray-500 dark:text-gray-400 max-w-xs text-center">
+                  Ekose Holdings Sarl accepté dans le programme EquityPilot - Recherche de capital $250,000
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="pt-8 border-t border-gray-200 dark:border-gray-800">
+          <p className="text-center text-gray-600 dark:text-gray-300 text-sm flex items-center justify-center gap-2">
+            © {new Date().getFullYear()} Ekose-Rx. {t('footer.rights')} | Développé par 
+            <img
+              src="/assets/images/interact.jpeg"
+              alt="INTERACT"
+              className="h-6 w-auto object-contain inline-block rounded-md"
+            />
           </p>
         </div>
       </div>

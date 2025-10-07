@@ -80,7 +80,7 @@ const Urgences = () => {
             </div>
             <motion.div variants={itemVariants} className="hidden md:block">
               <img
-                src="/assets/images/Urgences/urgence-hero.jpeg"
+                src="/assets/images/urgences/hero.png"
                 alt="Emergency"
                 className="rounded-lg shadow-xl"
               />
@@ -124,7 +124,7 @@ const Urgences = () => {
             </div>
             <div className="md:w-1/2">
               <img
-                src="/assets/images/Urgences/ambulance.jpeg"
+                src="/assets/images/urgences/Shanks_Leroux_A_white_ambulance_vehicle_with_emergency_lights_on_a38e485a-c1fd-44b9-a39a-fcf9c0828041.png"
                 alt="Ambulance"
                 className="rounded-lg shadow-xl"
                 loading="lazy"
