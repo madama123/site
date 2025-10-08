@@ -1,5 +1,6 @@
 // Suppression de l'import inutilisé de React
 import { useState, ReactNode } from "react";
+import { motion } from "framer-motion";
 
 const posts = [
   {
@@ -55,56 +56,56 @@ const posts = [
 ];
 
 const videos = [
-    {
-      category: "Health Tips",
-      title: "10 Easy Ways to Boost Your Immune System",
-      thumbnail: "https://www.verywellfit.com/thmb/D7bZJTYZ_Eto8Wlh8yo26n6yHwg=/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/immune-boosting-foods-4179058_final-9076d73bc86c4f249d9b8c8977f442b3.jpg",
-      duration: "15:30",
-      views: "10K",
-      date: "20 Octobre 2024",
-    },
-    {
-      category: "Fitness",
-      title: "Full Body Workout at Home - No Equipment Needed",
-      thumbnail: "https://www.coachmag.co.uk/sites/coachmag/files/2023-03/Bodyweight-Exercises-Poster-1200x675.jpg",
-      duration: "25:45",
-      views: "25K",
-      date: "18 Octobre 2024",
-    },
-    {
-      category: "Nutrition",
-      title: "Healthy Meal Prep Ideas for Busy Professionals",
-      thumbnail: "https://www.eatingwell.com/thmb/B7mc9EBB6vG-dmjs8b-FzTcPo3I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/healthy-meal-prep-for-the-week-559535302-5d7d263a46e0fb0001a618c6.jpg",
-      duration: "20:15",
-      views: "15K",
-      date: "15 Octobre 2024",
-    },
-    {
-      category: "Mental Health",
-      title: "5 Minute Meditation for Stress Relief",
-      thumbnail: "https://www.headspace.com/static/6c8e7d2e7b3d3e38a2d871e888f3d292.jpg",
-      duration: "07:20",
-      views: "30K",
-      date: "12 Octobre 2024",
-    },
-    {
-      category: "Medical Advice",
-      title: "Understanding Common Blood Test Results",
-      thumbnail: "https://www.webmd.com/medically-reviewed/images/analysis-of-blood-test-1280x720.jpg",
-      duration: "18:50",
-      views: "20K",
-      date: "10 Octobre 2024",
-    },
-    {
-      category: "Wellness",
-      title: "The Importance of Quality Sleep",
-      thumbnail: "https://images.unsplash.com/photo-1592972343831-cb5096741a50",
-      duration: "22:10",
-      views: "18K",
-      date: "08 Octobre 2024",
-    },
-  ];
-  
+  {
+    category: "Health Tips",
+    title: "10 Easy Ways to Boost Your Immune System",
+    thumbnail: "https://www.verywellfit.com/thmb/D7bZJTYZ_Eto8Wlh8yo26n6yHwg=/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/immune-boosting-foods-4179058_final-9076d73bc86c4f249d9b8c8977f442b3.jpg",
+    duration: "15:30",
+    views: "10K",
+    date: "20 Octobre 2024",
+  },
+  {
+    category: "Fitness",
+    title: "Full Body Workout at Home - No Equipment Needed",
+    thumbnail: "https://www.coachmag.co.uk/sites/coachmag/files/2023-03/Bodyweight-Exercises-Poster-1200x675.jpg",
+    duration: "25:45",
+    views: "25K",
+    date: "18 Octobre 2024",
+  },
+  {
+    category: "Nutrition",
+    title: "Healthy Meal Prep Ideas for Busy Professionals",
+    thumbnail: "https://www.eatingwell.com/thmb/B7mc9EBB6vG-dmjs8b-FzTcPo3I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/healthy-meal-prep-for-the-week-559535302-5d7d263a46e0fb0001a618c6.jpg",
+    duration: "20:15",
+    views: "15K",
+    date: "15 Octobre 2024",
+  },
+  {
+    category: "Mental Health",
+    title: "5 Minute Meditation for Stress Relief",
+    thumbnail: "https://www.headspace.com/static/6c8e7d2e7b3d3e38a2d871e888f3d292.jpg",
+    duration: "07:20",
+    views: "30K",
+    date: "12 Octobre 2024",
+  },
+  {
+    category: "Medical Advice",
+    title: "Understanding Common Blood Test Results",
+    thumbnail: "https://www.webmd.com/medically-reviewed/images/analysis-of-blood-test-1280x720.jpg",
+    duration: "18:50",
+    views: "20K",
+    date: "10 Octobre 2024",
+  },
+  {
+    category: "Wellness",
+    title: "The Importance of Quality Sleep",
+    thumbnail: "https://images.unsplash.com/photo-1592972343831-cb5096741a50",
+    duration: "22:10",
+    views: "18K",
+    date: "08 Octobre 2024",
+  },
+];
+
 
 const POSTS_PER_PAGE = 6;
 
@@ -143,11 +144,10 @@ interface TabsTriggerProps {
 
 const TabsTrigger: React.FC<TabsTriggerProps> = ({ isActive, onClick, children }) => (
   <button
-    className={`px-6 py-2 font-semibold rounded-t-md transition-colors duration-300 ${
-      isActive
+    className={`px-6 py-2 font-semibold rounded-t-md transition-colors duration-300 ${isActive
         ? "text-blue-600 border-b-4 border-blue-600"
         : "text-gray-600 hover:text-blue-600"
-    }`}
+      }`}
     onClick={onClick}
   >
     {children}
@@ -189,7 +189,14 @@ export const BlogPosts: React.FC = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-4 pt-16">
-      <h2 className="text-4xl font-extrabold text-center mb-8 text-gray-800">Ekose Posts</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        className="text-4xl font-extrabold text-center mb-8 text-gray-800"
+      >
+        Ekose Posts
+      </motion.h2>
       <Tabs>
         <TabsList>
           <TabsTrigger
@@ -209,7 +216,13 @@ export const BlogPosts: React.FC = () => {
           {activeTab === "recent" && (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {paginatedPosts.map((post, index) => (
-                <Card key={index}>
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.12 }}
+                  className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105 group"
+                >
                   <div className="relative h-48">
                     <img
                       src={post.image}
@@ -233,7 +246,7 @@ export const BlogPosts: React.FC = () => {
                       See more
                     </a>
                   </div>
-                </Card>
+                </motion.div>
               ))}
             </div>
           )}
@@ -301,11 +314,10 @@ export const BlogPosts: React.FC = () => {
             <Button
               key={page}
               onClick={() => setCurrentPage(page)}
-              className={`${
-                currentPage === page
+              className={`${currentPage === page
                   ? "bg-blue-600 text-white"
                   : "bg-white text-blue-600 hover:bg-blue-100"
-              } border border-blue-600`}
+                } border border-blue-600`}
             >
               {page}
             </Button>

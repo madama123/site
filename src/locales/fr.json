@@ -9,7 +9,6 @@
     "services": "Services",
     "blog": "Blog"
   },
-
   "nav": {
     "home": "Accueil",
     "about": "À propos",
@@ -25,7 +24,6 @@
       "pharmacies": "Pharmacies"
     }
   },
-
   "inscription": {
     "titreHero": "Rejoignez Nous!",
     "text": "Vous êtes médecin ou pharmacien et vous souhaitez rendre vos services plus accessibles à vos patients ?Rejoignez-nous dès maintenant !",
@@ -43,11 +41,14 @@
     "temoins5": "❝ Grâce à Ekose RX, j'ai pu consulter un médecin rapidement sans quitter ma maison. C'est simple, pratique, et rassurant !",
     "temoins6": "❝ L'intégration des ordonnances dans l'application est géniale. Je peux facilement consulter mes prescriptions et les envoyer à ma pharmacie sans aucun problème."
   },
-
   "HomePage": {
     "hero": {
-      "titreHero": "Gérez tout votre parcours de santé depuis une seule application ",
-      "paraph": "Simplifiez votre accès aux soins et prenez le contrôle de votre bien-être",
+      "titreHero": "Bienvenue sur Ekose RX",
+      "paraph": "Gérez tout votre parcours de santé depuis une seule application.",
+      "btnDownload": "Télécharger l'application",
+      "btnDownloadAria": "Télécharger l'application Ekose RX",
+      "btnDiscover": "Découvrir la plateforme",
+      "btnDiscoverAria": "Découvrir la plateforme Ekose RX",
       "recherche": "Vous recherchez:",
       "medecin": "Un Médecin ",
       "consultation": "Une Consultation ",
@@ -57,6 +58,9 @@
       "textSecure": "Vos informations sont protégées par des technologies de sécurité de pointe",
       "service": "24/7 Service",
       "serviceText": "Nous sommes disponibles quand vous le souhaitez "
+    },
+    "testimonials": {
+      "title": "Ils nous font confiance"
     },
     "meta": {
       "title": "Bienvenue sur Ekose RX",
@@ -124,6 +128,7 @@
     "contact": "Contact",
     "contactInfo": "Pour toute question, contactez-nous à contact@ekose-rx.com",
     "rights": "Tous droits réservés",
+    "copyright": "Tous droits réservés | Développé par INTERACT",
     "company": "Entreprise",
     "careers": "Carrières",
     "press": "Presse",
@@ -151,7 +156,6 @@
     "comingSoon": "Bientôt disponible",
     "description": "La liste des pharmacies sera bientôt disponible ici."
   },
-
   "rdv": {
     "hero": {
       "titreHero": "Réservez Votre Consultation EnQuelques Clics ! Simplifiez Votre Parcours De Soins Avec Ekose",
@@ -178,7 +182,7 @@
       "paraph": "Accédez à un vaste réseau de médecins qualifiés et expérimentés, prêts à vous accompagner. Grâce à notre plateforme, trouvez rapidement et facilement le médecin idéal près de chez vous, pour des consultations adaptées à vos disponibilités et à vos préférences. Simplifiez votre accès aux soins et bénéficiez d'un soutien médical fiable, où que vous soyez."
     },
     "rendezvous": {
-      "title": "Rendez-vous",
+      "title": "Mes rendez-vous médicaux",
       "imageAlt": "Image de la page Rendez-vous",
       "comingSoon": "Fonctionnalité de prise de rendez-vous bientôt disponible",
       "description": "La possibilité de prendre rendez-vous directement via l'application sera bientôt active. Restez à l'écoute !",
@@ -187,7 +191,6 @@
       "addButton": "Ajouter Rendez-vous"
     }
   },
-
   "UrgencesPage": {
     "consultationImmediate": {
       "besoin": "Besoin d'aide ",
@@ -211,7 +214,6 @@
     "reservezUne": "Réservez une Ambulance à tout Moment, en TempsRéel",
     "reservezUneTexte": "Besoin d'une ambulance en urgence ? Réservez la plus proche en quelques secondes grâce à Ekose. Accédez à une assistance rapide et sécurisée pour vous ou vos proches."
   },
-
   "about": {
     "hero": {
       "titre1": "NOUS PRENONS SOIN",
@@ -262,12 +264,38 @@
       "Adresse": "Adresse"
     }
   },
-
   "teleconsultation": {
     "hero": {
       "titreHero": "Consultez un médecin en ligne,  n'importe où, n'importe quand",
       "paraph": "Plus besoin de vous déplacer pour consulter un médecin.  Avec notre service de téléconsultation, accédez à  des conseils médicaux fiables et des soins personnalisés  depuis le confort de votre domicile, à tout moment.",
-      "telecharger": "cliquez ci dessous pour télécharger "
+      "telecharger": "cliquez ci dessous pour télécharger ",
+      "cta": "Commencer ma téléconsultation"
+    },
+    "securite": {
+      "titre": "Sécurité & Confidentialité",
+      "texte": "Vos données et vos échanges sont protégés par des protocoles de sécurité avancés et respectent la confidentialité médicale.",
+      "protection": "Protection des données",
+      "protectionTexte": "Toutes les informations sont chiffrées et stockées de façon sécurisée.",
+      "confidentialite": "Confidentialité médicale",
+      "confidentialiteTexte": "Seuls vous et le professionnel de santé avez accès à vos échanges."
+    },
+    "temoignages": {
+      "titre": "Ils nous font confiance",
+      "texte1": "Service rapide, efficace et sécurisé ! J'ai pu consulter un médecin sans me déplacer.",
+      "nom1": "Fatima, 32 ans",
+      "texte2": "La confidentialité est respectée, je me sens en sécurité pour mes échanges médicaux.",
+      "nom2": "Dr. Martin, Médecin généraliste",
+      "texte3": "Plateforme intuitive, prise de rendez-vous simple et suivi personnalisé.",
+      "nom3": "Julie, 27 ans"
+    },
+    "faq": {
+      "titre": "Questions fréquentes",
+      "question1": "Comment se déroule une téléconsultation ?",
+      "reponse1": "Vous prenez rendez-vous, vous échangez en toute sécurité avec le professionnel, puis recevez votre ordonnance si besoin.",
+      "question2": "Mes données sont-elles protégées ?",
+      "reponse2": "Oui, toutes vos informations sont chiffrées et strictement confidentielles.",
+      "question3": "Puis-je obtenir une ordonnance ?",
+      "reponse3": "Oui, le médecin peut vous délivrer une ordonnance électronique après la consultation."
     },
     "section2": {
       "comment": "Comment ça marche ?",
@@ -306,6 +334,46 @@
     "description": "Partagez vos expériences et connectez-vous avec d'autres utilisateurs pour améliorer votre santé.",
     "button": "Rejoindre maintenant",
     "learnMore": "En savoir plus"
+  },
+  "plansTarifs": {
+    "title": "Plans et tarifs",
+    "description": "Choisissez le plan qui correspond le mieux à vos besoins et commencez dès aujourd'hui.",
+    "currency": "€",
+    "subscription": "Abonnement annuel",
+    "subscribe": "Souscrire maintenant",
+    "payment": "Moyens de paiement acceptés : Visa, Mastercard, Mobile Money",
+    "plans": {
+      "freemium": {
+        "name": "FREEMIUM",
+        "price": "0",
+        "description": "Accès aux services essentiels gratuitement.",
+        "badge": "Populaire"
+      },
+      "standard": {
+        "name": "STANDARD",
+        "price": "5",
+        "description": "Plus de fonctionnalités et de flexibilité.",
+        "badge": "Recommandé"
+      },
+      "premium": {
+        "name": "PREMIUM",
+        "price": "10",
+        "description": "Tous les services, support prioritaire et avantages exclusifs.",
+        "badge": "Meilleure valeur"
+      }
+    },
+    "features": {
+      "delivery": "Livraison de médicaments",
+      "nearby": "Services à proximité",
+      "emergency": "Appel urgences",
+      "order": "Commander des médicaments",
+      "fees": "Frais de service inclus",
+      "records": "Gestion des dossiers",
+      "exchange": "Échange de données",
+      "scheduling": "Prise de rendez-vous",
+      "support": "Support prioritaire",
+      "advantages": "Avantages exclusifs"
+    }
   },
   "blog": {
     "title": "Bienvenue sur notre Blog",

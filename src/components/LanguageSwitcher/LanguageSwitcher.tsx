@@ -8,6 +8,7 @@ const LanguageSwitcher: React.FC = () => {
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
+    localStorage.setItem('language', lng);
     toggleMenuLanguage();
   };
 
@@ -26,9 +27,8 @@ const LanguageSwitcher: React.FC = () => {
       </button>
 
       <div
-        className={`absolute bg-white text-black rounded-lg shadow-md mt-2 w-20 ${
-          isMenuLanguageOpen ? "block" : "hidden"
-        }`}
+        className={`absolute bg-white text-black rounded-lg shadow-md mt-2 w-20 ${isMenuLanguageOpen ? "block" : "hidden"
+          }`}
       >
         <button
           onClick={() => changeLanguage("fr")}
