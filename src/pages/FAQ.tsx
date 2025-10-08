@@ -24,14 +24,14 @@ const faqs = [
 ];
 
 const FAQ: React.FC = () => (
-  <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 py-12 px-4">
-    <div className="max-w-2xl w-full bg-white rounded-xl shadow-lg p-8">
-      <h1 className="text-3xl font-bold mb-8 text-primary-700">Foire aux questions</h1>
+  <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 py-12 px-4">
+    <div className="max-w-2xl w-full bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+      <h1 className="text-3xl font-bold mb-8 text-primary-700 dark:text-primary-400">Foire aux questions</h1>
       <div className="space-y-6">
         {faqs.map((faq, idx) => (
-          <div key={idx} className="border-b pb-4">
-            <h2 className="text-lg font-semibold text-primary-600">{faq.question}</h2>
-            <p className="text-gray-700 mt-2">{faq.answer}</p>
+          <div key={idx} className="border-b border-gray-200 dark:border-gray-700 pb-4">
+            <h2 className="text-lg font-semibold text-primary-600 dark:text-primary-400">{faq.question}</h2>
+            <p className="text-gray-700 dark:text-gray-300 mt-2">{faq.answer}</p>
           </div>
         ))}
       </div>
