@@ -1,10 +1,2 @@
-import { useContext } from 'react';
-import { ThemeContext } from '../providers/ThemeProvider';
-
-export const useTheme = () => {
-  const context = useContext(ThemeContext);
-  if (!context) {
-    throw new Error('useTheme must be used within a ThemeProvider');
-  }
-  return context;
-}; 
+// Ce hook est maintenant défini dans ThemeContext.tsx pour éviter la duplication
+export { useTheme } from '../providers/ThemeContext'; 

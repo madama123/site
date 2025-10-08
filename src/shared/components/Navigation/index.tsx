@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, LogIn, Sun, Moon, Globe, UserCheck } from 'lucide-react';
-import { useTheme } from '../../../shared/providers/ThemeContext';
+import { useTheme } from '../../hooks/useTheme';
 import { useLanguage } from '../../../shared/hooks/useLanguage';
 import { useTranslation } from 'react-i18next';
 

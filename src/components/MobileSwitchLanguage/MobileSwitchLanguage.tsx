@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { useMenuLanguage } from "../../context/MenuLanguageContext/MenuLanguageContext";
+import { useMenuLanguage } from "../../hooks/useMenuLanguage";
 
 const MobileSwitchLanguage: React.FC = () => {
   const { t } = useTranslation();
