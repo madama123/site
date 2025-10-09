@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import React from "react";
 import AppStoreLinks from "../../components/AppStoreLinks";
-import { Link } from "react-router-dom";
 import { ShieldCheck, Lock, UserCircle, HelpCircle } from "lucide-react";
 
 const Teleconsultation = () => {

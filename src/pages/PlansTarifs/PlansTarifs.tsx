@@ -1,11 +1,10 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 import { Star, Crown, Award } from "lucide-react";
 
 const PlansTarifs = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const plans = [
     {
