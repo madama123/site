@@ -17,6 +17,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18"
+      - name: rull up cleaning
+        run: npm uninstall @rollup/rollup-win32-x64-msvc
+      - name: install rollup
+        run: npm install --save-dev rollup
       - name: remove node module
         run: rm -rf node_modules package-lock.json
       - name: Install dependencies
