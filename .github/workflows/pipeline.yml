@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: "20"
       - name: rull up cleaning
         run: npm uninstall @rollup/rollup-win32-x64-msvc
       - name: install rollup
