@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../LanguageSwitcher";
 import BtnDownload from "../BtnDownload";
 import MobileSwitchLanguage from "../MobileSwitchLanguage/MobileSwitchLanguage";
-import { useMenuLanguage } from "../../context/MenuLanguageContext/MenuLanguageContext";
+import { useMenuLanguage } from "../../hooks/useMenuLanguage";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface MenuItem {

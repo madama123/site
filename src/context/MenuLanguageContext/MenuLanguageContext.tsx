@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useState, ReactNode } from 'react';
 
 interface MenuLanguageContextType {
   isMenuLanguageOpen: boolean;
@@ -21,10 +21,4 @@ export const MenuLanguageProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export const useMenuLanguage = () => {
-  const context = useContext(MenuLanguageContext);
-  if (!context) {
-    throw new Error('useMenuLanguage must be used within a MenuLanguageProvider');
-  }
-  return context;
-};
+export { MenuLanguageContext };

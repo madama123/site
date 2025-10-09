@@ -24,11 +24,14 @@
       "pharmacies": "Pharmacies"
     }
   },
-
   "HomePage": {
     "hero": {
-      "titreHero": "Manage Your Entire Healthcare Journey from a Single App",
-      "paraph": "Simplify your access to care and take control of your well-being",
+      "titreHero": "Welcome to Ekose RX",
+      "paraph": "Manage your entire healthcare journey from a single application.",
+      "btnDownload": "Download the app",
+      "btnDownloadAria": "Download the Ekose RX app",
+      "btnDiscover": "Discover the platform",
+      "btnDiscoverAria": "Discover the Ekose RX platform",
       "recherche": "You are looking for:",
       "medecin": "A Doctor",
       "consultation": "A Consultation",
@@ -38,6 +41,9 @@
       "textSecure": "Your information is protected by advanced security technologies",
       "service": "24/7 Service",
       "serviceText": "We are available whenever you need us"
+    },
+    "testimonials": {
+      "title": "They trust us"
     },
     "titleConsultVisio": {
       "En": "By ",
@@ -61,7 +67,6 @@
     "decouvrerVideo": "Discover health advice videos",
     "decouvrerVideoTexte": "We regularly share health tips to help our patients adopt good habits and stay fit..",
     "cliquerIciPour": "Click below to download",
-
     "section2": {
       "titre": "Consult the best doctors online",
       "paraph1": "Wherever you are, our doctors are available online to provide fast, effective, and personalized care tailored to your needs.",
@@ -85,7 +90,13 @@
     "liensUtiles": "Useful Links",
     "securite": "Security",
     "legal": "Legal",
-    "reseauxSociaux": "Social Medias",
+    "copyright": "All rights reserved | Developed by INTERACT",
+    "about": "About",
+    "description": "Ekose-Rx is an online health platform that connects patients with qualified healthcare professionals.",
+    "teleconsultation": "Teleconsultation",
+    "pharmacies": "Pharmacies",
+    "blog": "Blog",
+    "contact": "Contact",
     "politique": "Privacy Policy",
     "conditions": "Terms of Use",
     "letterTitle": "Subscribe to our Newsletter",
@@ -118,7 +129,6 @@
     "pharmacieText": "Give a new dimension to your services! Sign up on our platform to allow your customers to order their medications online and receive fast delivery. Join us today to make your pharmacy more accessible, simplify prescription management, and offer a convenient and modern experience to your patients.",
     "bouton": "Sign Up"
   },
-
   "carossel": {
     "titreHero": "Here is what people say about us",
     "temoins1": "❝ Making an appointment with my doctor through Ekose RX is a breeze. No more calling or traveling to secure an appointment slot. A truly modern service",
@@ -128,7 +138,6 @@
     "temoins5": "❝ Thanks to Ekose RX, I was able to consult a doctor quickly without leaving my home. It's simple, convenient, and reassuring!",
     "temoins6": "❝ The integration of prescriptions in the app is great. I can easily view my prescriptions and send them to my pharmacy without any issues"
   },
-
   "rdv": {
     "hero": {
       "titreHero": "Book Your Consultation in Just a Few Clicks! Simplify Your Healthcare Journey with Ekose",
@@ -178,7 +187,6 @@
     "reservezUne": "Book an Ambulance at Any Time, in Real Time",
     "reservezUneTexte": "Need an emergency ambulance? Book the nearest one in seconds thanks to Ekose. Access fast and secure assistance for you or your loved ones."
   },
-
   "about": {
     "hero": {
       "titre1": "WE TAKE CARE",
@@ -229,12 +237,38 @@
       "Adresse": "Address"
     }
   },
-
   "teleconsultation": {
     "hero": {
       "titreHero": "Consult a doctor online, anywhere, anytime",
       "paraph": "No need to travel to see a doctor anymore.  With our teleconsultation service, access reliable medical advice and personalized care from the comfort of your home, at any time.",
-      "telecharger": "click below to download "
+      "telecharger": "click below to download ",
+      "cta": "Start my teleconsultation"
+    },
+    "securite": {
+      "titre": "Security & Confidentiality",
+      "texte": "Your data and exchanges are protected by advanced security protocols and comply with medical confidentiality.",
+      "protection": "Data Protection",
+      "protectionTexte": "All information is encrypted and securely stored.",
+      "confidentialite": "Medical Confidentiality",
+      "confidentialiteTexte": "Only you and the healthcare professional have access to your exchanges."
+    },
+    "temoignages": {
+      "titre": "They trust us",
+      "texte1": "Fast, efficient and secure service! I was able to consult a doctor without leaving home.",
+      "nom1": "Fatima, 32 years old",
+      "texte2": "Confidentiality is respected, I feel safe for my medical exchanges.",
+      "nom2": "Dr. Martin, General Practitioner",
+      "texte3": "Intuitive platform, easy appointment booking and personalized follow-up.",
+      "nom3": "Julie, 27 years old"
+    },
+    "faq": {
+      "titre": "Frequently Asked Questions",
+      "question1": "How does a teleconsultation work?",
+      "reponse1": "You book an appointment, exchange securely with the professional, then receive your prescription if needed.",
+      "question2": "Are my data protected?",
+      "reponse2": "Yes, all your information is encrypted and strictly confidential.",
+      "question3": "Can I get a prescription?",
+      "reponse3": "Yes, the doctor can issue an electronic prescription after the consultation."
     },
     "section2": {
       "comment": "How does it work ?",
@@ -245,7 +279,6 @@
       "discutez": "Schedule your consultation",
       "recevez": "Receive your prescriptions"
     },
-
     "Cards": {
       "LesAvantages": "The Advantages of Teleconsultation",
       "Accessibilite": "Simplified Accessibility",
@@ -263,7 +296,35 @@
     "title": "Login to your account"
   },
   "register": {
-    "submit": "Register"
+    "title": "Sign Up",
+    "backToHome": "Back to Home",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Your full name",
+    "email": "Email Address",
+    "emailPlaceholder": "your@email.com",
+    "password": "Password",
+    "passwordPlaceholder": "••••••••",
+    "role": "I am a",
+    "patient": "Patient",
+    "doctor": "Doctor",
+    "region": "Region",
+    "regionPlaceholder": "Your region",
+    "city": "City",
+    "cityPlaceholder": "Your city",
+    "residence": "Place of residence",
+    "residencePlaceholder": "Full address",
+    "phoneNumber": "Phone Number",
+    "phoneNumberPlaceholder": "+237 6 XX XX XX XX",
+    "medicalInfo": "Medical Information",
+    "specialty": "Specialty",
+    "specialtyPlaceholder": "Ex: General Medicine, Cardiology...",
+    "licenseNumber": "Medical License Number",
+    "licenseNumberPlaceholder": "CNOM number or equivalent",
+    "submit": "Sign Up",
+    "submitting": "Signing up...",
+    "alreadyAccount": "Already have an account?",
+    "loginLink": "Sign In",
+    "redirectNotice": "You will be redirected to the Ekose RX application"
   },
   "download": {
     "button": "Download the app",
@@ -274,6 +335,46 @@
     "description": "Share your experiences and connect with other users to improve your health.",
     "button": "Join now",
     "learnMore": "Learn more"
+  },
+  "plansTarifs": {
+    "title": "Plans & Pricing",
+    "description": "Choose the plan that best fits your needs and get started today.",
+    "currency": "$",
+    "subscription": "Annual subscription",
+    "subscribe": "Subscribe now",
+    "payment": "Accepted payment methods: Visa, Mastercard, Mobile Money",
+    "plans": {
+      "freemium": {
+        "name": "FREEMIUM",
+        "price": "0",
+        "description": "Access essential services for free.",
+        "badge": "Popular"
+      },
+      "standard": {
+        "name": "STANDARD",
+        "price": "5",
+        "description": "More features and flexibility.",
+        "badge": "Recommended"
+      },
+      "premium": {
+        "name": "PREMIUM",
+        "price": "10",
+        "description": "All services, priority support, and exclusive benefits.",
+        "badge": "Best value"
+      }
+    },
+    "features": {
+      "delivery": "Medicine delivery",
+      "nearby": "Nearby services",
+      "emergency": "Emergency call",
+      "order": "Order medicines",
+      "fees": "Service fees included",
+      "records": "Records management",
+      "exchange": "Data exchange",
+      "scheduling": "Appointment scheduling",
+      "support": "Priority support",
+      "advantages": "Exclusive benefits"
+    }
   },
   "blog": {
     "title": "Welcome to our Blog",

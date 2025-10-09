@@ -1,12 +1,24 @@
 import { create } from 'zustand';
 
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  role: 'patient' | 'doctor' | 'admin';
+  phoneNumber?: string;
+  region?: string;
+  city?: string;
+  specialty?: string;
+  licenseNumber?: string;
+}
+
 interface AuthState {
   token: string | null;
-  user: any | null;
+  user: User | null;
   isAuthenticated: boolean;
   isLoading: boolean;
   setToken: (token: string | null) => void;
-  setUser: (user: any | null) => void;
+  setUser: (user: User | null) => void;
   setLoading: (loading: boolean) => void;
   logout: () => void;
 }
