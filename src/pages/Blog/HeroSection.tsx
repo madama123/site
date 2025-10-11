@@ -15,8 +15,16 @@ const Input = forwardRef<HTMLInputElement, InputHTMLAttributes<HTMLInputElement>
 );
 Input.displayName = 'Input';
 
-export function HeroSection() {
+import { useState } from 'react';
+
+export function HeroSection({ onSearch }: { onSearch: (value: string) => void }) {
   const { t } = useTranslation();
+  const [search, setSearch] = useState("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearch(e.target.value);
+    onSearch(e.target.value);
+  };
 
   return (
     <section className="relative h-[480px] md:h-[500px] flex items-center justify-center overflow-hidden">
@@ -35,6 +43,8 @@ export function HeroSection() {
         <div className="relative w-full max-w-xl mx-auto flex flex-col md:flex-row gap-4 items-center justify-center">
           <Input
             type="search"
+            value={search}
+            onChange={handleChange}
             placeholder={t('blog.searchPlaceholder', 'Search subject')}
             className="w-full h-12 pl-4 pr-12 rounded-full bg-white/95 shadow-lg"
           />

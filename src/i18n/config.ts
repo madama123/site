@@ -4,23 +4,24 @@ import fr from '../locales/fr.json';
 import en from '../locales/en.json';
 
 const resources = {
-  fr: {
-    translation: fr
-  },
-  en: {
-    translation: en
-  }
-};
 
-i18n
-  .use(initReactI18next)
-  .init({
-    resources,
-    lng: 'fr',
-    fallbackLng: 'fr',
-    interpolation: {
-      escapeValue: false
-    }
-  });
+  fallbackLng: 'en',
+    .use(initReactI18next)
+    .init({
+      resources,
+      lng: localStorage.getItem('language') || 'fr',
+      fallbackLng: 'en',
+      interpolation: {
+        escapeValue: false
+      }
+    });
+  interpolation: {
+    escapeValue: false
+  },
+  detection: {
+    order: ['localStorage', 'navigator'],
+    caches: ['localStorage']
+  }
+});
 
 export default i18n;

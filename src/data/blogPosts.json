@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "category": "Psychology",
+        "category_fr": "Psychologie",
+        "title": "How to manage anxiety and depression?",
+        "title_fr": "Comment gérer l'anxiété et la dépression ?",
+        "image": "/assets/images/blog/unwell-ill-woman-suffering-from-painful-head-migraine-putting-pression-temples-with-fingers-stressed-young-adult-person-with-hypertension-feeling-sick.png",
+        "author": "Dr Ekose",
+        "date": "16 Octobre 2024",
+        "content": "Discover practical strategies to manage anxiety and depression, including lifestyle changes, therapy options, and expert advice for mental well-being.",
+        "content_fr": "Découvrez des stratégies pratiques pour gérer l'anxiété et la dépression, y compris des changements de mode de vie, des options de thérapie et des conseils d'experts pour le bien-être mental."
+    },
+    {
+        "id": "2",
+        "category": "Nutrition",
+        "category_fr": "Nutrition",
+        "title": "Fruits and vegetables: are they necessary?",
+        "title_fr": "Fruits et légumes : sont-ils nécessaires ?",
+        "image": "/assets/images/blog/world-health-day-celebration-with-healthy-food.png",
+        "author": "Dr Ekose",
+        "date": "14 Octobre 2024",
+        "content": "Explore the importance of fruits and vegetables in your diet, their health benefits, and how to incorporate them into daily meals.",
+        "content_fr": "Découvrez l'importance des fruits et légumes dans votre alimentation, leurs bienfaits pour la santé et comment les intégrer dans vos repas quotidiens."
+    },
+    {
+        "id": "3",
+        "category": "Vaccination",
+        "category_fr": "Vaccination",
+        "title": "Vaccination: an imperative, a right, and a duty.",
+        "title_fr": "Vaccination : un impératif, un droit et un devoir.",
+        "image": "/assets/images/blog/small-black-boy-receiving-vaccine-due-covid19-pandemic.png",
+        "author": "Dr Ekose",
+        "date": "06 Octobre 2024",
+        "content": "Understand why vaccination is crucial for public health, your rights and responsibilities, and the latest updates on vaccines.",
+        "content_fr": "Comprenez pourquoi la vaccination est cruciale pour la santé publique, vos droits et responsabilités, et les dernières actualités sur les vaccins."
+    },
+    {
+        "id": "4",
+        "category": "Medecine",
+        "category_fr": "Médecine",
+        "title": "Self-medication: what can be said about it?",
+        "title_fr": "Automédication : que peut-on en dire ?",
+        "image": "/assets/images/blog/36965984ff5a9e368d0fc1a95d8291b1.png",
+        "author": "Dr Ekose",
+        "date": "02 Octobre 2024",
+        "content": "Learn about the risks and benefits of self-medication, when it is safe, and when to seek professional advice.",
+        "content_fr": "Découvrez les risques et les avantages de l'automédication, quand elle est sûre et quand il faut consulter un professionnel."
+    },
+    {
+        "id": "5",
+        "category": "Medecine",
+        "category_fr": "Médecine",
+        "title": "DNA: Unraveling the Mysteries of Heredity.",
+        "title_fr": "ADN : percer les mystères de l'hérédité.",
+        "image": "/assets/images/blog/dadd95a3a411c73749e3757593c94fb3.png",
+        "author": "Dr Ekose",
+        "date": "02 Octobre 2024",
+        "content": "Dive into the world of genetics, heredity, and how DNA shapes our health and future.",
+        "content_fr": "Plongez dans le monde de la génétique, de l'hérédité et découvrez comment l'ADN façonne notre santé et notre avenir."
+    },
+    {
+        "id": "6",
+        "category": "Medecine",
+        "category_fr": "Médecine",
+        "title": "Asthma: Myths and Realities You Should Know",
+        "title_fr": "Asthme : mythes et réalités à connaître",
+        "image": "/assets/images/blog/man-with-medical-problems.png",
+        "author": "Dr Ekose",
+        "date": "27 Septembre 2024",
+        "content": "Debunk common myths about asthma and discover the facts for better management and prevention.",
+        "content_fr": "Démystifiez les idées reçues sur l'asthme et découvrez les faits pour une meilleure gestion et prévention."
+    }
+]
