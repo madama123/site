@@ -60,16 +60,15 @@ const Header: React.FC = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#1a365d] shadow-lg" : "bg-[#1a365d]"
-        }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#1a365d] shadow-lg backdrop-blur-md bg-opacity-95" : "bg-[#1a365d] backdrop-blur-md bg-opacity-90"}`}
     >
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-3">
+      <div className="container mx-auto px-2 sm:px-4 md:px-8">
+        <div className="flex justify-between items-center py-2 sm:py-3">
           <Link to="/" className="flex items-center">
             <motion.img
               src="/assets/images/logos/logo sur fond bleu.svg"
               alt="logo ekose-rx"
-              className="w-40 transition-transform duration-300 hover:scale-110 drop-shadow-lg"
+              className="w-28 sm:w-36 md:w-40 transition-transform duration-300 hover:scale-110 drop-shadow-lg"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             />
@@ -79,7 +78,7 @@ const Header: React.FC = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `transition-all duration-300 hover:text-primary-green ${isActive ? "text-primary-green font-bold" : ""}`
+                `transition-all duration-300 hover:text-primary-green whitespace-nowrap px-2 py-1 rounded-lg ${isActive ? "text-primary-green font-bold bg-white/10" : ""}`
               }
             >
               {t("header.home")}
@@ -167,20 +166,20 @@ const Header: React.FC = () => {
             <BtnDownload />
             <NavLink
               to="/login"
-              className="px-4 py-2 text-white hover:text-primary-green transition-colors duration-300"
+              className="px-3 py-2 text-white hover:text-primary-green transition-colors duration-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-green"
             >
               {t("login.signIn")}
             </NavLink>
             <NavLink
               to="/register"
-              className="px-4 py-2 bg-primary-green text-white rounded-lg hover:bg-opacity-90 transition-colors duration-300"
+              className="px-3 py-2 bg-primary-green text-white rounded-lg hover:bg-opacity-90 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary-green"
             >
               {t("register.submit")}
             </NavLink>
           </div>
 
           <button
-            className="lg:hidden text-white p-2"
+            className="lg:hidden text-white p-2 focus:outline-none focus:ring-2 focus:ring-primary-green"
             onClick={handleBurgerClick}
             aria-label="Toggle menu"
           >
@@ -221,15 +220,14 @@ const Header: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-[#1a365d] py-4"
+            className="lg:hidden bg-[#1a365d] py-4 shadow-lg backdrop-blur-md bg-opacity-95"
           >
-            <div className="container mx-auto px-4">
-              <nav className="flex flex-col gap-4 text-white">
+            <div className="container mx-auto px-2 sm:px-4">
+              <nav className="flex flex-col gap-2 text-white">
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    `transition-all duration-300 hover:text-primary-green ${isActive ? "text-primary-green" : ""
-                    }`
+                    `transition-all duration-300 hover:text-primary-green whitespace-nowrap px-2 py-2 rounded-lg ${isActive ? "text-primary-green font-bold bg-white/10" : ""}`
                   }
                 >
                   {t("header.home")}
@@ -279,13 +277,13 @@ const Header: React.FC = () => {
                 <BtnDownload />
                 <NavLink
                   to="/login"
-                  className="px-4 py-2 text-white hover:text-primary-green transition-colors duration-300"
+                  className="px-3 py-2 text-white hover:text-primary-green transition-colors duration-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-green"
                 >
                   {t("login.signIn")}
                 </NavLink>
                 <NavLink
                   to="/register"
-                  className="px-4 py-2 bg-primary-green text-white rounded-lg hover:bg-opacity-90 transition-colors duration-300"
+                  className="px-3 py-2 bg-primary-green text-white rounded-lg hover:bg-opacity-90 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary-green"
                 >
                   {t("register.submit")}
                 </NavLink>

@@ -68,7 +68,7 @@ const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center pt-20">
+    <main className="min-h-screen flex flex-col items-center justify-center pt-16 sm:pt-20 bg-gradient-to-b from-blue-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900">
       <Helmet>
         <title>Ekose RX - {t('HomePage.meta.title')}</title>
         <meta name="description" content={t('HomePage.meta.description')} />
@@ -81,7 +81,7 @@ const Home = () => {
       {/* Hero Section moderne et animée avec fond SVG */}
       <section className="w-full max-w-6xl mx-auto py-20 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-between border-b border-gray-100 dark:border-gray-800 relative overflow-hidden">
         {/* SVG animé en fond */}
-        <svg className="absolute left-0 top-0 w-full h-full -z-10" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <svg className="absolute left-0 top-0 w-full h-full -z-10 pointer-events-none" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <motion.path
             initial={{ pathLength: 0 }}
             animate={{ pathLength: 1 }}
@@ -93,7 +93,7 @@ const Home = () => {
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-5xl font-extrabold mb-6 text-blue-primary dark:text-primary-400"
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-blue-primary dark:text-primary-400 break-words"
           >
             {t('HomePage.hero.titreHero')}
           </motion.h1>
@@ -101,7 +101,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-lg mb-8 text-gray-700 dark:text-gray-200"
+            className="text-base sm:text-lg mb-8 text-gray-700 dark:text-gray-200 break-words"
           >
             {t('HomePage.hero.paraph')}
           </motion.p>
@@ -110,7 +110,7 @@ const Home = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="px-8 py-3 btn-ekose-primary rounded-lg shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-green transition text-lg font-semibold"
+              className="px-6 sm:px-8 py-3 btn-ekose-primary rounded-lg shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-green transition text-base sm:text-lg font-semibold"
               aria-label={t('HomePage.hero.btnDownloadAria')}
             >
               {t('HomePage.hero.btnDownload')}
@@ -119,7 +119,7 @@ const Home = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="px-8 py-3 btn-ekose-secondary rounded-lg shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-green transition text-lg font-semibold"
+              className="px-6 sm:px-8 py-3 btn-ekose-secondary rounded-lg shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-green transition text-base sm:text-lg font-semibold"
               aria-label={t('HomePage.hero.btnDiscoverAria')}
             >
               {t('HomePage.hero.btnDiscover')}
@@ -131,7 +131,7 @@ const Home = () => {
           <motion.img
             src="/assets/images/HomePage/phone.png"
             alt="Illustration Ekose RX"
-            className="w-80 h-auto drop-shadow-xl"
+            className="w-52 sm:w-64 md:w-80 h-auto drop-shadow-xl object-contain"
             loading="lazy"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -140,18 +140,18 @@ const Home = () => {
         </div>
       </section>
       <Suspense fallback={<div>Loading...</div>}>
-        <section className="w-full py-20 border-b border-gray-100 dark:border-gray-800">
+        <section className="w-full py-12 sm:py-20 border-b border-gray-100 dark:border-gray-800">
           <Section1 />
         </section>
         <section className="w-full py-20 px-4 md:px-8 lg:px-48 border-b border-gray-100 dark:border-gray-800">
           <div id="bottom-sec" className="max-w-6xl mx-auto">
-            <h1 className="text-center text-4xl md:w-[80%] lg:w-[90%] mx-auto font-bold text-blue-primary dark:text-primary-400 mb-6">
+            <h1 className="text-center text-2xl sm:text-3xl md:text-4xl md:w-[80%] lg:w-[90%] mx-auto font-bold text-blue-primary dark:text-primary-400 mb-6 break-words">
               {t('HomePage.section2.titre')}
             </h1>
-            <p className="text-center md:w-[70%] lg:text-xl lg:my-8 mx-auto my-5 text-gray-700 dark:text-gray-200 mb-8">
+            <p className="text-center md:w-[70%] lg:text-xl lg:my-8 mx-auto my-5 text-gray-700 dark:text-gray-200 mb-8 break-words">
               {t('HomePage.section2.paraph1')}
             </p>
-            <div className="md:h-[150px] h-auto mb-16">
+            <div className="md:h-[150px] h-auto mb-10">
               <SpecialtyCardSlider />
             </div>
           </div>

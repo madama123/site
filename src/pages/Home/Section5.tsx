@@ -36,13 +36,14 @@ const Section5 = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="hidden lg:block absolute bottom-0 right-0"
+            className="absolute bottom-0 right-0 flex justify-end items-end w-full h-full pointer-events-none"
           >
             <img
               src="/assets/images/HomePage/security-doctor.png"
               alt="Medical security illustration"
-              className="w-[500px] xl:w-[600px]"
+              className="w-40 sm:w-64 md:w-[350px] lg:w-[500px] xl:w-[600px] h-auto object-contain"
               loading="lazy"
+              style={{ maxWidth: '100%', height: 'auto' }}
             />
           </motion.div>
         </div>

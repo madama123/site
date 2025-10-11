@@ -88,22 +88,19 @@
   },
   "footer": {
     "liensUtiles": "Useful Links",
-    "securite": "Security",
-    "legal": "Legal",
-    "copyright": "All rights reserved | Developed by INTERACT",
-    "about": "About",
-    "description": "Ekose-Rx is an online health platform that connects patients with qualified healthcare professionals.",
     "teleconsultation": "Teleconsultation",
-    "pharmacies": "Pharmacies",
+    "plans": "Plans & Pricing",
     "blog": "Blog",
+    "pharmacies": "Pharmacies",
+    "emergency": "Emergency",
+    "about": "About",
     "contact": "Contact",
-    "politique": "Privacy Policy",
-    "conditions": "Terms of Use",
     "letterTitle": "Subscribe to our Newsletter",
     "letterPara": "Receive the best health tips, the latest news, and exclusive offers directly in your inbox.",
     "mail": "Enter your email address",
     "souscrire": "Subscribe",
-    "connecter": "Connect to Better Health!"
+    "description": "Ekose RX simplifies connected healthcare in Cameroon. Teleconsultation, appointments, pharmacy and emergencies, all in one place.",
+    "copyright": "All rights reserved | Developed by INTERACT"
   },
   "pharmacies": {
     "hero": {
