@@ -57,7 +57,7 @@ const Login: React.FC = () => {
               {t('login.premiumSlogan', "Accédez à la santé de demain, aujourd'hui.")}
             </div>
           </div>
-          <div className={`bg-white/90 dark:bg-slate-900/80 backdrop-blur-2xl rounded-2xl p-8 shadow-2xl border border-turquoise-200/60 dark:border-blue-900/40 border-2 animate-zoomFadeIn ${shake ? 'animate-shake' : ''}`} style={{borderImage: 'linear-gradient(90deg, #67e8f9 0%, #38bdf8 100%) 1'}}>
+          <div className={`bg-white/90 dark:bg-slate-900/80 backdrop-blur-2xl rounded-2xl p-8 shadow-2xl border-2 border-turquoise-200/60 dark:border-blue-900/40 animate-zoomFadeIn ${shake ? 'animate-shake' : ''}`}>
             <h1 className="text-2xl font-extrabold text-center text-blue-primary dark:text-white mb-8 tracking-tight animate-fadeIn delay-100">{t('login.title', 'Se connecter')}</h1>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -113,37 +113,7 @@ const Login: React.FC = () => {
                 )}
                 {loading ? t('login.loading', 'Connexion...') : t('login.submit', 'Se connecter')}
               </button>
-// Injection CSS animations premium (zoomFadeIn, shake, glow)
-import { useEffect } from 'react';
 
-const ANIMATION_CSS = `
-@keyframes zoomFadeIn {
-  0% { opacity: 0; transform: scale(0.95) translateY(40px); }
-  100% { opacity: 1; transform: scale(1) translateY(0); }
-}
-.animate-zoomFadeIn { animation: zoomFadeIn 0.7s cubic-bezier(.4,2,.3,1) both; }
-@keyframes shake {
-  10%, 90% { transform: translateX(-2px); }
-  20%, 80% { transform: translateX(4px); }
-  30%, 50%, 70% { transform: translateX(-8px); }
-  40%, 60% { transform: translateX(8px); }
-}
-.animate-shake { animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both; }
-@keyframes glow {
-  0%, 100% { box-shadow: 0 0 16px 2px #22c55e55, 0 2px 8px 0 #0002; }
-  50% { box-shadow: 0 0 32px 8px #38bdf8aa, 0 2px 8px 0 #0002; }
-}
-.animate-glow { animation: glow 2s infinite alternate; }
-`;
-
-useEffect(() => {
-  if (typeof window !== 'undefined' && !document.getElementById('login-animations')) {
-    const style = document.createElement('style');
-    style.id = 'login-animations';
-    style.innerHTML = ANIMATION_CSS;
-    document.head.appendChild(style);
-  }
-}, []);
             </form>
             <div className="mt-6 text-center animate-fadeIn delay-200">
               <p className="text-sm text-slate-500 dark:text-slate-400">

@@ -125,9 +125,11 @@ export const Footer: React.FC = () => {
         {/* Partenaires */}
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 w-full">
           <div className="flex flex-wrap justify-center gap-8 md:gap-6 items-center">
-            <a href="https://www.fastercapital.com" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center space-y-2 hover:opacity-80 transition-opacity">
-              <img src="/assets/images/fasterCap.jpg" alt="FasterCapital" className="h-12 w-auto object-contain rounded-lg shadow-md" />
-              <span className="text-blue-primary dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors font-medium text-base">FasterCapital</span>
+            <div className="flex flex-col items-center space-y-2 hover:opacity-80 transition-opacity">
+              <a href="https://www.fastercapital.com" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/fasterCap.jpg" alt="FasterCapital" className="h-12 w-auto object-contain rounded-lg shadow-md" />
+                <span className="text-blue-primary dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors font-medium text-base">FasterCapital</span>
+              </a>
               {i18n.language === 'fr' ? (
                 <span className="text-center text-gray-700 dark:text-gray-200 text-xs mt-2 px-2 py-1 rounded-lg bg-gray-50 dark:bg-gray-800 shadow-sm max-w-xs">
                   <strong className="text-primary-green">Ekose Holdings Sarl</strong> a été acceptée dans le programme EquityPilot de <a href="https://www.fastercapital.com" target="_blank" rel="noopener noreferrer" className="underline text-blue-600 dark:text-blue-400">FasterCapital</a> et recherche un capital de <span className="font-bold text-green-700 dark:text-green-400">$ 250,000</span>.
@@ -137,7 +139,7 @@ export const Footer: React.FC = () => {
                   <strong className="text-primary-green">Ekose Holdings Sarl</strong> has been accepted into the EquityPilot program of <a href="https://www.fastercapital.com" target="_blank" rel="noopener noreferrer" className="underline text-blue-600 dark:text-blue-400">FasterCapital</a> and is seeking a capital of <span className="font-bold text-green-700 dark:text-green-400">$ 250,000</span>.
                 </span>
               )}
-            </a>
+            </div>
           </div>
         </div>
 
