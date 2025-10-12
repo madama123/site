@@ -320,7 +320,18 @@
   },
   "login": {
     "signIn": "Connexion",
-    "title": "Connexion à votre compte"
+    "title": "Connexion à votre compte",
+    "backToHome": "Retour à l'accueil",
+    "emailLabel": "Adresse email",
+    "emailPlaceholder": "votre@email.com",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "••••••••",
+    "submit": "Se connecter",
+    "loading": "Connexion...",
+    "noAccount": "Pas encore de compte?",
+    "register": "S'inscrire",
+    "redirectInfo": "Vous serez redirigé vers l'application Ekose RX",
+    "error": "Erreur lors de la connexion"
   },
   "register": {
     "title": "S'inscrire",

@@ -123,7 +123,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="bg-transparent backdrop-blur shadow-md fixed w-full z-50 border-b border-gray-100 dark:border-gray-800">
+    <nav className="bg-gradient-to-r from-blue-50 to-turquoise-50 dark:from-gray-800 dark:to-gray-700 backdrop-blur shadow-md fixed w-full z-50 border-b border-gray-100 dark:border-gray-800">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-16 px-4 md:px-8 lg:px-16">
         <Link to="/" className="flex items-center group" aria-label="Accueil Ekose-Rx">
           <img src="/assets/images/logos/logo.svg" alt="Ekose-Rx" className="h-8 w-auto mr-2 transition-transform group-hover:scale-105" />

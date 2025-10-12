@@ -1,4 +1,3 @@
-
 import { useTranslation } from 'react-i18next';
 import AboutCarte from '../../components/AboutCarte/AboutCarte';
 import { motion } from 'framer-motion';
@@ -13,8 +12,10 @@ const cardImages = [
 ];
 
 const About = () => {
-  const { t, i18n } = useTranslation();
-  const solutions = t('about.solutions.cards', { returnObjects: true });
+  const { t } = useTranslation();
+  const solutions = t('about.solutions.cards', { returnObjects: true }) as Array<{ title: string; description: string }>;
+
+
 
   return (
     <main className="bg-white dark:bg-gray-900 min-h-screen">
@@ -30,9 +31,10 @@ const About = () => {
         <span className="inline-block bg-red-600 text-white rounded-full px-6 py-2 font-semibold shadow-lg mb-8">
           {t('about.hero.service')}
         </span>
+        <img src="/assets/images/AboutUs/hero.png" alt="Hero illustration" className="mx-auto rounded-xl shadow-xl w-full max-w-2xl mb-8" />
       </section>
 
-      {/* Histoire & Mission */}
+      {/* Histoire & Mission avec illustrations */}
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="text-3xl font-bold text-blue-700 dark:text-primary-400 mb-4">
@@ -41,6 +43,7 @@ const About = () => {
           <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 mb-6">
             {t('about.history.paraph')}
           </p>
+          <img src="/assets/images/AboutUs/promise.png" alt="History illustration" className="rounded-lg shadow-lg w-full max-w-md mt-4" />
         </div>
         <div>
           <h2 className="text-3xl font-bold text-blue-700 dark:text-primary-400 mb-4">
@@ -55,6 +58,7 @@ const About = () => {
             <li>{t('about.mission.rdv')}</li>
             <li>{t('about.mission.patient')}</li>
           </ul>
+          <img src="/assets/images/AboutUs/beautiful-black-nurse-portrait.png" alt="Mission illustration" className="rounded-lg shadow-lg w-full max-w-md mt-4" />
         </div>
       </section>
 
@@ -82,18 +86,29 @@ const About = () => {
         </div>
       </section>
 
-      {/* Partenaires & Témoignages */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
-        <h2 className="text-3xl font-bold text-blue-700 dark:text-primary-400 mb-6">
-          {t('about.partners.titre')}
-        </h2>
-        <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 mb-8">
-          {t('about.partners.paraph')}
-        </p>
-        {/* Ici, vous pouvez ajouter un composant de logos partenaires ou de témoignages premium */}
+      {/* Partenaires & Témoignages avec illustration */}
+      <section className="py-16 px-4 md:px-8 lg:px-16 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 flex flex-col md:flex-row items-center gap-12">
+        <div className="flex-1">
+          <h2 className="text-3xl font-bold text-blue-700 dark:text-primary-400 mb-6">
+            {t('about.partners.titre')}
+          </h2>
+          <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 mb-8">
+            {t('about.partners.paraph')}
+          </p>
+          {/* Logos partenaires premium */}
+          <div className="flex flex-wrap gap-6 justify-center items-center">
+            <img src="/assets/images/AboutUs/logo-blue.svg" alt="Partner logo blue" className="h-12" />
+            <img src="/assets/images/AboutUs/logo-green.svg" alt="Partner logo green" className="h-12" />
+            <img src="/assets/images/AboutUs/logo-original.svg" alt="Partner logo original" className="h-12" />
+            <img src="/assets/images/AboutUs/medical-partner.png" alt="Medical partner" className="h-12" />
+          </div>
+        </div>
+        <div className="flex-1 flex justify-center">
+          <img src="/assets/images/AboutUs/map.png" alt="Partners illustration" className="rounded-lg shadow-lg w-full max-w-md" />
+        </div>
       </section>
 
-      {/* Contact */}
+      {/* Contact premium */}
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50 dark:bg-gray-800 text-center">
         <h2 className="text-3xl font-bold text-blue-700 dark:text-primary-400 mb-6">
           {t('about.contact.soumettre')}
@@ -101,10 +116,26 @@ const About = () => {
         <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 mb-8">
           {t('about.contact.paraph')}
         </p>
-        {/* Formulaire de contact premium à ajouter ici */}
+        <form className="max-w-xl mx-auto grid gap-6 text-left">
+          <div>
+            <label htmlFor="name" className="block text-gray-700 dark:text-gray-200 font-semibold mb-2">{t('about.contact.nom')}</label>
+            <input type="text" id="name" name="name" className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+          </div>
+          <div>
+            <label htmlFor="email" className="block text-gray-700 dark:text-gray-200 font-semibold mb-2">{t('about.contact.email')}</label>
+            <input type="email" id="email" name="email" className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+          </div>
+          <div>
+            <label htmlFor="message" className="block text-gray-700 dark:text-gray-200 font-semibold mb-2">{t('about.contact.message')}</label>
+            <textarea id="message" name="message" rows={4} className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+          </div>
+          <button type="submit" className="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            {t('about.contact.soumettre')}
+          </button>
+        </form>
       </section>
     </main>
   );
-};
 
+}
 export default About;

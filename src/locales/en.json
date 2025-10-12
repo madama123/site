@@ -303,8 +303,19 @@
     }
   },
   "login": {
-    "signIn": "Accounte",
-    "title": "Login to your account"
+    "signIn": "Sign In",
+    "title": "Login to your account",
+    "backToHome": "Back to Home",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "your@email.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "••••••••",
+    "submit": "Login",
+    "loading": "Logging in...",
+    "noAccount": "No account yet?",
+    "register": "Sign Up",
+    "redirectInfo": "You will be redirected to the Ekose RX application",
+    "error": "Login error"
   },
   "register": {
     "title": "Sign Up",

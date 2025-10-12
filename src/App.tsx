@@ -48,9 +48,9 @@ const App = () => {
                 <Route path="faq" element={<FAQ />} />
                 <Route path="legal" element={<Legal />} />
                 <Route path="privacy" element={<Privacy />} />
+                <Route path="login" element={<Login />} />
+                <Route path="register" element={<Register />} />
               </Route>
-              <Route path="/login" element={<Login />} />
-              <Route path="/register" element={<Register />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
