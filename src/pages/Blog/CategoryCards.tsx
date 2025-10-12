@@ -23,9 +23,11 @@ const categories = [
 
 import { motion } from "framer-motion";
 
-export function CategoryCards({ onCategory }: { onCategory: (category: string) => void }) {
+export function CategoryCards() {
+  // Simule le filtrage (à intégrer avec la logique réelle si besoin)
   const handleCategoryClick = (title: string) => {
-    onCategory(title);
+    // TODO: filtrer les articles selon la catégorie
+    alert(`Filtrer par catégorie : ${title}`);
   };
   return (
     <section className="max-w-6xl mx-auto px-4 -mt-20 relative z-20">

@@ -16,7 +16,7 @@ const Urgences = () => {
     },
   };
 
-  
+
 
   const itemVariants = {
     hidden: { opacity: 0, scale: 0.8 },
@@ -52,6 +52,7 @@ const Urgences = () => {
       <section
         className="relative bg-gradient-to-r from-red-600 to-red-800 text-white py-20 px-4 md:px-8 lg:px-16 border-b border-gray-100 dark:border-gray-800"
       >
+        <div className="mt-8"></div>
         <div className="max-w-7xl mx-auto">
           <motion.div
             variants={containerVariants}
@@ -64,7 +65,7 @@ const Urgences = () => {
                   {t("UrgencesPage.consultationImmediate.immediat")}
                 </span>
               </h1>
-              <p className="text-lg mb-8 text-white dark:text-gray-200">
+              <p className="text-lg mb-8 text-white dark:text-gray-200 mt-8">
                 {t("UrgencesPage.consultationImmediate.texte")}
               </p>
               <div className="space-y-6">
@@ -78,11 +79,20 @@ const Urgences = () => {
                 />
               </div>
             </div>
+            {/* Image visible sur desktop */}
             <motion.div variants={itemVariants} className="hidden md:block">
               <img
                 src="/assets/images/urgences/hero.png"
                 alt="Emergency"
-                className="rounded-lg shadow-xl"
+                className="rounded-lg shadow-xl w-full h-auto object-cover"
+              />
+            </motion.div>
+            {/* Image visible sur mobile */}
+            <motion.div variants={itemVariants} className="block md:hidden mt-8">
+              <img
+                src="/assets/images/urgences/hero.png"
+                alt="Emergency"
+                className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
             </motion.div>
           </motion.div>

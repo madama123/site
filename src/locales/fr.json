@@ -224,19 +224,33 @@
       "paraph": "Ekose-RX est soutenu par des partenaires de qualité, engagés à améliorer l'accès et la qualité des soins grâce à des solutions de santé innovantes et accessibles."
     },
     "solutions": {
-      "titre": " Solutions Proposées ",
-      "titreCard1": "Innovation et Technologie ",
-      "paraphCard1": "Ekose-Rx mise sur des technologies avancées et innovantes pour créer des solutions performantes, intuitives et adaptées aux besoins modernes, assurant efficacité et simplicité.",
-      "titreCard2": "Modèle de Soins en Équipe et Télémédecine ",
-      "paraphCard2": "Ekose-Rx favorise la collaboration entre professionnels de la santé grâce à des outils numériques intégrés et la télémédecine, simplifiant l'accès aux soins.",
-      "titreCard3": "Suivi Automatisé et Gestion des Soins Basée sur les Données ",
-      "paraphCard3": "Ekose-Rx optimise la prise en charge avec un suivi automatisé et des analyses de données précises, pour des soins personnalisés et efficaces.",
-      "titreCard4": "Encouragement à l'Engagement des Patients",
-      "paraphCard4": "Ekose-Rx valorise l'implication des patients en leur fournissant des outils interactifs et éducatifs pour participer activement à leur parcours de soins.",
-      "titreCard5": "Gestion des Dossiers Médicaux et Coordination des Soins ",
-      "paraphCard5": "Ekose-Rx centralise les dossiers médicaux pour une accessibilité optimale, facilitant la coordination entre professionnels et assurant une prise en charge fluide",
-      "titreCard6": "Sécurité et Confidentialité ",
-      "paraphCard6": "Vos informations personnelles et médicales restent protégées."
+      "titre": "Solutions Proposées",
+      "cards": [
+        {
+          "title": "Innovation technologique",
+          "description": "Nous utilisons les technologies les plus avancées pour offrir des solutions de santé intuitives et performantes à chaque patient et professionnel."
+        },
+        {
+          "title": "Téléconsultation collaborative",
+          "description": "Notre plateforme favorise le travail d'équipe entre professionnels de santé, pour des consultations à distance simples et efficaces."
+        },
+        {
+          "title": "Suivi automatisé & données intelligentes",
+          "description": "Bénéficiez d'un suivi santé en temps réel et d'une prise en charge personnalisée grâce à l'analyse intelligente des données."
+        },
+        {
+          "title": "Engagement & responsabilisation du patient",
+          "description": "Nous encourageons chaque patient à devenir acteur de sa santé, avec des outils interactifs et des récompenses pour les bonnes habitudes."
+        },
+        {
+          "title": "Dossiers médicaux & coordination des soins",
+          "description": "Des dossiers médicaux centralisés et sécurisés pour une coordination fluide et une accessibilité optimale entre tous les professionnels."
+        },
+        {
+          "title": "Sécurité & confidentialité",
+          "description": "Vos données personnelles et médicales sont protégées par des protocoles de sécurité avancés, garantissant une confidentialité totale."
+        }
+      ]
     },
     "contact": {
       "paraph": "Laissez nous un message si vous avez des questions concernant l'application Ekose RX, un agent entrera en contact avez vous sous peu.",

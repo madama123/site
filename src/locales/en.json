@@ -102,6 +102,22 @@
     "description": "Ekose RX simplifies connected healthcare in Cameroon. Teleconsultation, appointments, pharmacy and emergencies, all in one place.",
     "copyright": "All rights reserved | Developed by INTERACT"
   },
+  "pharmacies": {
+    "hero": {
+      "title": "Find the Closest Pharmacies Near You",
+      "paraph": "In just seconds, locate nearby open pharmacies, check their hours and services, and get directions to reach them quickly. Enjoy easy access to healthcare, wherever you are and at any time."
+    },
+    "section2": {
+      "titre": "Say Goodbye to Stress When Buying Your Medications",
+      "paraph": "Ekose-RX directly connects you with pharmacies to simplify the process of acquiring medications.",
+      "liste1": "Locate pharmacies near your location",
+      "liste2": "Check pharmacy availability (on duty, opening hours)",
+      "liste3": "Detailed pharmacy profile with information and action options (call, directions)",
+      "liste4": "Verify medication availability",
+      "telecharger": "Download the app now",
+      "paraph2": "Easily find the closest pharmacies with our integrated geolocation system. The app provides real-time information on nearby open pharmacies, their hours, and the services they offer. Simplify your search and quickly access the medications you need, wherever you are."
+    }
+  },
   "inscription": {
     "titreHero": "Join Us!",
     "text": "Are you a doctor or pharmacist and want to make your services more accessible to your patients? Join us now!",
@@ -193,18 +209,32 @@
     },
     "solutions": {
       "titre": "Proposed Solutions",
-      "titreCard1": "Innovation and Technology",
-      "paraphCard1": "Ekose-Rx relies on advanced and innovative technologies to create high-performance, intuitive solutions that meet modern needs, ensuring efficiency and simplicity.",
-      "titreCard2": "Team-Based Care Model and Telemedicine",
-      "paraphCard2": "Ekose-Rx promotes collaboration among healthcare professionals through integrated digital tools and telemedicine, simplifying access to care.",
-      "titreCard3": "Automated Monitoring and Data-Driven Care Management",
-      "paraphCard3": "Ekose-Rx optimizes care with automated monitoring and precise data analysis, ensuring personalized and effective treatment.",
-      "titreCard4": "Encouragement of Patient Engagement",
-      "paraphCard4": "Ekose-Rx values patient involvement by providing interactive and educational tools to actively participate in their care journey.",
-      "titreCard5": "Medical Record Management and Care Coordination",
-      "paraphCard5": "Ekose-Rx centralizes medical records for optimal accessibility, facilitating coordination among professionals and ensuring smooth care delivery.",
-      "titreCard6": "Security and Confidentiality",
-      "paraphCard6": "Your personal and medical information remains protected."
+      "cards": [
+        {
+          "title": "Technological Innovation",
+          "description": "We use cutting-edge technologies to deliver intuitive, high-performance healthcare solutions for every patient and professional."
+        },
+        {
+          "title": "Collaborative Teleconsultation",
+          "description": "Our platform enables seamless teamwork between healthcare professionals, making remote consultations simple and effective."
+        },
+        {
+          "title": "Automated Monitoring & Smart Data",
+          "description": "Benefit from real-time health monitoring and data-driven care for personalized, proactive treatment."
+        },
+        {
+          "title": "Patient Engagement & Empowerment",
+          "description": "We encourage patients to take an active role in their health journey, with interactive tools and rewards for healthy habits."
+        },
+        {
+          "title": "Medical Records & Care Coordination",
+          "description": "Centralized, secure medical records for smooth coordination and optimal accessibility among all professionals."
+        },
+        {
+          "title": "Security & Confidentiality",
+          "description": "Your personal and medical data is protected by advanced security protocols, ensuring total confidentiality."
+        }
+      ]
     },
     "contact": {
       "paraph": "Leave us a message if you have any questions regarding the Ekose RX app, an agent will get in touch with you shortly.",
@@ -362,53 +392,5 @@
     "comingSoon": "Coming Soon",
     "description": "Stay tuned for exciting articles and updates."
   },
-  "loading": "Loading...",
-  "pharmacies": {
-    "title": "Find the ideal pharmacy",
-    "description": "Access a premium selection of pharmacies, services and health advice, everywhere and anytime.",
-    "cta": "Find a pharmacy near me",
-    "heroImgAlt": "Premium pharmacy illustration",
-    "availableTitle": "Pharmacies available near you",
-    "availableDesc": "Check the list of open pharmacies, locate them on the map and get quick access to their services: hours, contact, delivery, health advice.",
-    "availableBadge": "Real-time update",
-    "availableImgAlt": "Location of available pharmacies",
-    "storyTitle": "Your health, our priority",
-    "howTitle": "How does it work?",
-    "step1": "Search and geolocation",
-    "step1Desc": "Quickly find open pharmacies around you thanks to geolocation and the interactive map.",
-    "step2": "Service consultation",
-    "step2Desc": "Access opening hours, contacts, available services, medicine availability and delivery options.",
-    "step3": "Order and delivery",
-    "step3Desc": "Order your medicines or health products online, choose home delivery or pickup at the pharmacy.",
-    "step4": "Personalized support",
-    "step4Desc": "Benefit from health advice, digital follow-up and support from expert pharmacists.",
-    "step5": "Security and confidentiality",
-    "step5Desc": "All your data and transactions are protected, medical secrecy guaranteed.",
-    "badge1": "Geolocation",
-    "badge2": "Express delivery",
-    "badge3": "Personalized advice",
-    "badge4": "Security & confidentiality",
-    "mapImgAlt": "Pharmacy interactive map",
-    "medsImgAlt": "Available medicines",
-    "premium": "Premium selection",
-    "premiumDesc": "Access certified, reliable partner pharmacies close to you.",
-    "open": "24/7 availability",
-    "openDesc": "Find a pharmacy open at any time, even on holidays.",
-    "delivery": "Express delivery",
-    "deliveryDesc": "Receive your medicines at home, safely and confidentially.",
-    "advice": "Personalized advice",
-    "adviceDesc": "Direct dialogue with expert pharmacists for tailored health support.",
-    "digital": "Digital follow-up",
-    "digitalDesc": "Order history, renewal reminders, notifications and mobile access.",
-    "security": "Security & confidentiality",
-    "securityDesc": "Your data is protected and medical secrecy is respected.",
-    "access": "Accessibility",
-    "accessDesc": "Intuitive interface, adapted to all profiles and specific needs.",
-    "range": "Wide range",
-    "rangeDesc": "Medicines, parapharmacy, natural products, accessories and wellness advice.",
-    "contact": "Contact a pharmacist",
-    "pharmacistImgAlt": "Expert pharmacist",
-    "deliveryImgAlt": "Pharmacy delivery",
-    "localiseImgAlt": "Pharmacy location"
-  }
+  "loading": "Loading..."
 }
