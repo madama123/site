@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
 const Pharmacies: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     document.body.style.background = 'linear-gradient(135deg, #e0f7fa 0%, #f8fafc 60%, #d1fae5 100%)';

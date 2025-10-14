@@ -27,7 +27,7 @@ const Login: React.FC = () => {
       }, 1200);
       // Pour succès, décommente :
       // setTimeout(() => { window.location.reload(); }, 1200);
-    } catch (err) {
+    } catch {
       setError(t('login.error', 'Erreur lors de la connexion'));
       setShake(true);
       setTimeout(() => setShake(false), 600);

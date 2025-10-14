@@ -63,7 +63,7 @@ const Register: React.FC = () => {
       }, 1200);
       // Pour succès, décommente :
       // setTimeout(() => { window.location.reload(); }, 1200);
-    } catch (err) {
+    } catch {
       setError(t('register.error', "Erreur lors de l'inscription"));
       setShake(true);
       setTimeout(() => setShake(false), 600);
