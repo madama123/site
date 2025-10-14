@@ -95,8 +95,6 @@ export const BlogPosts: React.FC<{ search?: string; category?: string }> = ({ se
                         alt={title}
                         className="w-full h-full object-cover rounded-t-lg"
                         loading="lazy"
-                        srcSet={post.image.replace('.png', '.webp') + ' 1x, ' + post.image + ' 2x'}
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
                       <div className="absolute bottom-0 left-0 bg-blue-900 text-white px-4 py-1 text-sm font-medium">
                         {categoryName}
@@ -131,8 +129,6 @@ export const BlogPosts: React.FC<{ search?: string; category?: string }> = ({ se
                       alt={video.title}
                       className="w-full h-full object-cover rounded-t-lg"
                       loading="lazy"
-                      srcSet={video.thumbnail.replace('.jpg', '.webp') + ' 1x, ' + video.thumbnail + ' 2x'}
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <svg
