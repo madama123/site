@@ -94,7 +94,7 @@ const About = () => {
                 transition={{ delay: 0.3, type: "spring" }}
                 className="text-4xl font-bold text-[#134888] dark:text-sky-400 mb-2"
               >
-                100K+
+                {t('about.aboutPage.stats.patientsCount')}
               </motion.div>
               <p className="text-gray-600 dark:text-gray-300 font-medium">{t('about.aboutPage.stats.patients')}</p>
             </motion.div>
@@ -116,7 +116,7 @@ const About = () => {
                 transition={{ delay: 0.4, type: "spring" }}
                 className="text-4xl font-bold text-[#134888] dark:text-sky-400 mb-2"
               >
-                500+
+                {t('about.aboutPage.stats.doctorsCount')}
               </motion.div>
               <p className="text-gray-600 dark:text-gray-300 font-medium">{t('about.aboutPage.stats.doctors')}</p>
             </motion.div>
@@ -138,7 +138,7 @@ const About = () => {
                 transition={{ delay: 0.5, type: "spring" }}
                 className="text-4xl font-bold text-[#134888] dark:text-sky-400 mb-2"
               >
-                50K+
+                {t('about.aboutPage.stats.consultationsCount')}
               </motion.div>
               <p className="text-gray-600 dark:text-gray-300 font-medium">{t('about.aboutPage.stats.consultations')}</p>
             </motion.div>
@@ -160,7 +160,7 @@ const About = () => {
                 transition={{ delay: 0.6, type: "spring" }}
                 className="text-4xl font-bold text-[#134888] dark:text-sky-400 mb-2"
               >
-                98%
+                {t('about.aboutPage.stats.satisfactionCount')}
               </motion.div>
               <p className="text-gray-600 dark:text-gray-300 font-medium">{t('about.aboutPage.stats.satisfaction')}</p>
             </motion.div>

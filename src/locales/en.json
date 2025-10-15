@@ -303,9 +303,13 @@
       "brandStory": "Ekose-Rx Brand Story",
       "subtitle": "Connecting Africa to quality healthcare, one interaction at a time.",
       "stats": {
+        "patientsCount": "100K+",
         "patients": "Patients",
+        "doctorsCount": "500+",
         "doctors": "Doctors",
+        "consultationsCount": "50K+",
         "consultations": "Consultations",
+        "satisfactionCount": "98%",
         "satisfaction": "Satisfaction"
       },
       "whoWeAre": {

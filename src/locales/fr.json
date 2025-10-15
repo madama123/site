@@ -316,9 +316,13 @@
       "brandStory": "L'histoire de la marque Ekose-Rx",
       "subtitle": "Connecter l'Afrique à des soins de santé de qualité, une interaction à la fois.",
       "stats": {
+        "patientsCount": "100K+",
         "patients": "Patients",
+        "doctorsCount": "500+",
         "doctors": "Médecins",
+        "consultationsCount": "50K+",
         "consultations": "Consultations",
+        "satisfactionCount": "98%",
         "satisfaction": "Satisfaction"
       },
       "whoWeAre": {
