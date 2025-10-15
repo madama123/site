@@ -222,6 +222,9 @@
     }
   },
   "UrgencesPage": {
+    "badge": "Service d'urgence 24/7",
+    "whyChoose": "Pourquoi choisir notre service d'urgence ?",
+    "downloadNow": "Téléchargez l'application maintenant :",
     "consultationImmediate": {
       "besoin": "Besoin d'aide ",
       "immediat": "immédiate ?",
@@ -372,6 +375,7 @@
     }
   },
   "teleconsultation": {
+    "badge": "Consultation en ligne 24/7",
     "hero": {
       "titreHero": "Consultez un médecin en ligne,  n'importe où, n'importe quand",
       "paraph": "Plus besoin de vous déplacer pour consulter un médecin.  Avec notre service de téléconsultation, accédez à  des conseils médicaux fiables et des soins personnalisés  depuis le confort de votre domicile, à tout moment.",

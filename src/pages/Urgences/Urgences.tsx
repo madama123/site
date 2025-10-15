@@ -69,7 +69,7 @@ const Urgences = () => {
                 className="inline-block mb-6"
               >
                 <span className="px-4 py-2 bg-white/20 backdrop-blur-sm text-white rounded-full text-sm font-semibold border border-white/30">
-                  🚑 Service d'urgence 24/7
+                  🚑 {t("UrgencesPage.badge")}
                 </span>
               </motion.div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white leading-tight">
@@ -128,7 +128,7 @@ const Urgences = () => {
       >
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-primary dark:text-sky-400 mb-16">
-            Pourquoi choisir notre service d'urgence ?
+            {t("UrgencesPage.whyChoose")}
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {items.map((item, index) => (
@@ -169,7 +169,7 @@ const Urgences = () => {
               </h2>
               <p className="text-lg md:text-xl mb-8 text-gray-700 dark:text-gray-300 leading-relaxed">{t("UrgencesPage.reservezUneTexte")}</p>
               <div className="space-y-4">
-                <p className="font-semibold text-gray-800 dark:text-gray-200">Téléchargez l'application maintenant :</p>
+                <p className="font-semibold text-gray-800 dark:text-gray-200">{t("UrgencesPage.downloadNow")}</p>
                 <AppStoreLinks />
               </div>
             </div>

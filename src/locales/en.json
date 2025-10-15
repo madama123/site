@@ -209,6 +209,9 @@
     }
   },
   "UrgencesPage": {
+    "badge": "Emergency service 24/7",
+    "whyChoose": "Why choose our emergency service?",
+    "downloadNow": "Download the app now:",
     "consultationImmediate": {
       "besoin": "Need ",
       "immediat": "immediate help ?",
@@ -359,6 +362,7 @@
     }
   },
   "teleconsultation": {
+    "badge": "Online consultation 24/7",
     "hero": {
       "titreHero": "Consult a doctor online, anywhere, anytime",
       "paraph": "No need to travel to see a doctor anymore.  With our teleconsultation service, access reliable medical advice and personalized care from the comfort of your home, at any time.",
