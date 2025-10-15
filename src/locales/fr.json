@@ -124,6 +124,52 @@
     "copyright": "Tous droits réservés | Développé par INTERACT"
   },
   "pharmacies": {
+    "title": "Trouvez la pharmacie idéale",
+    "description": "Accédez à une sélection premium de pharmacies, services et conseils santé, partout et à tout moment.",
+    "cta": "Trouver une pharmacie près de moi",
+    "heroImgAlt": "Illustration pharmacie premium",
+    "availableImgAlt": "Localisation des pharmacies disponibles",
+    "availableTitle": "Pharmacies disponibles près de vous",
+    "availableDesc": "Consultez la liste des pharmacies ouvertes, localisez-les sur la carte et bénéficiez d'un accès rapide à leurs services : horaires, contact, livraison, conseils santé.",
+    "availableBadge": "Mise à jour en temps réel",
+    "howTitle": "Comment ça marche ?",
+    "step1": "Recherche et géolocalisation",
+    "step1Desc": "Trouvez rapidement les pharmacies ouvertes autour de vous grâce à la géolocalisation et à la carte interactive.",
+    "step2": "Consultation des services",
+    "step2Desc": "Accédez aux horaires, contacts, services proposés, disponibilité des médicaments et options de livraison.",
+    "step3": "Commande et livraison",
+    "step3Desc": "Commandez vos médicaments ou produits de santé en ligne, choisissez la livraison à domicile ou le retrait en pharmacie.",
+    "step4": "Accompagnement personnalisé",
+    "step4Desc": "Bénéficiez de conseils santé, d'un suivi digitalisé et d'un accompagnement par des pharmaciens experts.",
+    "step5": "Sécurité et confidentialité",
+    "step5Desc": "Toutes vos données et transactions sont protégées, respect du secret médical garanti.",
+    "badge1": "Géolocalisation",
+    "badge2": "Livraison express",
+    "badge3": "Conseils personnalisés",
+    "badge4": "Sécurité & confidentialité",
+    "mapImgAlt": "Carte interactive pharmacie",
+    "medsImgAlt": "Médicaments disponibles",
+    "storyTitle": "Votre santé, notre priorité",
+    "premium": "Sélection premium",
+    "premiumDesc": "Accès à des pharmacies partenaires certifiées, fiables et proches de vous.",
+    "open": "Disponibilité 24h/24",
+    "openDesc": "Trouvez une pharmacie ouverte à toute heure, même les jours fériés.",
+    "delivery": "Livraison express",
+    "deliveryDesc": "Recevez vos médicaments à domicile, en toute sécurité et confidentialité.",
+    "advice": "Conseils personnalisés",
+    "adviceDesc": "Dialogue direct avec des pharmaciens experts pour un accompagnement santé sur-mesure.",
+    "digital": "Suivi digitalisé",
+    "digitalDesc": "Historique de vos commandes, rappels de renouvellement, notifications et accès mobile.",
+    "security": "Sécurité & confidentialité",
+    "securityDesc": "Protection de vos données et respect du secret médical.",
+    "access": "Accessibilité",
+    "accessDesc": "Interface intuitive, adaptée à tous les profils et besoins spécifiques.",
+    "range": "Large gamme",
+    "rangeDesc": "Médicaments, parapharmacie, produits naturels, accessoires et conseils bien-être.",
+    "contact": "Contactez un pharmacien",
+    "pharmacistImgAlt": "Pharmacien expert",
+    "deliveryImgAlt": "Livraison pharmacie",
+    "localiseImgAlt": "Localisation pharmacie",
     "hero": {
       "title": "Trouvez les Pharmacies les Plus Proches de Vous",
       "paraph": "En quelques secondes, repérez les pharmacies ouvertes à proximité, consultez leurs horaires et services, et obtenez l'itinéraire pour vous y rendre rapidement. Profitez d'un accès facilité aux soins de santé, où vous soyez et à toute heure."
@@ -138,9 +184,7 @@
       "telecharger": "Télécharger l'application maintenant",
       "paraph2": "Trouvez facilement les pharmacies les plus proches grâce à notre système de géolocalisation intégré. L'application vous indique en temps réel les pharmacies ouvertes à proximité, leurs horaires, ainsi que les services disponibles. Simplifiez vos recherches et accédez rapidement aux médicaments dont vous avez besoin, où que vous soyez."
     },
-    "title": "Pharmacies",
-    "comingSoon": "Bientôt disponible",
-    "description": "La liste des pharmacies sera bientôt disponible ici."
+    "comingSoon": "Bientôt disponible"
   },
   "rdv": {
     "hero": {
@@ -262,6 +306,69 @@
       "adressemail": "Adresse E-mail ",
       "tel": "Telephone",
       "Adresse": "Adresse"
+    },
+    "aboutPage": {
+      "badge": "Depuis 2022 - Innovation en Santé",
+      "ctaButton": "Découvrir notre équipe",
+      "brandStory": "L'histoire de la marque Ekose-Rx",
+      "subtitle": "Connecter l'Afrique à des soins de santé de qualité, une interaction à la fois.",
+      "stats": {
+        "patients": "Patients",
+        "doctors": "Médecins",
+        "consultations": "Consultations",
+        "satisfaction": "Satisfaction"
+      },
+      "whoWeAre": {
+        "title": "Qui nous sommes",
+        "p1": "Ekose-Rx est une entreprise de technologie de la santé numérique qui comble le fossé entre les patients, les prestataires de soins et les systèmes de santé à travers l'Afrique.",
+        "p2": "Nous croyons que des soins de santé de qualité ne devraient pas dépendre du lieu, du revenu ou de l'accès à l'infrastructure. Grâce à notre écosystème sécurisé de téléconsultation, de prescription électronique et d'API, nous connectons les patients à des médecins, pharmacies, services d'urgence et laboratoires vérifiés, créant une expérience de soins de santé unifiée, abordable et basée sur les données."
+      },
+      "mission": {
+        "title": "Notre Mission",
+        "p1": "En simplifiant le processus de recherche et d'accès aux soins, ekose vise à améliorer l'expérience des patients et des professionnels de santé, en améliorant l'accès à des soins de qualité et en rationalisant l'ensemble du processus de soins."
+      },
+      "vision": {
+        "title": "Notre Vision",
+        "p1": "Nous envisageons un écosystème de santé où des soins fluides, efficaces et centrés sur le patient sont la norme, alimentés par une technologie intelligente et des informations basées sur les données."
+      },
+      "coreValues": {
+        "title": "Nos Valeurs Fondamentales",
+        "value1": {
+          "title": "Des soins sans compromis",
+          "description": "Chaque produit et service est conçu autour des besoins réels de la santé humaine."
+        },
+        "value2": {
+          "title": "La confiance par la technologie",
+          "description": "Des systèmes sécurisés, conformes et transparents garantissent la protection et la fiabilité des données."
+        },
+        "value3": {
+          "title": "La communauté d'abord",
+          "description": "Nous construisons pour les réalités locales - des kiosques ruraux aux hôpitaux connectés."
+        },
+        "value4": {
+          "title": "L'innovation avec un but",
+          "description": "Chaque fonctionnalité que nous concevons résout un problème clair et mesurable dans l'accès aux soins de santé."
+        }
+      },
+      "teamStory": {
+        "title": "L'histoire de l'équipe Ekose-Rx",
+        "p1": "Ekose-Rx est né d'une frustration partagée par un petit groupe de professionnels de la santé, de gestionnaires d'entreprise, de pharmaciens et de technologues qui avaient constaté de visu les obstacles à l'accès aux soins en Afrique.",
+        "p2": "En 2022, nos fondateurs ont commencé par développer un système de commande de pharmacie, conçu pour simplifier la façon dont les patients accédaient aux médicaments prescrits. Cependant, à mesure que la réglementation se resserrait et que l'équipe s'engageait avec davantage de prestataires de soins, nous avons réalisé que le vrai problème était bien plus profond, un écosystème de santé déconnecté. À la mi-2024, nous avons pivoté pour créer Ekose-Rx, une plateforme de santé modulaire et interopérable qui relie les soins de santé numériques et physiques grâce à des téléconsultations, des prescriptions électroniques et des API d'échange de données sécurisées."
+      },
+      "difference": {
+        "title": "Notre différence",
+        "p1": "Contrairement aux plateformes de télésanté générales, Ekose-Rx combine les soins numériques, l'interopérabilité des données et l'infrastructure communautaire pour atteindre les patients au-delà des smartphones et des limites de la ville. Nous n'offrons pas seulement des consultations, nous construisons un écosystème qui unit les acteurs de la santé, simplifie l'échange de données et permet une transformation durable du système."
+      },
+      "teamMission": {
+        "title": "La mission de notre équipe",
+        "p1": "Notre équipe combine l'expertise clinique, l'expertise commerciale et l'innovation technologique :",
+        "listItem1": "Les professionnels de la santé veillent à ce que la prestation de soins de la plateforme réponde aux normes cliniques et aux besoins des utilisateurs.",
+        "listItem2": "Les ingénieurs et les architectes de données conçoivent des systèmes sécurisés, évolutifs et conformes aux réglementations régionales.",
+        "listItem3": "Les spécialistes des affaires et des partenariats se concentrent sur la durabilité grâce à des collaborations avec des cliniques, des assureurs et des programmes gouvernementaux.",
+        "listItem4": "Le conseil consultatif favorise l'adoption dans les zones mal desservies, garantissant l'inclusivité et l'équilibre entre les sexes.",
+        "placeholder": "Ici, insérez ce qui suit, appelez-moi pour que je vous donne les informations.",
+        "conclusion": "Ensemble, nous partageons une mission : rendre les soins de santé accessibles, connectés et centrés sur le patient à travers l'Afrique."
+      }
     }
   },
   "teleconsultation": {

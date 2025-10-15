@@ -71,17 +71,27 @@ const Teleconsultation = () => {
           variants={containerVariants}
           className="pt-24 px-5 lg:px-16"
         >
-          <div className="w-full pl-6 lg:pl-12 pt-8 pb-0 rounded-3xl bg-gradient-to-r from-blue-50 to-turquoise-50 dark:from-gray-800 dark:to-gray-700 text-center lg:text-left md:flex gap-8">
+          <div className="w-full pl-6 lg:pl-12 pt-8 pb-0 rounded-3xl bg-gradient-to-br from-blue-50 via-white to-sky-50 dark:from-gray-800 dark:via-gray-700 dark:to-blue-900/20 text-center lg:text-left md:flex gap-8 shadow-xl">
             <div className="max-sm:pb-6 max-md:pr-6 mb-2 md:mb-6 flex flex-col md:justify-center md:w-[60%]">
-              <h1 className="font-extrabold mb-4 text-3xl md:text-5xl text-blue-primary dark:text-white animate-fadeIn">
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="inline-block mb-4"
+              >
+                <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900/40 text-[#134888] dark:text-sky-300 rounded-full text-sm font-semibold border border-blue-200 dark:border-blue-800">
+                  📱 Consultation en ligne 24/7
+                </span>
+              </motion.div>
+              <h1 className="font-extrabold mb-4 text-3xl md:text-5xl lg:text-6xl text-blue-primary dark:text-sky-400 animate-fadeIn leading-tight">
                 {t("teleconsultation.hero.titreHero")}
               </h1>
-              <p className="mb-4 text-gray-800 dark:text-gray-200 animate-fadeIn delay-100">{t("teleconsultation.hero.paraph")}</p>
+              <p className="mb-4 text-lg text-gray-700 dark:text-gray-200 animate-fadeIn delay-100 leading-relaxed">{t("teleconsultation.hero.paraph")}</p>
               <div className="flex flex-col gap-4 mt-6 animate-fadeIn delay-200">
                 <motion.button
                   whileHover={{ scale: 1.08 }}
                   whileTap={{ scale: 0.98 }}
-                  className="px-7 py-4 bg-primary-green text-white rounded-2xl font-bold shadow-xl hover:bg-green-700 transition w-fit mx-auto md:mx-0 animate-pulse"
+                  className="px-8 py-4 bg-gradient-to-r from-primary-green to-blue-500 text-white rounded-full font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 w-fit mx-auto md:mx-0"
                   aria-label={t("teleconsultation.hero.cta")}
                   onClick={() => window.location.href = '/login'}
                 >
@@ -96,12 +106,22 @@ const Teleconsultation = () => {
               </div>
             </div>
             <div className="flex justify-center items-center md:w-[40%] relative">
-              <img
+              <motion.img
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.8 }}
                 src="https://images.pexels.com/photos/4225880/pexels-photo-4225880.jpeg"
                 alt="Téléconsultation"
-                className="w-[250px] sm:w-[350px] lg:w-[500px] 2xl:w-[550px] rounded-3xl shadow-xl animate-fadeIn"
+                className="w-[250px] sm:w-[350px] lg:w-[500px] 2xl:w-[550px] rounded-3xl shadow-2xl"
               />
-              <ShieldCheck className="absolute top-4 right-4 text-primary-green bg-white rounded-full p-1 shadow-lg" size={40} aria-label="Sécurité" />
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: 0.5, type: "spring" }}
+                className="absolute top-4 right-4 bg-white dark:bg-gray-800 rounded-full p-2 shadow-lg"
+              >
+                <ShieldCheck className="text-primary-green" size={32} aria-label="Sécurité" />
+              </motion.div>
             </div>
           </div>
         </motion.div>
@@ -127,43 +147,63 @@ const Teleconsultation = () => {
           {items.map((item, index) => (
             <motion.div
               key={index}
-              whileHover={{ scale: 1.08, boxShadow: "0 8px 32px rgba(0,0,0,0.12)" }}
-              className={`${item.bgColor} rounded-2xl shadow-lg p-6 transform transition-transform hover:scale-105 animate-fadeIn group`}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -8, boxShadow: "0 20px 40px rgba(0,0,0,0.15)" }}
+              className={`${item.bgColor} rounded-2xl shadow-lg p-6 transform transition-all duration-300 animate-fadeIn group border border-gray-100 dark:border-gray-700`}
             >
-              <div className="flex items-center mb-4">
-                <div className="bg-blue-primary dark:bg-blue-600 w-12 h-12 rounded-xl flex items-center justify-center group-hover:bg-primary-green transition">
-                  <img src={item.icon} alt="" className="w-6 h-6" loading="lazy" />
+              <div className="flex flex-col items-center text-center mb-4">
+                <div className="bg-gradient-to-br from-blue-500 to-primary-green w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mb-4 shadow-lg">
+                  <img src={item.icon} alt="" className="w-8 h-8" loading="lazy" />
                 </div>
-                <h3 className="text-blue-primary dark:text-blue-600 font-bold ml-4">{item.title}</h3>
+                <h3 className="text-blue-primary dark:text-blue-400 font-bold text-lg">{item.title}</h3>
               </div>
-              <p className="text-gray-800 dark:text-gray-700">{item.description}</p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-center">{item.description}</p>
             </motion.div>
           ))}
         </motion.div>
       </motion.section>
 
       {/* Section Sécurité & Confidentialité */}
-      <section className="w-full py-10 bg-gradient-to-r from-blue-100 to-turquoise-100 dark:from-gray-900 dark:to-gray-800">
+      <motion.section
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="w-full py-16 bg-gradient-to-br from-blue-50 to-sky-50 dark:from-gray-900 dark:to-gray-800"
+      >
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-blue-primary dark:text-white mb-4 animate-fadeIn flex items-center justify-center gap-2">
-            <Lock size={28} className="text-primary-green" />
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-primary dark:text-white mb-6 animate-fadeIn flex items-center justify-center gap-3">
+            <Lock size={32} className="text-primary-green" />
             {t("teleconsultation.securite.titre")}
           </h2>
-          <p className="text-gray-700 dark:text-gray-300 mb-6 animate-fadeIn delay-100">{t("teleconsultation.securite.texte")}</p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 animate-fadeIn delay-100 leading-relaxed max-w-3xl mx-auto">{t("teleconsultation.securite.texte")}</p>
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center animate-fadeIn delay-200">
-            <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-6 w-full md:w-1/2 flex flex-col items-center">
-              <Lock size={32} className="text-primary-green mb-2" />
-              <h3 className="font-bold text-blue-primary dark:text-blue-400 mb-2">{t("teleconsultation.securite.protection")}</h3>
-              <p className="text-gray-700 dark:text-gray-300">{t("teleconsultation.securite.protectionTexte")}</p>
-            </div>
-            <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-6 w-full md:w-1/2 flex flex-col items-center">
-              <ShieldCheck size={32} className="text-primary-green mb-2" />
-              <h3 className="font-bold text-blue-primary dark:text-blue-400 mb-2">{t("teleconsultation.securite.confidentialite")}</h3>
-              <p className="text-gray-700 dark:text-gray-300">{t("teleconsultation.securite.confidentialiteTexte")}</p>
-            </div>
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-8 w-full md:w-1/2 flex flex-col items-center border border-gray-100 dark:border-gray-700 hover:shadow-2xl transition-all duration-300"
+            >
+              <div className="bg-green-100 dark:bg-green-900/30 p-4 rounded-full mb-4">
+                <Lock size={40} className="text-primary-green" />
+              </div>
+              <h3 className="font-bold text-xl text-blue-primary dark:text-blue-400 mb-3">{t("teleconsultation.securite.protection")}</h3>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-center">{t("teleconsultation.securite.protectionTexte")}</p>
+            </motion.div>
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-8 w-full md:w-1/2 flex flex-col items-center border border-gray-100 dark:border-gray-700 hover:shadow-2xl transition-all duration-300"
+            >
+              <div className="bg-blue-100 dark:bg-blue-900/30 p-4 rounded-full mb-4">
+                <ShieldCheck size={40} className="text-primary-green" />
+              </div>
+              <h3 className="font-bold text-xl text-blue-primary dark:text-blue-400 mb-3">{t("teleconsultation.securite.confidentialite")}</h3>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-center">{t("teleconsultation.securite.confidentialiteTexte")}</p>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Témoignages */}
       <section className="w-full py-10 bg-white dark:bg-gray-900">

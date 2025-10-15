@@ -103,6 +103,52 @@
     "copyright": "All rights reserved | Developed by INTERACT"
   },
   "pharmacies": {
+    "title": "Find the ideal pharmacy",
+    "description": "Access a premium selection of pharmacies, services and health advice, anywhere and anytime.",
+    "cta": "Find a pharmacy near me",
+    "heroImgAlt": "Premium pharmacy illustration",
+    "availableImgAlt": "Available pharmacies location",
+    "availableTitle": "Pharmacies available near you",
+    "availableDesc": "Browse the list of open pharmacies, locate them on the map and enjoy quick access to their services: hours, contact, delivery, health advice.",
+    "availableBadge": "Real-time updates",
+    "howTitle": "How does it work?",
+    "step1": "Search and geolocation",
+    "step1Desc": "Quickly find open pharmacies around you thanks to geolocation and the interactive map.",
+    "step2": "Service consultation",
+    "step2Desc": "Access hours, contacts, services offered, medication availability and delivery options.",
+    "step3": "Order and delivery",
+    "step3Desc": "Order your medications or health products online, choose home delivery or pharmacy pickup.",
+    "step4": "Personalized support",
+    "step4Desc": "Benefit from health advice, digitalized follow-up and support from expert pharmacists.",
+    "step5": "Security and confidentiality",
+    "step5Desc": "All your data and transactions are protected, medical confidentiality guaranteed.",
+    "badge1": "Geolocation",
+    "badge2": "Express delivery",
+    "badge3": "Personalized advice",
+    "badge4": "Security & confidentiality",
+    "mapImgAlt": "Interactive pharmacy map",
+    "medsImgAlt": "Available medications",
+    "storyTitle": "Your health, our priority",
+    "premium": "Premium selection",
+    "premiumDesc": "Access to certified, reliable partner pharmacies close to you.",
+    "open": "24/7 availability",
+    "openDesc": "Find an open pharmacy at any time, even on holidays.",
+    "delivery": "Express delivery",
+    "deliveryDesc": "Receive your medications at home, safely and confidentially.",
+    "advice": "Personalized advice",
+    "adviceDesc": "Direct dialogue with expert pharmacists for tailored health support.",
+    "digital": "Digitalized tracking",
+    "digitalDesc": "Order history, renewal reminders, notifications and mobile access.",
+    "security": "Security & confidentiality",
+    "securityDesc": "Data protection and respect for medical confidentiality.",
+    "access": "Accessibility",
+    "accessDesc": "Intuitive interface, adapted to all profiles and specific needs.",
+    "range": "Wide range",
+    "rangeDesc": "Medications, parapharmacy, natural products, accessories and wellness advice.",
+    "contact": "Contact a pharmacist",
+    "pharmacistImgAlt": "Expert pharmacist",
+    "deliveryImgAlt": "Pharmacy delivery",
+    "localiseImgAlt": "Pharmacy location",
     "hero": {
       "title": "Find the Closest Pharmacies Near You",
       "paraph": "In just seconds, locate nearby open pharmacies, check their hours and services, and get directions to reach them quickly. Enjoy easy access to healthcare, wherever you are and at any time."
@@ -116,7 +162,8 @@
       "liste4": "Verify medication availability",
       "telecharger": "Download the app now",
       "paraph2": "Easily find the closest pharmacies with our integrated geolocation system. The app provides real-time information on nearby open pharmacies, their hours, and the services they offer. Simplify your search and quickly access the medications you need, wherever you are."
-    }
+    },
+    "comingSoon": "Coming soon"
   },
   "inscription": {
     "titreHero": "Join Us!",
@@ -193,7 +240,7 @@
     },
     "history": {
       "titre": "Our History",
-      "paraph": "From an avoidable tragedy to a revolution in healthcare: the tragic loss of a 47-year-old diabetic patient in Cameroon due to critical delays and the lack of essential medical supplies. Despite the worsening of his condition, the hospital was unable to provide fast-acting insulin on time due to stock shortages and communication issues. Systemic inefficiencies in the healthcare system are evident through delays in registration and misplaced medical records, the lack of essential medications like insulin, overwhelmed and understaffed hospital personnel, as well as poor coordination. A tragedy that is not uncommon in Cameroon, and in many low-resource countries in Francophone Africa, where patients with chronic diseases regularly face these challenges. The preventable death of this patient is, sadly, a story shared by many. \"Inspired by this tragedy, we knew we had to act. Ekose-Rx evolved from a simple pharmacy ordering system to a comprehensive healthcare aggregator.\""
+      "paraph": "From an avoidable tragedy to a revolution in healthcare: the tragic loss of a 47-year-old diabetic patient in Cameroon due to critical delays and the lack of essential medical supplies. Despite the worsening of his condition, the hospital was unable to provide fast-acting insulin on time due to stock shortages and communication issues. Systemic inefficiencies in the healthcare system are evident through delays in registration and misplaced medical records, the lack of essential medications like insulin, overwhelmed and understaffed hospital personnel, as well as poor coordination. A tragedy that is not uncommon in Cameroon, and in many low-resource countries in Francophone Africa, where patients with chronic diseases regularly face these challenges. The preventable death of this patient is, sadly, a story shared by many. '''Inspired by this tragedy, we knew we had to act. Ekose-Rx evolved from a simple pharmacy ordering system to a comprehensive healthcare aggregator.'''"
     },
     "mission": {
       "mission": "Our Mission",
@@ -246,6 +293,69 @@
       "adressemail": "Email Address",
       "tel": "Phone Number",
       "Adresse": "Address"
+    },
+    "aboutPage": {
+      "badge": "Since 2022 - Healthcare Innovation",
+      "ctaButton": "Discover our team",
+      "brandStory": "Ekose-Rx Brand Story",
+      "subtitle": "Connecting Africa to quality healthcare, one interaction at a time.",
+      "stats": {
+        "patients": "Patients",
+        "doctors": "Doctors",
+        "consultations": "Consultations",
+        "satisfaction": "Satisfaction"
+      },
+      "whoWeAre": {
+        "title": "Who We Are",
+        "p1": "Ekose-Rx is a digital health technology company bridging the gap between patients, healthcare providers, and health systems across Africa.",
+        "p2": "We believe quality healthcare should not depend on location, income, or access to infrastructure. Through our secure teleconsultation, e-prescription, and API-driven ecosystem, we connect patients to verified doctors, pharmacies, emergency services and laboratories, creating a unified, affordable, and data-driven healthcare experience."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "p1": "By simplifying the process of finding and accessing healthcare, ekose aims to improve both patient and healthcare providers experience, enhancing access to quality care, and streamlining the overall healthcare process."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "p1": "We envision a healthcare ecosystem where seamless, efficient and patient-centered care is the standard, powered by intelligent technology and data-driven insights."
+      },
+      "coreValues": {
+        "title": "Our Core Values",
+        "value1": {
+          "title": "Care Without Compromise",
+          "description": "Every product and service is designed around real human health needs."
+        },
+        "value2": {
+          "title": "Trust Through Technology",
+          "description": "Secure, compliant, and transparent systems ensure data protection and reliability."
+        },
+        "value3": {
+          "title": "Community First",
+          "description": "We build for local realities — from rural kiosks to connected hospitals."
+        },
+        "value4": {
+          "title": "Innovation With Purpose",
+          "description": "Every feature we design solves a clear, measurable problem in healthcare access."
+        }
+      },
+      "teamStory": {
+        "title": "Ekose-Rx Team Story",
+        "p1": "Ekose-Rx was born from a shared frustration among a small group of healthcare professionals, Business managers, pharmacists, and technologists who had witnessed firsthand the barriers to accessible care in Africa.",
+        "p2": "In mid-2024, we pivoted to create Ekose-Rx, a modular, interoperable health platform that bridges digital and physical healthcare through teleconsultations, e-prescriptions, and secure data exchange APIs."
+      },
+      "difference": {
+        "title": "Our Difference",
+        "p1": "Unlike general telehealth platforms, Ekose-Rx combines digital care, data interoperability, and community infrastructure to reach patients beyond smartphones and city limits. We don’t just offer consultations, we build an ecosystem that unites health actors, simplifies data exchange, and enables long-term system transformation."
+      },
+      "teamMission": {
+        "title": "Our Team's Mission",
+        "p1": "Our team combines clinical insight, Business expertise and tech innovation:",
+        "listItem1": "Health professionals ensure the platform’s care delivery meets clinical standards and user needs.",
+        "listItem2": "Engineers and data architects design secure, scalable systems compliant with regional regulations.",
+        "listItem3": "Business and partnerships specialists focus on sustainability through collaborations with clinics, insurers, and government programs.",
+        "listItem4": "Advisory board drive adoption in underserved areas, ensuring inclusivity and gender balance.",
+        "placeholder": "Here insert the following, call me so i can give you the information.",
+        "conclusion": "Together, we share one mission: to make healthcare accessible, connected, and patient-centered across Africa."
+      }
     }
   },
   "teleconsultation": {

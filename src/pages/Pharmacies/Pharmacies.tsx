@@ -21,17 +21,17 @@ const Pharmacies: React.FC = () => {
           className="flex-1 text-center md:text-left"
         >
           <h1 className="text-4xl sm:text-5xl font-extrabold text-blue-900 dark:text-primary-green mb-4 drop-shadow-lg">
-            {t('pharmacies.title', 'Trouvez la pharmacie idéale')}
+            {t('pharmacies.title')}
           </h1>
           <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-200 mb-6">
-            {t('pharmacies.description', 'Accédez à une sélection premium de pharmacies, services et conseils santé, partout et à tout moment.')}
+            {t('pharmacies.description')}
           </p>
           <button
             className="px-8 py-4 bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold rounded-full shadow-xl hover:scale-110 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-green text-lg"
-            aria-label={t('pharmacies.cta', 'Trouver une pharmacie près de moi')}
+            aria-label={t('pharmacies.cta')}
             onClick={() => alert('Fonctionnalité à venir !')}
           >
-            {t('pharmacies.cta', 'Trouver une pharmacie près de moi')}
+            {t('pharmacies.cta')}
           </button>
         </motion.div>
         <motion.div
@@ -42,7 +42,7 @@ const Pharmacies: React.FC = () => {
         >
           <img
             src="/assets/images/pharmacy/hero.png"
-            alt={t('pharmacies.heroImgAlt', 'Illustration pharmacie premium')}
+            alt={t('pharmacies.heroImgAlt')}
             className="w-64 md:w-80 lg:w-96 h-auto rounded-2xl shadow-2xl border-4 border-white dark:border-primary-green object-contain bg-gradient-to-br from-blue-100 to-green-100"
             loading="lazy"
           />
@@ -58,14 +58,14 @@ const Pharmacies: React.FC = () => {
       >
         <img
           src="/assets/images/pharmacy/localise.png"
-          alt={t('pharmacies.availableImgAlt', 'Localisation des pharmacies disponibles')}
+          alt={t('pharmacies.availableImgAlt')}
           className="w-40 h-40 rounded-2xl object-contain shadow-xl border-4 border-primary-green mr-0 md:mr-8 mb-4 md:mb-0 animate-bounce"
           loading="lazy"
         />
         <div className="flex-1">
-          <h3 className="text-3xl font-extrabold text-primary-green mb-2">{t('pharmacies.availableTitle', 'Pharmacies disponibles près de vous')}</h3>
-          <p className="text-lg text-gray-700 dark:text-gray-200 mb-2">{t('pharmacies.availableDesc', "Consultez la liste des pharmacies ouvertes, localisez-les sur la carte et bénéficiez d'un accès rapide à leurs services : horaires, contact, livraison, conseils santé.")}</p>
-          <span className="inline-block px-4 py-1 bg-gradient-to-r from-blue-100 to-green-100 dark:from-primary-green dark:to-blue-900 text-primary-green dark:text-white rounded-full text-xs font-semibold shadow animate-pulse">{t('pharmacies.availableBadge', 'Mise à jour en temps réel')}</span>
+          <h3 className="text-3xl font-extrabold text-primary-green mb-2">{t('pharmacies.availableTitle')}</h3>
+          <p className="text-lg text-gray-700 dark:text-gray-200 mb-2">{t('pharmacies.availableDesc')}</p>
+          <span className="inline-block px-4 py-1 bg-gradient-to-r from-blue-100 to-green-100 dark:from-primary-green dark:to-blue-900 text-primary-green dark:text-white rounded-full text-xs font-semibold shadow animate-pulse">{t('pharmacies.availableBadge')}</span>
         </div>
       </motion.section>
       {/* Services section */}
@@ -78,31 +78,31 @@ const Pharmacies: React.FC = () => {
         className="w-full max-w-6xl mx-auto px-4 sm:px-8 lg:px-16 py-12 flex flex-col md:flex-row items-center gap-10 relative z-10 animate-fadeIn"
       >
         <div className="flex-1 flex flex-col justify-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 dark:text-primary-green mb-4">{t('pharmacies.howTitle', 'Comment ça marche ?')}</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 dark:text-primary-green mb-4">{t('pharmacies.howTitle')}</h2>
           <ol className="list-decimal list-inside space-y-4 mb-6 text-lg text-gray-700 dark:text-gray-200">
-            <li><strong className="text-primary-green">{t('pharmacies.step1', 'Recherche et géolocalisation')}</strong> : {t('pharmacies.step1Desc', "Trouvez rapidement les pharmacies ouvertes autour de vous grâce à la géolocalisation et à la carte interactive.")}</li>
-            <li><strong className="text-primary-green">{t('pharmacies.step2', 'Consultation des services')}</strong> : {t('pharmacies.step2Desc', "Accédez aux horaires, contacts, services proposés, disponibilité des médicaments et options de livraison.")}</li>
-            <li><strong className="text-primary-green">{t('pharmacies.step3', 'Commande et livraison')}</strong> : {t('pharmacies.step3Desc', "Commandez vos médicaments ou produits de santé en ligne, choisissez la livraison à domicile ou le retrait en pharmacie.")}</li>
-            <li><strong className="text-primary-green">{t('pharmacies.step4', 'Accompagnement personnalisé')}</strong> : {t('pharmacies.step4Desc', "Bénéficiez de conseils santé, d’un suivi digitalisé et d’un accompagnement par des pharmaciens experts.")}</li>
-            <li><strong className="text-primary-green">{t('pharmacies.step5', 'Sécurité et confidentialité')}</strong> : {t('pharmacies.step5Desc', "Toutes vos données et transactions sont protégées, respect du secret médical garanti.")}</li>
+            <li><strong className="text-primary-green">{t('pharmacies.step1')}</strong> : {t('pharmacies.step1Desc')}</li>
+            <li><strong className="text-primary-green">{t('pharmacies.step2')}</strong> : {t('pharmacies.step2Desc')}</li>
+            <li><strong className="text-primary-green">{t('pharmacies.step3')}</strong> : {t('pharmacies.step3Desc')}</li>
+            <li><strong className="text-primary-green">{t('pharmacies.step4')}</strong> : {t('pharmacies.step4Desc')}</li>
+            <li><strong className="text-primary-green">{t('pharmacies.step5')}</strong> : {t('pharmacies.step5Desc')}</li>
           </ol>
           <div className="flex flex-wrap gap-4 mt-4">
-            <span className="px-4 py-2 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-full font-semibold shadow">{t('pharmacies.badge1', 'Géolocalisation')}</span>
-            <span className="px-4 py-2 bg-gradient-to-r from-blue-500 to-green-400 text-white rounded-full font-semibold shadow">{t('pharmacies.badge2', 'Livraison express')}</span>
-            <span className="px-4 py-2 bg-gradient-to-r from-primary-green to-blue-500 text-white rounded-full font-semibold shadow">{t('pharmacies.badge3', 'Conseils personnalisés')}</span>
-            <span className="px-4 py-2 bg-gradient-to-r from-blue-400 to-green-500 text-white rounded-full font-semibold shadow">{t('pharmacies.badge4', 'Sécurité & confidentialité')}</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-full font-semibold shadow">{t('pharmacies.badge1')}</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-blue-500 to-green-400 text-white rounded-full font-semibold shadow">{t('pharmacies.badge2')}</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-primary-green to-blue-500 text-white rounded-full font-semibold shadow">{t('pharmacies.badge3')}</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-blue-400 to-green-500 text-white rounded-full font-semibold shadow">{t('pharmacies.badge4')}</span>
           </div>
         </div>
         <div className="flex-1 flex flex-col items-center justify-center gap-6">
           <img
             src="/assets/images/pharmacy/fond.png"
-            alt={t('pharmacies.mapImgAlt', 'Carte interactive pharmacie')}
+            alt={t('pharmacies.mapImgAlt')}
             className="w-72 h-auto rounded-2xl shadow-2xl border-4 border-primary-green object-cover bg-gradient-to-br from-blue-100 to-green-100 mb-4 animate-fadeIn"
             loading="lazy"
           />
           <img
             src="/assets/images/pharmacy/pillule_verte.svg"
-            alt={t('pharmacies.medsImgAlt', 'Médicaments disponibles')}
+            alt={t('pharmacies.medsImgAlt')}
             className="w-32 h-auto rounded-xl shadow-lg border-2 border-blue-100 object-contain animate-bounce"
             loading="lazy"
           />
@@ -116,41 +116,41 @@ const Pharmacies: React.FC = () => {
         className="w-full max-w-6xl mx-auto px-4 sm:px-8 lg:px-16 py-12 flex flex-col md:flex-row items-center gap-10 relative z-10 animate-fadeIn"
       >
         <div className="flex-1 flex flex-col justify-center">
-          <h2 className="text-3xl font-bold text-primary-green dark:text-blue-400 mb-4">{t('pharmacies.storyTitle', 'Votre santé, notre priorité')}</h2>
+          <h2 className="text-3xl font-bold text-primary-green dark:text-blue-400 mb-4">{t('pharmacies.storyTitle')}</h2>
           <ul className="space-y-4 mb-6 text-lg text-gray-700 dark:text-gray-200">
-            <li><strong className="text-primary-green">✔ {t('pharmacies.premium', 'Sélection premium')} :</strong> {t('pharmacies.premiumDesc', 'Accès à des pharmacies partenaires certifiées, fiables et proches de vous.')}</li>
-            <li><strong className="text-primary-green">✔ {t('pharmacies.open', 'Disponibilité 24h/24')} :</strong> {t('pharmacies.openDesc', 'Trouvez une pharmacie ouverte à toute heure, même les jours fériés.')}</li>
-            <li><strong className="text-primary-green">✔ {t('pharmacies.delivery', 'Livraison express')} :</strong> {t('pharmacies.deliveryDesc', 'Recevez vos médicaments à domicile, en toute sécurité et confidentialité.')}</li>
-            <li><strong className="text-primary-green">✔ {t('pharmacies.advice', 'Conseils personnalisés')} :</strong> {t('pharmacies.adviceDesc', 'Dialogue direct avec des pharmaciens experts pour un accompagnement santé sur-mesure.')}</li>
-            <li><strong className="text-primary-green">✔ {t('pharmacies.digital', 'Suivi digitalisé')} :</strong> {t('pharmacies.digitalDesc', 'Historique de vos commandes, rappels de renouvellement, notifications et accès mobile.')}</li>
-            <li><strong className="text-primary-green">✔ {t('pharmacies.security', 'Sécurité & confidentialité')} :</strong> {t('pharmacies.securityDesc', 'Protection de vos données et respect du secret médical.')}</li>
-            <li><strong className="text-primary-green">✔ {t('pharmacies.access', 'Accessibilité')} :</strong> {t('pharmacies.accessDesc', 'Interface intuitive, adaptée à tous les profils et besoins spécifiques.')}</li>
-            <li><strong className="text-primary-green">✔ {t('pharmacies.range', 'Large gamme')} :</strong> {t('pharmacies.rangeDesc', 'Médicaments, parapharmacie, produits naturels, accessoires et conseils bien-être.')}</li>
+            <li><strong className="text-primary-green">✔ {t('pharmacies.premium')} :</strong> {t('pharmacies.premiumDesc')}</li>
+            <li><strong className="text-primary-green">✔ {t('pharmacies.open')} :</strong> {t('pharmacies.openDesc')}</li>
+            <li><strong className="text-primary-green">✔ {t('pharmacies.delivery')} :</strong> {t('pharmacies.deliveryDesc')}</li>
+            <li><strong className="text-primary-green">✔ {t('pharmacies.advice')} :</strong> {t('pharmacies.adviceDesc')}</li>
+            <li><strong className="text-primary-green">✔ {t('pharmacies.digital')} :</strong> {t('pharmacies.digitalDesc')}</li>
+            <li><strong className="text-primary-green">✔ {t('pharmacies.security')} :</strong> {t('pharmacies.securityDesc')}</li>
+            <li><strong className="text-primary-green">✔ {t('pharmacies.access')} :</strong> {t('pharmacies.accessDesc')}</li>
+            <li><strong className="text-primary-green">✔ {t('pharmacies.range')} :</strong> {t('pharmacies.rangeDesc')}</li>
           </ul>
           <button
             className="px-6 py-3 bg-gradient-to-r from-blue-500 to-primary-green text-white font-bold rounded-full shadow-lg hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-green"
-            aria-label={t('pharmacies.contact', 'Contactez un pharmacien')}
+            aria-label={t('pharmacies.contact')}
             onClick={() => alert('Contact direct à venir !')}
           >
-            {t('pharmacies.contact', 'Contactez un pharmacien')}
+            {t('pharmacies.contact')}
           </button>
         </div>
         <div className="flex-1 flex flex-col items-center justify-center gap-6">
           <img
             src="/assets/images/pharmacy/portrait-female-pharmacist-working-drugstore.png"
-            alt={t('pharmacies.pharmacistImgAlt', 'Pharmacien expert')}
+            alt={t('pharmacies.pharmacistImgAlt')}
             className="w-72 h-auto rounded-2xl shadow-2xl border-4 border-primary-green object-cover bg-gradient-to-br from-blue-100 to-green-100 mb-4 animate-fadeIn"
             loading="lazy"
           />
           <img
             src="/assets/images/pharmacy/livreur.png"
-            alt={t('pharmacies.deliveryImgAlt', 'Livraison pharmacie')}
+            alt={t('pharmacies.deliveryImgAlt')}
             className="w-40 h-auto rounded-xl shadow-lg border-2 border-blue-100 object-contain animate-bounce"
             loading="lazy"
           />
           <img
             src="/assets/images/pharmacy/localise.png"
-            alt={t('pharmacies.localiseImgAlt', 'Localisation pharmacie')}
+            alt={t('pharmacies.localiseImgAlt')}
             className="w-32 h-auto rounded-xl shadow-lg border-2 border-primary-green object-contain animate-bounce"
             loading="lazy"
           />
