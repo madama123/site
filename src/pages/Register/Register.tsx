@@ -25,7 +25,7 @@ const Register: React.FC = () => {
     if (typeof window !== 'undefined' && !document.getElementById('register-animations')) {
       const style = document.createElement('style');
       style.id = 'register-animations';
-      style.innerHTML = `
+      style.textContent = `
         @keyframes zoomFadeIn {
           0% { opacity: 0; transform: scale(0.95) translateY(40px); }
           100% { opacity: 1; transform: scale(1) translateY(0); }
