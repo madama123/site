@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 
 const Pharmacies: React.FC = () => {
@@ -12,6 +13,10 @@ const Pharmacies: React.FC = () => {
 
   return (
     <main className="min-h-screen bg-transparent py-0 flex flex-col items-center justify-center relative overflow-x-hidden">
+      <Helmet>
+        <title>{t('seo.pharmacies.title')}</title>
+        <meta name="description" content={t('seo.pharmacies.description')} />
+      </Helmet>
       {/* Hero section */}
       <section className="w-full flex flex-col md:flex-row items-center justify-between gap-8 pt-32 pb-8 px-4 sm:px-8 lg:px-16 relative z-10">
         <motion.div

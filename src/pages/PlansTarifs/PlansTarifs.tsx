@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 
 import { Star, Crown, Award } from "lucide-react";
 
@@ -74,6 +75,10 @@ const PlansTarifs = () => {
       animate={{ opacity: 1 }}
       className="pb-16 lg:pb-20"
     >
+      <Helmet>
+        <title>{t('seo.plans.title')}</title>
+        <meta name="description" content={t('seo.plans.description')} />
+      </Helmet>
       {/* Espace entre nav et bannière */}
       <div className="h-12 md:h-16 lg:h-20" aria-hidden="true"></div>
       {/* Section Banniere avec image animée */}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 
 const Rendezvous: React.FC = () => {
   const { t } = useTranslation();
@@ -15,6 +16,10 @@ const Rendezvous: React.FC = () => {
 
   return (
     <div className="min-h-screen pt-24 py-8 px-2 sm:px-4 lg:px-8 bg-gradient-to-br from-blue-50 to-turquoise-50 dark:from-gray-900 dark:to-gray-800">
+      <Helmet>
+        <title>{t('seo.rendezvous.title')}</title>
+        <meta name="description" content={t('seo.rendezvous.description')} />
+      </Helmet>
       <div className="max-w-2xl mx-auto">
         <h1 className="text-3xl sm:text-4xl font-extrabold text-blue-primary dark:text-white mb-8 text-center">
           {t('rendezvous.title')}

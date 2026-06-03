@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 import React from "react";
 import AppStoreLinks from "../../components/AppStoreLinks";
 import { ShieldCheck, Lock, UserCircle, HelpCircle } from "lucide-react";
@@ -57,6 +58,10 @@ const Teleconsultation = () => {
 
   return (
     <main className="max-w-[1900px] mx-auto">
+      <Helmet>
+        <title>{t('seo.teleconsultation.title')}</title>
+        <meta name="description" content={t('seo.teleconsultation.description')} />
+      </Helmet>
       {/* Section Hero */}
       <motion.section
         id="landing"

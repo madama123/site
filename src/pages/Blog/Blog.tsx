@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 import { BlogHeroSection } from './HeroSection';
 import { BlogPosts } from './BlogPosts';
 import OlderArticles from './OlderArticles';
@@ -9,6 +10,10 @@ const Blog: React.FC = () => {
 
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+      <Helmet>
+        <title>{t('seo.blog.title')}</title>
+        <meta name="description" content={t('seo.blog.description')} />
+      </Helmet>
       <BlogHeroSection />
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">

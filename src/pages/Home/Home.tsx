@@ -12,27 +12,19 @@ const JoinCommunity = lazy(() => import("../../components/JoinCommunity"));
 const Carousel = lazy(() => import("../../components/Carousel"));
 import SpecialtyCardSlider from "../../components/SpecialtyCardSlider";
 
-const testimonials = [
-  {
-    name: "Dr. Jean Dupont",
-    role: "Médecin généraliste",
-    text: "Ekose RX a révolutionné ma façon de suivre mes patients à distance. Simple, rapide et sécurisé !",
-    avatar: "/assets/images/avatarhoe.png"
-  },
-  {
-    name: "Sophie M.",
-    role: "Patiente",
-    text: "J’ai pu consulter un spécialiste sans me déplacer, et mes ordonnances sont toujours accessibles.",
-    avatar: "/assets/images/avatarfem.png"
-  },
-  // Ajoutez d'autres témoignages ici avec avatar
-];
-
+interface Testimonial {
+  name: string;
+  role: string;
+  text: string;
+  avatar: string;
+}
 
 function TestimonialsSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const { t } = useTranslation();
+
+  const testimonials = (t('HomePage.testimonials.items', { returnObjects: true }) || []) as Testimonial[];
 
   return (
     <section ref={ref} className="py-16 bg-gray-50 dark:bg-gray-900 w-full">
@@ -45,7 +37,7 @@ function TestimonialsSection() {
         {t('HomePage.testimonials.title')}
       </motion.h2>
       <div className="flex flex-wrap justify-center gap-8 max-w-4xl mx-auto">
-        {testimonials.map((t, i) => (
+        {Array.isArray(testimonials) && testimonials.map((item, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 30 }}
@@ -53,10 +45,10 @@ function TestimonialsSection() {
             transition={{ duration: 0.5, delay: 0.2 + i * 0.2 }}
             className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 max-w-xs flex flex-col items-center"
           >
-            <img src={t.avatar} alt={t.name} className="w-16 h-16 rounded-full mb-3 object-cover border-2 border-primary-green shadow" />
-            <p className="text-gray-700 dark:text-gray-200 italic mb-4 text-center">“{t.text}”</p>
-            <div className="font-semibold text-primary-600">{t.name}</div>
-            <div className="text-sm text-gray-500">{t.role}</div>
+            <img src={item.avatar} alt={item.name} className="w-16 h-16 rounded-full mb-3 object-cover border-2 border-primary-green shadow" />
+            <p className="text-gray-700 dark:text-gray-200 italic mb-4 text-center">“{item.text}”</p>
+            <div className="font-semibold text-primary-600">{item.name}</div>
+            <div className="text-sm text-gray-500">{item.role}</div>
           </motion.div>
         ))}
       </div>

@@ -24,6 +24,60 @@
       "pharmacies": "Pharmacies"
     }
   },
+  "seo": {
+    "about": {
+      "title": "About Us - Ekose RX",
+      "description": "Discover the history, mission and values of Ekose RX, your modern healthcare platform."
+    },
+    "pharmacies": {
+      "title": "On-Duty Pharmacies - Ekose RX",
+      "description": "Easily find on-duty or nearby pharmacies open 24/7."
+    },
+    "rendezvous": {
+      "title": "Book an Appointment - Ekose RX",
+      "description": "Schedule your medical consultations online or in person with our healthcare professionals."
+    },
+    "urgences": {
+      "title": "24/7 Emergencies - Ekose RX",
+      "description": "Quickly access emergency numbers and order an ambulance in case of critical need."
+    },
+    "blog": {
+      "title": "Health Blog & Advice - Ekose RX",
+      "description": "Find articles written by medical experts to take care of your health daily."
+    },
+    "teleconsultation": {
+      "title": "Online Consultation - Ekose RX",
+      "description": "Consult general practitioners or specialists via video without leaving your home."
+    },
+    "plans": {
+      "title": "Plans & Pricing - Ekose RX",
+      "description": "Check our custom plans and subscriptions for individuals and healthcare professionals."
+    },
+    "contact": {
+      "title": "Contact Us - Ekose RX",
+      "description": "Have a question, partnership proposal, or need support? Write to the Ekose RX team."
+    },
+    "faq": {
+      "title": "FAQ - Ekose RX",
+      "description": "Find answers to the most frequently asked questions about using Ekose RX."
+    },
+    "legal": {
+      "title": "Legal Notice - Ekose RX",
+      "description": "Read the legal information and terms of use for the Ekose RX website."
+    },
+    "privacy": {
+      "title": "Privacy Policy - Ekose RX",
+      "description": "Learn how we protect your health data and personal information."
+    },
+    "login": {
+      "title": "Login - Ekose RX",
+      "description": "Log in to your personal Ekose RX space to access your health services."
+    },
+    "register": {
+      "title": "Sign Up - Ekose RX",
+      "description": "Create your Ekose RX account in a few moments to easily manage your health."
+    }
+  },
   "HomePage": {
     "hero": {
       "titreHero": "Welcome to Ekose RX",
@@ -43,7 +97,21 @@
       "serviceText": "We are available whenever you need us"
     },
     "testimonials": {
-      "title": "They trust us"
+      "title": "They trust us",
+      "items": [
+        {
+          "name": "Dr. Jean Dupont",
+          "role": "General practitioner",
+          "text": "Ekose RX has revolutionized the way I monitor my patients remotely. Simple, fast and secure!",
+          "avatar": "/assets/images/avatarhoe.png"
+        },
+        {
+          "name": "Sophie M.",
+          "role": "Patient",
+          "text": "I was able to consult a specialist without having to travel, and my prescriptions are always accessible.",
+          "avatar": "/assets/images/avatarfem.png"
+        }
+      ]
     },
     "titleConsultVisio": {
       "En": "By ",

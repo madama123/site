@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 import AboutCarte from '../../components/AboutCarte/AboutCarte';
 import { motion } from 'framer-motion';
 import { Globe, Lightbulb, Target, Heart, Lock, Handshake, Users, Building, CheckCircle2, TrendingUp, UserCheck, Activity, ArrowDown } from 'lucide-react';
@@ -30,6 +31,10 @@ const About = () => {
 
   return (
     <main className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 overflow-x-hidden">
+      <Helmet>
+        <title>{t('seo.about.title')}</title>
+        <meta name="description" content={t('seo.about.description')} />
+      </Helmet>
       {/* Hero Title */}
       <motion.section
         {...sectionAnimation}

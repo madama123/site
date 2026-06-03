@@ -24,6 +24,60 @@
       "pharmacies": "Pharmacies"
     }
   },
+  "seo": {
+    "about": {
+      "title": "À Propos - Ekose RX",
+      "description": "Découvrez l'histoire, la mission et les valeurs d'Ekose RX, votre plateforme de santé moderne."
+    },
+    "pharmacies": {
+      "title": "Pharmacies de Garde - Ekose RX",
+      "description": "Trouvez facilement une pharmacie de garde ou à proximité ouverte 24h/24 et 7j/7."
+    },
+    "rendezvous": {
+      "title": "Prendre Rendez-vous - Ekose RX",
+      "description": "Planifiez vos consultations médicales en ligne ou en présentiel avec nos professionnels de santé."
+    },
+    "urgences": {
+      "title": "Urgences 24/7 - Ekose RX",
+      "description": "Accédez rapidement aux numéros d'urgence et commandez une ambulance en cas de besoin critique."
+    },
+    "blog": {
+      "title": "Blog Santé & Conseils - Ekose RX",
+      "description": "Retrouvez des articles rédigés par des experts médicaux pour prendre soin de votre santé au quotidien."
+    },
+    "teleconsultation": {
+      "title": "Téléconsultation Médicale - Ekose RX",
+      "description": "Consultez des médecins généralistes ou spécialistes en visio sans vous déplacer."
+    },
+    "plans": {
+      "title": "Plans & Tarifs - Ekose RX",
+      "description": "Consultez nos abonnements et tarifs adaptés pour les particuliers et les professionnels de santé."
+    },
+    "contact": {
+      "title": "Contactez-nous - Ekose RX",
+      "description": "Une question, un partenariat ou un besoin de support ? Écrivez à l'équipe Ekose RX."
+    },
+    "faq": {
+      "title": "Foire Aux Questions - Ekose RX",
+      "description": "Retrouvez les réponses aux questions les plus fréquentes sur l'utilisation d'Ekose RX."
+    },
+    "legal": {
+      "title": "Mentions Légales - Ekose RX",
+      "description": "Consultez les informations légales et les conditions d'utilisation du site Ekose RX."
+    },
+    "privacy": {
+      "title": "Politique de Confidentialité - Ekose RX",
+      "description": "Découvrez comment nous protégeons vos données de santé et informations personnelles."
+    },
+    "login": {
+      "title": "Connexion - Ekose RX",
+      "description": "Connectez-vous à votre espace personnel Ekose RX pour accéder à vos services de santé."
+    },
+    "register": {
+      "title": "Inscription - Ekose RX",
+      "description": "Créez votre compte Ekose RX en quelques instants pour gérer votre santé en toute simplicité."
+    }
+  },
   "inscription": {
     "titreHero": "Rejoignez Nous!",
     "text": "Vous êtes médecin ou pharmacien et vous souhaitez rendre vos services plus accessibles à vos patients ?Rejoignez-nous dès maintenant !",
@@ -60,7 +114,21 @@
       "serviceText": "Nous sommes disponibles quand vous le souhaitez "
     },
     "testimonials": {
-      "title": "Ils nous font confiance"
+      "title": "Ils nous font confiance",
+      "items": [
+        {
+          "name": "Dr. Jean Dupont",
+          "role": "Médecin généraliste",
+          "text": "Ekose RX a révolutionné ma façon de suivre mes patients à distance. Simple, rapide et sécurisé !",
+          "avatar": "/assets/images/avatarhoe.png"
+        },
+        {
+          "name": "Sophie M.",
+          "role": "Patiente",
+          "text": "J’ai pu consulter un spécialiste sans me déplacer, et mes ordonnances sont toujours accessibles.",
+          "avatar": "/assets/images/avatarfem.png"
+        }
+      ]
     },
     "meta": {
       "title": "Bienvenue sur Ekose RX",

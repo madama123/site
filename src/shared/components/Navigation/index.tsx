@@ -187,7 +187,7 @@ const MobileServicesAccordion = ({ onLinkClick }: { onLinkClick: () => void }) =
             <Link
               key={service.href}
               to={service.href}
-              className="block px-3 py-2 text-gray-650 dark:text-gray-300 hover:text-[#003273] dark:hover:text-[#32E800] rounded-xl transition-all font-medium text-sm flex items-center gap-2"
+              className="px-3 py-2 text-gray-650 dark:text-gray-300 hover:text-[#003273] dark:hover:text-[#32E800] rounded-xl transition-all font-medium text-sm flex items-center gap-2"
               onClick={onLinkClick}
             >
               <span>{service.icon}</span>

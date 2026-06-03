@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, MessageSquare, Shield } from 'lucide-react';
 
@@ -25,6 +26,10 @@ const Contact: React.FC = () => {
 
   return (
     <main className="min-h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 overflow-x-hidden pt-24 pb-16">
+      <Helmet>
+        <title>{t('seo.contact.title')}</title>
+        <meta name="description" content={t('seo.contact.description')} />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-blue-50 via-white to-sky-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900/20 text-center overflow-hidden">
         <div className="absolute inset-0 opacity-10">

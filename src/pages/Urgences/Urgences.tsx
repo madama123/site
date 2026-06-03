@@ -1,6 +1,6 @@
-
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 import Button from "../../components/Button";
 import AppStoreLinks from "../../components/AppStoreLinks";
 
@@ -42,6 +42,10 @@ const Urgences = () => {
 
   return (
     <main className="bg-white dark:bg-gray-900 min-h-screen">
+      <Helmet>
+        <title>{t('seo.urgences.title')}</title>
+        <meta name="description" content={t('seo.urgences.description')} />
+      </Helmet>
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

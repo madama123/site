@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, LogIn } from 'lucide-react';
 // Header et Footer sont gérés par MainLayout (Navigation)
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -36,6 +37,10 @@ const Login: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col relative bg-gradient-to-r from-blue-50 to-turquoise-50 dark:from-gray-800 dark:to-gray-700 pt-24 pb-24 overflow-x-hidden">
+      <Helmet>
+        <title>{t('seo.login.title')}</title>
+        <meta name="description" content={t('seo.login.description')} />
+      </Helmet>
       {/* Bande blanche entre le header et le bloc login */}
       <div className="h-8 w-full bg-white"></div>
       <div className="flex-1 flex items-center justify-center p-4 animate-fadeInUp">
