@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 import './i18n';
-import { NotificationProvider } from './components/NotificationProvider';
 import { ThemeProvider } from './shared/providers/ThemeProvider';
 import { LanguageProvider } from './shared/providers/LanguageProvider';
 import { MenuLanguageProvider } from './context/MenuLanguageContext/MenuLanguageContext';
@@ -14,11 +13,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <LanguageProvider>
       <ThemeProvider>
         <MenuLanguageProvider>
-          <NotificationProvider>
-            <HelmetProvider>
-              <App />
-            </HelmetProvider>
-          </NotificationProvider>
+          <HelmetProvider>
+            <App />
+          </HelmetProvider>
         </MenuLanguageProvider>
       </ThemeProvider>
     </LanguageProvider>

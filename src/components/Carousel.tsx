@@ -7,21 +7,21 @@ const testimonials = [
     id: 1,
     name: "Dr. Sophie Martin",
     role: "Médecin généraliste",
-    image: "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=150",
+    image: "/assets/images/Carousel/avatar1.jpg",
     quote: "Une plateforme qui révolutionne la télémédecine."
   },
   {
     id: 2,
     name: "Jean Dupont",
     role: "Patient",
-    image: "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=150",
+    image: "/assets/images/Carousel/avatar2.jpg",
     quote: "Consultation rapide et efficace depuis chez moi."
   },
   {
     id: 3,
     name: "Dr. Thomas Bernard",
     role: "Cardiologue",
-    image: "https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=150",
+    image: "/assets/images/Carousel/avatar3.jpg",
     quote: "Un outil indispensable pour le suivi des patients."
   }
 ];

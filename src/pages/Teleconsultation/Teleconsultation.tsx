@@ -115,7 +115,7 @@ const Teleconsultation = () => {
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8 }}
-                src="https://images.pexels.com/photos/4225880/pexels-photo-4225880.jpeg"
+                src="/assets/images/Teleconsultation/doctor_teleconsult.jpg"
                 alt="Téléconsultation"
                 className="w-[250px] sm:w-[350px] lg:w-[500px] 2xl:w-[550px] rounded-3xl shadow-2xl"
               />
