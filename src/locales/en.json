@@ -521,5 +521,63 @@
     "comingSoon": "Coming Soon",
     "description": "Stay tuned for exciting articles and updates."
   },
-  "loading": "Loading..."
+  "loading": "Loading...",
+  "contactPage": {
+    "title": "Contact Us",
+    "requiredFields": "Please fill out all fields.",
+    "success": "Thank you for your message! We will reply to you shortly.",
+    "labelName": "Name",
+    "placeholderName": "Your name",
+    "labelEmail": "Email",
+    "placeholderEmail": "Your email",
+    "labelMessage": "Message",
+    "placeholderMessage": "Your message",
+    "submit": "Send",
+    "socialTitle": "Follow us on social media",
+    "emailLabel": "Email"
+  },
+  "faqPage": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "How does Ekose RX work?",
+        "answer": "Ekose RX allows you to book appointments, consult a doctor remotely, access your medical records and much more, all online and securely."
+      },
+      {
+        "question": "Is it secure?",
+        "answer": "Yes, all data is encrypted and we comply with GDPR regulations."
+      },
+      {
+        "question": "How do I contact support?",
+        "answer": "You can use the contact form or write to support@ekose.com."
+      },
+      {
+        "question": "Can I use Ekose RX on mobile?",
+        "answer": "Yes, the platform is responsive and a mobile application is coming soon!"
+      },
+      {
+        "question": "What payment methods are accepted?",
+        "answer": "Credit card, PayPal, and soon Mobile Money."
+      }
+    ]
+  },
+  "legalPage": {
+    "title": "Legal Notice",
+    "editor": "This site is published by Ekose RX. All rights reserved.",
+    "director": "Publication Director: Dr. Ekose",
+    "contact": "Contact",
+    "host": "Host: Vercel Inc. / Netlify Inc.",
+    "question": "For any legal questions, contact us by email."
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "intro": "We respect your privacy. Your data is encrypted and is never sold to third parties.",
+    "request": "You can request the deletion of your data at any time by writing to support@ekose.com.",
+    "moreInfo": "For more information, please check our GDPR policy or contact us."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "back": "Back to Home"
+  }
 }

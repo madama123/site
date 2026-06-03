@@ -554,5 +554,63 @@
     "status": "Statut",
     "actions": "Actions"
   },
-  "loading": "Chargement..."
+  "loading": "Chargement...",
+  "contactPage": {
+    "title": "Contactez-nous",
+    "requiredFields": "Merci de remplir tous les champs.",
+    "success": "Merci pour votre message ! Nous vous répondrons rapidement.",
+    "labelName": "Nom",
+    "placeholderName": "Votre nom",
+    "labelEmail": "Email",
+    "placeholderEmail": "Votre email",
+    "labelMessage": "Message",
+    "placeholderMessage": "Votre message",
+    "submit": "Envoyer",
+    "socialTitle": "Suivez-nous sur les réseaux sociaux",
+    "emailLabel": "Email"
+  },
+  "faqPage": {
+    "title": "Foire aux questions",
+    "items": [
+      {
+        "question": "Comment fonctionne Ekose RX ?",
+        "answer": "Ekose RX permet de prendre rendez-vous, consulter un médecin à distance, accéder à vos dossiers médicaux et bien plus, le tout en ligne et en toute sécurité."
+      },
+      {
+        "question": "Est-ce sécurisé ?",
+        "answer": "Oui, toutes les données sont chiffrées et nous respectons la réglementation RGPD."
+      },
+      {
+        "question": "Comment contacter le support ?",
+        "answer": "Vous pouvez utiliser le formulaire de contact ou écrire à support@ekose.com."
+      },
+      {
+        "question": "Puis-je utiliser Ekose RX sur mobile ?",
+        "answer": "Oui, la plateforme est responsive et une application mobile arrive bientôt !"
+      },
+      {
+        "question": "Quels sont les moyens de paiement acceptés ?",
+        "answer": "Carte bancaire, PayPal, et bientôt Mobile Money."
+      }
+    ]
+  },
+  "legalPage": {
+    "title": "Mentions légales",
+    "editor": "Ce site est édité par Ekose RX. Tous droits réservés.",
+    "director": "Directeur de la publication : Dr Ekose",
+    "contact": "Contact",
+    "host": "Hébergeur : Vercel Inc. / Netlify Inc.",
+    "question": "Pour toute question juridique, contactez-nous par email."
+  },
+  "privacyPage": {
+    "title": "Politique de confidentialité",
+    "intro": "Nous respectons votre vie privée. Vos données sont chiffrées et ne sont jamais revendues à des tiers.",
+    "request": "Vous pouvez demander la suppression de vos données à tout moment en écrivant à support@ekose.com.",
+    "moreInfo": "Pour plus d'informations, consultez notre politique RGPD ou contactez-nous."
+  },
+  "notFound": {
+    "title": "Page non trouvée",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "back": "Retour à l'accueil"
+  }
 }
