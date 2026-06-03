@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Accueil -->
+  <url>
+    <loc>https://ekose-rx.com/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ekose-rx.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ekose-rx.com/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ekose-rx.com/" />
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- À Propos -->
+  <url>
+    <loc>https://ekose-rx.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ekose-rx.com/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ekose-rx.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ekose-rx.com/about" />
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Téléconsultation -->
+  <url>
+    <loc>https://ekose-rx.com/teleconsultation</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ekose-rx.com/teleconsultation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ekose-rx.com/en/teleconsultation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ekose-rx.com/teleconsultation" />
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Pharmacies -->
+  <url>
+    <loc>https://ekose-rx.com/pharmacies</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ekose-rx.com/pharmacies" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ekose-rx.com/en/pharmacies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ekose-rx.com/pharmacies" />
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Rendez-vous -->
+  <url>
+    <loc>https://ekose-rx.com/rendez-vous</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ekose-rx.com/rendez-vous" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ekose-rx.com/en/rendez-vous" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ekose-rx.com/rendez-vous" />
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Urgences -->
+  <url>
+    <loc>https://ekose-rx.com/urgences</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ekose-rx.com/urgences" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ekose-rx.com/en/urgences" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ekose-rx.com/urgences" />
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Plans & Tarifs -->
+  <url>
+    <loc>https://ekose-rx.com/plans-tarifs</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ekose-rx.com/plans-tarifs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ekose-rx.com/en/plans-tarifs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ekose-rx.com/plans-tarifs" />
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://ekose-rx.com/blog</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ekose-rx.com/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ekose-rx.com/en/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ekose-rx.com/blog" />
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://ekose-rx.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ekose-rx.com/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ekose-rx.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ekose-rx.com/contact" />
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://ekose-rx.com/faq</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ekose-rx.com/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ekose-rx.com/en/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ekose-rx.com/faq" />
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

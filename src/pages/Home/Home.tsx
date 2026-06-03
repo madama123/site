@@ -69,6 +69,21 @@ const Home = () => {
         <meta property="og:image" content="/assets/images/HomePage/og-image.jpg" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalOrganization",
+              "name": "Ekose RX",
+              "url": "https://ekose-rx.com",
+              "logo": "https://ekose-rx.com/assets/images/logos/logo.svg",
+              "description": "Gérez tout votre parcours de santé depuis une seule application : téléconsultation, ordonnances, pharmacies de garde, et urgences 24/7.",
+              "sameAs": [
+                "https://www.linkedin.com/company/ekose-rx"
+              ]
+            }
+          `}
+        </script>
       </Helmet>
       {/* Hero Section moderne et animée avec fond SVG */}
       <section className="w-full max-w-6xl mx-auto py-20 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-between border-b border-gray-100 dark:border-gray-800 relative overflow-hidden">
