@@ -4,9 +4,11 @@
 
 /* Variables CSS pour les couleurs Ekose RX */
 :root {
+  --ekose-navy: #003273;
   --ekose-blue: #134888;
   --ekose-blue-dark: #0A458E;
   --ekose-green: #32E800;
+  --ekose-green-dark: #2AC100;
   --ekose-blue-light: #E8F1FF;
 }
 
@@ -16,6 +18,7 @@
 
 /* Styles de base avec dégradé turquoise subtil */
 body {
+  font-family: 'Inter', 'Poppins', sans-serif;
   background: linear-gradient(135deg, #FAFAFA 0%, #E0F7FA 50%, #FAFAFA 100%);
   @apply text-gray-900;
   transition: background 0.5s ease, color 0.3s ease;
@@ -129,11 +132,11 @@ body.dark {
 }
 
 /* Amélioration des transitions pour le changement de thème */
-* {
+a, button, input, textarea, select, svg, .card-ekose, .section-light, .section-blue, body {
   @apply transition-colors duration-300 ease-in-out;
 }
 
 /* Focus states améliorés */
 .focus-ring {
-  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-800;
+  @apply focus:outline-none focus:ring-2 focus:ring-[#32E800] focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-800;
 }

@@ -53,16 +53,16 @@ const LanguageSelector = ({ className = '' }: { className?: string }) => {
         <Globe size={20} />
       </button>
       {showLangMenu && (
-        <div className="absolute right-0 mt-2 bg-white dark:bg-gray-900 shadow rounded z-50 min-w-[120px]">
+        <div className="absolute right-0 mt-2 bg-white dark:bg-gray-905 shadow-xl rounded-xl z-50 min-w-[140px] border border-gray-100 dark:border-gray-800 py-1">
           <button
             onClick={() => { changeLanguage('fr'); setShowLangMenu(false); }}
-            className={`block px-4 py-2 w-full text-left hover:bg-gray-100 dark:hover:bg-gray-800 ${language === 'fr' ? 'font-bold text-primary-600' : ''}`}
+            className={`block px-4 py-2.5 w-full text-left hover:bg-gray-50 dark:hover:bg-gray-800 text-sm transition-colors ${language === 'fr' ? 'font-bold text-[#003273] dark:text-[#32E800]' : 'text-gray-700 dark:text-gray-300'}`}
           >
             Français
           </button>
           <button
             onClick={() => { changeLanguage('en'); setShowLangMenu(false); }}
-            className={`block px-4 py-2 w-full text-left hover:bg-gray-100 dark:hover:bg-gray-800 ${language === 'en' ? 'font-bold text-primary-600' : ''}`}
+            className={`block px-4 py-2.5 w-full text-left hover:bg-gray-50 dark:hover:bg-gray-800 text-sm transition-colors ${language === 'en' ? 'font-bold text-[#003273] dark:text-[#32E800]' : 'text-gray-700 dark:text-gray-300'}`}
           >
             English
           </button>
@@ -78,11 +78,11 @@ const AuthButtons = ({ isMobile, onLinkClick }: { isMobile?: boolean; onLinkClic
   if (isMobile) {
     return (
       <div className="flex flex-col space-y-2 pt-2">
-        <Link to="/login" className="flex items-center w-full px-3 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition" onClick={onLinkClick}>
-          <LogIn className="h-5 w-5 mr-2" />
+        <Link to="/login" className="flex items-center w-full px-3 py-2 bg-[#003273] text-white rounded-xl hover:bg-[#0A458E] transition" onClick={onLinkClick}>
+          <LogIn className="h-5 w-5 mr-2 text-[#32E800]" />
           <span>{t('nav.login')}</span>
         </Link>
-        <Link to="/register" className="flex items-center w-full px-3 py-2 bg-primary-100 text-primary-700 rounded-md hover:bg-primary-200 transition border border-primary-600" onClick={onLinkClick}>
+        <Link to="/register" className="flex items-center w-full px-3 py-2 bg-[#32E800] text-white rounded-xl hover:bg-[#2AC100] transition" onClick={onLinkClick}>
           <UserCheck className="h-5 w-5 mr-2" />
           <span>{t('nav.register')}</span>
         </Link>
@@ -92,11 +92,11 @@ const AuthButtons = ({ isMobile, onLinkClick }: { isMobile?: boolean; onLinkClic
 
   return (
     <div className="flex items-center space-x-2">
-      <Link to="/login" className="flex items-center space-x-2 bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition ml-2">
-        <LogIn className="h-5 w-5" />
+      <Link to="/login" className="flex items-center space-x-2 bg-[#003273] hover:bg-[#0A458E] text-white px-4 py-2 rounded-xl transition ml-2 shadow-md hover:shadow-lg">
+        <LogIn className="h-5 w-5 text-[#32E800]" />
         <span>{t('nav.login')}</span>
       </Link>
-      <Link to="/register" className="flex items-center space-x-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-md hover:bg-primary-200 transition ml-2 border border-primary-600">
+      <Link to="/register" className="flex items-center space-x-2 bg-[#32E800] hover:bg-[#2AC100] text-white px-4 py-2 rounded-xl transition ml-2 shadow-md hover:shadow-lg">
         <UserCheck className="h-5 w-5" />
         <span>{t('nav.register')}</span>
       </Link>
@@ -123,7 +123,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="bg-gradient-to-r from-blue-50 to-turquoise-50 dark:from-gray-800 dark:to-gray-700 backdrop-blur shadow-md fixed w-full z-50 border-b border-gray-100 dark:border-gray-800">
+    <nav className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg fixed w-full z-50 border-b border-gray-100/50 dark:border-gray-800/50">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-16 px-4 md:px-8 lg:px-16">
         <Link to="/" className="flex items-center group" aria-label="Accueil Ekose-Rx">
           <img src="/assets/images/logos/logo.svg" alt="Ekose-Rx" className="h-8 w-auto mr-2 transition-transform group-hover:scale-105" />
@@ -135,12 +135,13 @@ const Navigation = () => {
             <Link
               key={link.href}
               to={link.href}
-              className="text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium px-2 py-1 rounded flex items-center"
+              className="text-gray-700 dark:text-gray-200 hover:text-[#003273] dark:hover:text-[#32E800] transition-all duration-200 font-semibold px-3 py-2 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-850 flex items-center"
               aria-label={link.label}
             >
               {link.label}
             </Link>
           ))}
+          <div className="h-6 w-[1px] bg-gray-200 dark:bg-gray-700 mx-2"></div>
           <ThemeToggler />
           <LanguageSelector />
           <AuthButtons />
@@ -150,7 +151,7 @@ const Navigation = () => {
         <div className="md:hidden flex items-center">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-gray-700 hover:text-primary-600 focus:outline-none"
+            className="text-gray-700 dark:text-gray-200 hover:text-[#003273] dark:hover:text-[#32E800] focus:outline-none p-2 rounded-xl transition-all"
             aria-label="Ouvrir le menu"
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -160,20 +161,20 @@ const Navigation = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white/10 dark:bg-gray-900/10 backdrop-blur shadow-lg border-t border-gray-100 dark:border-gray-800 animate-fade-in">
+        <div className="md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg shadow-xl border-t border-gray-100 dark:border-gray-800 animate-fade-in">
           <div className="px-4 py-4 space-y-2 flex flex-col">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 to={link.href}
-                className="block px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 rounded transition-colors font-medium flex items-center"
+                className="block px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-[#003273] dark:hover:text-[#32E800] rounded-xl transition-all font-semibold hover:bg-gray-50 dark:hover:bg-gray-800"
                 aria-label={link.label}
                 onClick={closeMenu}
               >
                 {link.label}
               </Link>
             ))}
-            <div className="flex items-center justify-start space-x-4 pt-2">
+            <div className="flex items-center justify-start space-x-4 pt-2 border-t border-gray-100 dark:border-gray-800 mt-2">
               <ThemeToggler />
               <LanguageSelector />
             </div>
