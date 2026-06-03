@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { Navigation } from "../../shared/components/Navigation";
 import { Footer } from "../../shared/components/Footer";
+import { ScrollToTop } from "../../shared/components/ScrollToTop";
 
 const MainLayout: React.FC = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const MainLayout: React.FC = () => {
         <Outlet />
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
