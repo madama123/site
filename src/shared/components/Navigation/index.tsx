@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, LogIn, Sun, Moon, Globe, UserCheck } from 'lucide-react';
+import { Menu, X, LogIn, Sun, Moon, Globe, UserCheck, ChevronDown } from 'lucide-react';
 import { useTheme } from '../../hooks/useTheme';
 import { useLanguage } from '../../../shared/hooks/useLanguage';
 import { useTranslation } from 'react-i18next';
@@ -104,6 +104,101 @@ const AuthButtons = ({ isMobile, onLinkClick }: { isMobile?: boolean; onLinkClic
   );
 };
 
+const ServicesDropdown = ({ className = '', onLinkClick }: { className?: string; onLinkClick?: () => void }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isOpen]);
+
+  const services = [
+    { href: '/teleconsultation', label: t('nav.services.teleconsultation'), icon: '📱' },
+    { href: '/rendez-vous', label: t('nav.services.appointments'), icon: '📅' },
+    { href: '/pharmacies', label: t('nav.services.pharmacies'), icon: '🏥' },
+    { href: '/urgences', label: t('nav.services.emergency'), icon: '🚑' },
+  ];
+
+  return (
+    <div className={`relative ${className}`} ref={dropdownRef}>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="text-gray-700 dark:text-gray-200 hover:text-[#003273] dark:hover:text-[#32E800] transition-all duration-200 font-semibold px-3 py-2 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 flex items-center gap-1 focus:outline-none"
+      >
+        <span>{t('nav.services_label')}</span>
+        <ChevronDown size={16} className={`transition-transform duration-200 ${isOpen ? 'rotate-180 text-[#32E800]' : ''}`} />
+      </button>
+      {isOpen && (
+        <div className="absolute left-0 mt-2 bg-white dark:bg-gray-950 shadow-xl rounded-2xl z-50 min-w-[240px] border border-gray-100 dark:border-gray-800 py-2 animate-fade-in">
+          {services.map((service) => (
+            <Link
+              key={service.href}
+              to={service.href}
+              onClick={() => {
+                setIsOpen(false);
+                if (onLinkClick) onLinkClick();
+              }}
+              className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors"
+            >
+              <span className="text-xl">{service.icon}</span>
+              <span className="font-semibold text-sm text-gray-900 dark:text-white hover:text-[#003273] dark:hover:text-[#32E800]">
+                {service.label}
+              </span>
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+const MobileServicesAccordion = ({ onLinkClick }: { onLinkClick: () => void }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
+
+  const services = [
+    { href: '/teleconsultation', label: t('nav.services.teleconsultation'), icon: '📱' },
+    { href: '/rendez-vous', label: t('nav.services.appointments'), icon: '📅' },
+    { href: '/pharmacies', label: t('nav.services.pharmacies'), icon: '🏥' },
+    { href: '/urgences', label: t('nav.services.emergency'), icon: '🚑' },
+  ];
+
+  return (
+    <div className="space-y-1">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full flex items-center justify-between px-3 py-2 text-gray-700 dark:text-gray-200 font-semibold rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 text-left focus:outline-none"
+      >
+        <span>{t('nav.services_label')}</span>
+        <ChevronDown size={18} className={`transition-transform duration-200 ${isOpen ? 'rotate-180 text-[#32E800]' : ''}`} />
+      </button>
+      {isOpen && (
+        <div className="pl-6 space-y-1 border-l-2 border-gray-150 dark:border-gray-800 ml-3">
+          {services.map((service) => (
+            <Link
+              key={service.href}
+              to={service.href}
+              className="block px-3 py-2 text-gray-650 dark:text-gray-300 hover:text-[#003273] dark:hover:text-[#32E800] rounded-xl transition-all font-medium text-sm flex items-center gap-2"
+              onClick={onLinkClick}
+            >
+              <span>{service.icon}</span>
+              <span>{service.label}</span>
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
 // --- Composant Navigation principal refactorisé ---
 
@@ -114,11 +209,8 @@ const Navigation = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   const navLinks = [
-    { href: '/teleconsultation', label: t('nav.services.teleconsultation') },
     { href: '/plans-tarifs', label: t('nav.pricing') },
     { href: '/blog', label: t('nav.blog') },
-    { href: '/pharmacies', label: t('nav.services.pharmacies') },
-    { href: '/urgences', label: t('nav.services.emergency') },
     { href: '/about', label: t('nav.about') },
   ];
 
@@ -131,6 +223,7 @@ const Navigation = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center space-x-4">
+          <ServicesDropdown />
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -163,6 +256,7 @@ const Navigation = () => {
       {isMenuOpen && (
         <div className="lg:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg shadow-xl border-t border-gray-100 dark:border-gray-800 animate-fade-in">
           <div className="px-4 py-4 space-y-2 flex flex-col">
+            <MobileServicesAccordion onLinkClick={closeMenu} />
             {navLinks.map((link) => (
               <Link
                 key={link.href}
