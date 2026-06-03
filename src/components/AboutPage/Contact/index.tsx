@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Boutton from "../../Button";
+import Button from "../../Button";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -26,7 +26,7 @@ const Contact = () => {
               <input type="email" placeholder={t("about.contact.email")} />
               <textarea placeholder={t("about.contact.message")}></textarea>
             </form>
-            <Boutton
+            <Button
               label={t("about.contact.soumettre")}
               className="border-2 border-blue-primary mx-auto hover:bg-blue-primary hover:text-white "
               type="submit"

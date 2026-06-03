@@ -23,7 +23,7 @@ Object.defineProperty(window, 'localStorage', {
 });
 
 // Mock de fetch
-global.fetch = vi.fn();
+globalThis.fetch = vi.fn();
 
 // Mock de matchMedia
 Object.defineProperty(window, 'matchMedia', {

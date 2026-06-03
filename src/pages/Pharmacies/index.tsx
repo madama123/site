@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import Boutton from "../../components/Button";
+import Button from "../../components/Button";
 import AppPlayLink from "../../components/AppPLayLink";
 import { useTranslation } from "react-i18next";
 
@@ -148,7 +148,7 @@ const Pharmacies = () => {
             className="flex flex-col items-center"
             variants={fadeInUp}
           >
-            <Boutton
+            <Button
                   label={t("pharmacies.section2.telecharger")}
               className="bg-blue-primary text-white hover:bg-blue-header"
             />

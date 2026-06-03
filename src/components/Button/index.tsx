@@ -10,7 +10,7 @@ interface ButtonProps {
   py?: string; 
 }
 
-const Boutton: React.FC<ButtonProps> = ({
+const Button: React.FC<ButtonProps> = ({
   label,
   onClick,
   className = "",
@@ -31,4 +31,4 @@ const Boutton: React.FC<ButtonProps> = ({
   );
 };
 
-export default Boutton;
+export default Button;

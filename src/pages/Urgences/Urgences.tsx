@@ -89,7 +89,6 @@ const Urgences = () => {
                   <Button
                     label={t("UrgencesPage.consultationImmediate.telecharger")}
                     className="bg-white text-red-600 hover:bg-red-50 px-10 py-4 text-lg font-bold shadow-2xl rounded-full"
-                    primary
                   />
                 </motion.div>
               </div>
