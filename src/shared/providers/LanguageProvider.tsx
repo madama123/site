@@ -13,6 +13,8 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     i18n.changeLanguage(language);
     localStorage.setItem('language', language);
+    // Met à jour dynamiquement la langue du document HTML pour éviter les auto-traductions intempestives
+    document.documentElement.setAttribute('lang', language);
   }, [language]);
 
   const changeLanguage = (lang: Language) => setLanguage(lang);

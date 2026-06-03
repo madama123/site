@@ -130,7 +130,7 @@ const Navigation = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden lg:flex items-center space-x-4">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -148,7 +148,7 @@ const Navigation = () => {
         </div>
 
         {/* Mobile menu button */}
-        <div className="md:hidden flex items-center">
+        <div className="lg:hidden flex items-center">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-gray-700 dark:text-gray-200 hover:text-[#003273] dark:hover:text-[#32E800] focus:outline-none p-2 rounded-xl transition-all"
@@ -161,7 +161,7 @@ const Navigation = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg shadow-xl border-t border-gray-100 dark:border-gray-800 animate-fade-in">
+        <div className="lg:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg shadow-xl border-t border-gray-100 dark:border-gray-800 animate-fade-in">
           <div className="px-4 py-4 space-y-2 flex flex-col">
             {navLinks.map((link) => (
               <Link
