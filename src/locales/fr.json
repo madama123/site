@@ -278,16 +278,16 @@
     "section3": {
       "titre": "Rencontrez Des Médecins Qualifiés Près De Chez Vous",
       "paraph": "Accédez à un vaste réseau de médecins qualifiés et expérimentés, prêts à vous accompagner. Grâce à notre plateforme, trouvez rapidement et facilement le médecin idéal près de chez vous, pour des consultations adaptées à vos disponibilités et à vos préférences. Simplifiez votre accès aux soins et bénéficiez d'un soutien médical fiable, où que vous soyez."
-    },
-    "rendezvous": {
-      "title": "Mes rendez-vous médicaux",
-      "imageAlt": "Image de la page Rendez-vous",
-      "comingSoon": "Fonctionnalité de prise de rendez-vous bientôt disponible",
-      "description": "La possibilité de prendre rendez-vous directement via l'application sera bientôt active. Restez à l'écoute !",
-      "noAppointments": "Aucun rendez-vous à afficher pour le moment.",
-      "addPlaceholder": "Ajouter un nouveau rendez-vous...",
-      "addButton": "Ajouter Rendez-vous"
     }
+  },
+  "rendezvous": {
+    "title": "Mes rendez-vous médicaux",
+    "imageAlt": "Image de la page Rendez-vous",
+    "comingSoon": "Fonctionnalité de prise de rendez-vous bientôt disponible",
+    "description": "La possibilité de prendre rendez-vous directement via l'application sera bientôt active. Restez à l'écoute !",
+    "noAppointments": "Aucun rendez-vous à afficher pour le moment.",
+    "addPlaceholder": "Ajouter un nouveau rendez-vous...",
+    "addButton": "Ajouter Rendez-vous"
   },
   "UrgencesPage": {
     "badge": "Service d'urgence 24/7",

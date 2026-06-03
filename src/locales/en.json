@@ -276,6 +276,15 @@
       "paraph": "Access a vast network of qualified and experienced doctors ready to assist you. With our platform, quickly and easily find the ideal doctor near you for consultations tailored to your schedule and preferences. Simplify your access to healthcare and enjoy reliable medical support, wherever you are."
     }
   },
+  "rendezvous": {
+    "title": "My medical appointments",
+    "imageAlt": "Rendez-vous page image",
+    "comingSoon": "Appointment booking feature coming soon",
+    "description": "The ability to book appointments directly through the application will be active soon. Stay tuned!",
+    "noAppointments": "No appointments to display for now.",
+    "addPlaceholder": "Add a new appointment...",
+    "addButton": "Add Appointment"
+  },
   "UrgencesPage": {
     "badge": "Emergency service 24/7",
     "whyChoose": "Why choose our emergency service?",
