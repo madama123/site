@@ -122,6 +122,40 @@ const Urgences = () => {
         </div>
       </motion.section>
 
+      {/* Bandeau des numéros d'urgence cliquables (UX de crise) */}
+      <section className="bg-red-50 dark:bg-gray-800 border-b border-red-200 dark:border-red-900/30 py-6 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="text-center md:text-left">
+            <h3 className="text-xl font-bold text-red-700 dark:text-red-400">
+              🚨 {t("UrgencesPage.Bandeau.titre")}
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 text-sm">
+              {t("UrgencesPage.Bandeau.texte")}
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="tel:15"
+              className="flex items-center gap-3 px-6 py-3 bg-red-600 hover:bg-red-700 text-white rounded-xl font-bold shadow-lg shadow-red-600/20 hover:scale-105 transition-all"
+            >
+              <span>📞 SAMU (15)</span>
+            </a>
+            <a
+              href="tel:112"
+              className="flex items-center gap-3 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold shadow-lg shadow-blue-600/20 hover:scale-105 transition-all"
+            >
+              <span>📞 Urgences (112)</span>
+            </a>
+            <a
+              href="tel:18"
+              className="flex items-center gap-3 px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-xl font-bold shadow-lg shadow-orange-600/20 hover:scale-105 transition-all"
+            >
+              <span>📞 Pompiers (18)</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <motion.section
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -184,7 +218,7 @@ const Urgences = () => {
               className="md:w-1/2"
             >
               <img
-                src="/assets/images/urgences/Shanks_Leroux_A_white_ambulance_vehicle_with_emergency_lights_on_a38e485a-c1fd-44b9-a39a-fcf9c0828041.png"
+                src="/assets/images/urgences/ambulance.png"
                 alt="Ambulance"
                 className="rounded-3xl shadow-2xl"
                 loading="lazy"

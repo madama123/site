@@ -290,6 +290,10 @@
     "addButton": "Ajouter Rendez-vous"
   },
   "UrgencesPage": {
+    "Bandeau": {
+      "titre": "Numéros d'urgence nationaux",
+      "texte": "Appel gratuit 24h/24 depuis n'importe quel téléphone"
+    },
     "badge": "Service d'urgence 24/7",
     "whyChoose": "Pourquoi choisir notre service d'urgence ?",
     "downloadNow": "Téléchargez l'application maintenant :",

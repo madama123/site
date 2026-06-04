@@ -1,73 +1,53 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
+import { useNavigate } from 'react-router-dom';
+import { Calendar, User } from 'lucide-react';
 
 const Rendezvous: React.FC = () => {
   const { t } = useTranslation();
-  const [appointments, setAppointments] = useState<string[]>([]);
-  const [newAppointment, setNewAppointment] = useState<string>('');
-
-  const handleAddAppointment = () => {
-    if (newAppointment.trim()) {
-      setAppointments([...appointments, newAppointment]);
-      setNewAppointment('');
-    }
-  };
+  const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen pt-24 py-8 px-2 sm:px-4 lg:px-8 bg-gradient-to-br from-blue-50 to-turquoise-50 dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen pt-24 py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-emerald-50 dark:from-gray-900 dark:to-gray-800">
       <Helmet>
         <title>{t('seo.rendezvous.title')}</title>
         <meta name="description" content={t('seo.rendezvous.description')} />
       </Helmet>
       <div className="max-w-2xl mx-auto">
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-blue-primary dark:text-white mb-8 text-center">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-blue-900 dark:text-white mb-8 text-center">
           {t('rendezvous.title')}
         </h1>
-        <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-4 sm:p-6 mb-6 flex flex-col items-center">
+        <div className="bg-white dark:bg-gray-900 rounded-3xl shadow-xl p-6 sm:p-8 mb-6 flex flex-col items-center border border-gray-100 dark:border-gray-800">
           <img
             src="/assets/images/prise de redez vous/hero.png"
             alt={t('rendezvous.imageAlt')}
-            className="mb-4 w-full max-w-xs sm:max-w-md h-auto object-cover rounded-xl shadow-md"
+            className="mb-6 w-full max-w-xs sm:max-w-md h-auto object-cover rounded-2xl shadow-lg border-4 border-white dark:border-gray-800"
           />
-          <h2 className="text-lg sm:text-xl font-semibold mb-2 text-blue-primary dark:text-blue-400 text-center">{t('rendezvous.comingSoon')}</h2>
-          <p className="text-gray-700 dark:text-gray-300 text-center">{t('rendezvous.description')}</p>
+          <h2 className="text-xl sm:text-2xl font-bold mb-3 text-blue-900 dark:text-primary-green text-center">
+            {t('rendezvous.comingSoon')}
+          </h2>
+          <p className="text-gray-600 dark:text-gray-300 text-center mb-8 max-w-md">
+            {t('rendezvous.description')}
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
+            <button
+              onClick={() => navigate('/login')}
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-900 hover:bg-blue-800 text-white rounded-xl font-bold shadow-lg transition-all hover:scale-105"
+            >
+              <User size={18} />
+              <span>{t('nav.login')}</span>
+            </button>
+            <button
+              onClick={() => navigate('/contact')}
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-primary-green hover:bg-green-700 text-white rounded-xl font-bold shadow-lg transition-all hover:scale-105"
+            >
+              <Calendar size={18} />
+              <span>{t('pharmacies.contact')}</span>
+            </button>
+          </div>
         </div>
-        {/* Liste des rendez-vous */}
-        <div className="mb-6">
-          <h3 className="text-lg font-bold text-blue-primary dark:text-white mb-2 text-center">{t('rendezvous.title')}</h3>
-          {appointments.length > 0 ? (
-            <ul className="space-y-3">
-              {appointments.map((appointment, index) => (
-                <li key={index} className="bg-blue-100 dark:bg-gray-800 rounded-lg px-4 py-3 shadow flex items-center justify-between">
-                  <span className="text-gray-800 dark:text-gray-200">{appointment}</span>
-                  {/* Option de suppression si besoin */}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="text-gray-500 text-center">{t('rendezvous.noAppointments')}</p>
-          )}
-        </div>
-        {/* Formulaire pour ajouter un rendez-vous */}
-        <form
-          className="flex flex-col sm:flex-row items-center gap-3 sm:gap-2 justify-center"
-          onSubmit={e => { e.preventDefault(); handleAddAppointment(); }}
-        >
-          <input
-            type="text"
-            value={newAppointment}
-            onChange={(e) => setNewAppointment(e.target.value)}
-            placeholder={t('rendezvous.addPlaceholder')}
-            className="border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-2 w-full sm:w-auto focus:outline-none focus:ring-2 focus:ring-blue-400"
-          />
-          <button
-            type="submit"
-            className="bg-primary-green text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-700 transition shadow"
-          >
-            {t('rendezvous.addButton')}
-          </button>
-        </form>
       </div>
     </div>
   );

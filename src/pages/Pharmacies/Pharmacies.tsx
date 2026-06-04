@@ -2,9 +2,11 @@ import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const Pharmacies: React.FC = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     document.body.style.background = 'linear-gradient(135deg, #e0f7fa 0%, #f8fafc 60%, #d1fae5 100%)';
@@ -34,7 +36,7 @@ const Pharmacies: React.FC = () => {
           <button
             className="px-8 py-4 bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold rounded-full shadow-xl hover:scale-110 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-green text-lg"
             aria-label={t('pharmacies.cta')}
-            onClick={() => alert('Fonctionnalité à venir !')}
+            onClick={() => window.open('https://3237.fr', '_blank', 'noopener,noreferrer')}
           >
             {t('pharmacies.cta')}
           </button>
@@ -135,7 +137,7 @@ const Pharmacies: React.FC = () => {
           <button
             className="px-6 py-3 bg-gradient-to-r from-blue-500 to-primary-green text-white font-bold rounded-full shadow-lg hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-green"
             aria-label={t('pharmacies.contact')}
-            onClick={() => alert('Contact direct à venir !')}
+            onClick={() => navigate('/contact')}
           >
             {t('pharmacies.contact')}
           </button>

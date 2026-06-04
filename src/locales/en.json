@@ -286,6 +286,10 @@
     "addButton": "Add Appointment"
   },
   "UrgencesPage": {
+    "Bandeau": {
+      "titre": "National Emergency Numbers",
+      "texte": "Free calls 24/7 from any phone"
+    },
     "badge": "Emergency service 24/7",
     "whyChoose": "Why choose our emergency service?",
     "downloadNow": "Download the app now:",
