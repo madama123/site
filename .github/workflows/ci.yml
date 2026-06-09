@@ -11,10 +11,10 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
@@ -42,12 +42,12 @@ jobs:
       cancel-in-progress: false
     steps:
       - name: Deploy to VPS via SSH
-        uses: appleboy/ssh-action@029f5b4aeeeb58fdfe1410a5d17f801b2d3e846c # v1.2.0
+        uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
-          port: ${{ secrets.VPS_PORT || 22 }}
+          port: 22
           script: |
             set -e
             cd /var/www/ekose-rx-vitrine/site
@@ -57,7 +57,7 @@ jobs:
             docker compose up --build -d
             echo "⏳ Waiting for healthcheck..."
             sleep 10
-            if curl -sf http://127.0.0.1:3000/health > /dev/null; then
+            if curl -sf http://127.0.0.1:8081/health > /dev/null; then
               echo "✅ Deployment successful!"
             else
               echo "❌ Health check failed"

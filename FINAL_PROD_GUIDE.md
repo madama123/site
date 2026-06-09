@@ -6,40 +6,36 @@ Ce document récapitule les étapes pour déployer le site vitrine Ekose RX sur 
 
 ## 🏗️ Architecture du Déploiement
 
-```
+```text
 Internet → DNS (ekose-rx.com)
          → VPS 195.110.59.18
-           → Nginx (port 80/443) — Reverse Proxy + SSL + Headers sécurité
-             → Docker Container (port 3000:8080) — Nginx + App React statique
+           → Nginx Docker (port 80/443) — Reverse Proxy global + SSL
+             → ekose-showcase-web (port 8080) — Nginx + App React statique
 ```
 
-| Composant       | Technologie                     |
-|-----------------|---------------------------------|
-| **Frontend**    | React 18 / Vite (build statique) |
-| **Conteneur**   | Docker (Nginx Alpine, non-root)  |
-| **Orchestration** | Docker Compose v2              |
-| **Reverse Proxy** | Nginx (hôte VPS)               |
-| **SSL**         | Let's Encrypt via Certbot        |
-| **Firewall**    | UFW (ports 22, 80, 443)         |
-| **CI/CD**       | GitHub Actions → SSH → VPS      |
+| Composant         | Technologie                      |
+| ----------------- | -------------------------------- |
+| **Frontend**      | React 18 / Vite (build statique) |
+| **Conteneur**     | Docker (Nginx Alpine, non-root)  |
+| **Orchestration** | Docker Compose v2                |
+| **Reverse Proxy** | Nginx Docker (ekose-rx-nginx-1)  |
+| **SSL**           | Let's Encrypt via Certbot        |
+| **Firewall**      | UFW (ports 22, 80, 443)          |
+| **CI/CD**         | GitHub Actions → SSH → VPS       |
 
 ---
 
 ## 🛠️ Prérequis VPS
 
-Le script `setup-vps.sh` installe automatiquement les prérequis manquants :
-- Docker & Docker Compose v2
-- Nginx
-- Certbot
-- UFW
+Le VPS dispose déjà de Docker, Docker Compose, et d'un Nginx Dockerisé (`ekose-rx-nginx-1`) qui sert de reverse proxy global pour tous les services.
 
 ---
 
 ## ⚡ Déploiement Initial (Première fois)
 
-### 1. Configurer le DNS (Hostinger)
+### 1. Configurer le DNS (Bluehost)
 
-1. Allez dans la gestion DNS de votre domaine sur Hostinger
+1. Allez dans la gestion DNS de votre domaine sur Bluehost
 2. Enregistrement **A** : `@` → `195.110.59.18`
 3. Enregistrement **CNAME** : `www` → `ekose-rx.com`
 4. Attendez la propagation DNS (5-30 min)
@@ -50,36 +46,45 @@ Le script `setup-vps.sh` installe automatiquement les prérequis manquants :
 # Connexion SSH
 ssh root@195.110.59.18
 
-# Cloner le repo (ou git pull si déjà cloné)
+# Accéder au projet
 cd /var/www/ekose-rx-vitrine/site
 git pull origin main
 
-# Rendre le script exécutable et le lancer
-chmod +x setup-vps.sh
-sudo ./setup-vps.sh
+# Lancer le conteneur du site vitrine
+docker compose up --build -d
 ```
 
-Le script vous demandera :
-- **Nom de domaine** (ex: `ekose-rx.com`)
-- **Email** (pour Let's Encrypt)
+### 3. Générer le certificat SSL
 
-Il effectuera automatiquement :
-1. ✅ Mise à jour du système
-2. ✅ Installation des prérequis
-3. ✅ Configuration du firewall UFW
-4. ✅ Configuration Nginx reverse proxy + headers de sécurité
-5. ✅ Build et lancement Docker
-6. ✅ Génération du certificat SSL
-7. ✅ Vérification post-déploiement
+```bash
+# Arrêter momentanément le reverse proxy global
+docker stop ekose-rx-nginx-1
 
-### 3. Vérification
+# Générer le certificat Let's Encrypt
+sudo certbot certonly --standalone \
+  -d ekose-rx.com -d www.ekose-rx.com \
+  --email ekorogaetan5@gmail.com --agree-tos -n
+
+# Relancer le reverse proxy
+docker start ekose-rx-nginx-1
+```
+
+### 4. Configurer le Reverse Proxy global
+
+Ajouter le bloc site vitrine dans `/var/www/ekose-rx/nginx/nginx.conf` (à la fin du fichier) puis recharger :
+
+```bash
+docker exec ekose-rx-nginx-1 nginx -s reload
+```
+
+### 5. Vérification
 
 ```bash
 # Vérifier le conteneur
 docker ps
 
-# Vérifier Nginx
-sudo systemctl status nginx
+# Tester le healthcheck local
+curl -sf http://127.0.0.1:8081/health
 
 # Tester HTTPS
 curl -I https://ekose-rx.com
@@ -93,12 +98,15 @@ curl -sI https://ekose-rx.com | grep -E "(Strict-Transport|X-Frame|X-Content|Per
 ## 🔄 Mises à jour (Déploiements suivants)
 
 ### Automatique (via CI/CD)
+
 Chaque `git push` sur `main` déclenche automatiquement :
+
 1. Lint + TypeCheck + Build (CI)
 2. Déploiement SSH vers le VPS (CD)
 3. Health check post-déploiement
 
 ### Manuel (si nécessaire)
+
 ```bash
 ssh root@195.110.59.18
 cd /var/www/ekose-rx-vitrine/site
@@ -117,27 +125,26 @@ docker logs -f ekose-showcase-web
 # État du conteneur (inclut le healthcheck)
 docker inspect --format='{{.State.Health.Status}}' ekose-showcase-web
 
-# Logs Nginx (reverse proxy hôte)
-sudo tail -f /var/log/nginx/access.log
-sudo tail -f /var/log/nginx/error.log
+# Logs Nginx (reverse proxy global)
+docker logs -f ekose-rx-nginx-1
 ```
 
 ---
 
 ## 🔒 Sécurité
 
-| Protection | État |
-|------------|------|
-| HTTPS (TLS 1.2+) | ✅ Certbot auto-renew |
-| HSTS (2 ans) | ✅ `Strict-Transport-Security` |
-| Anti-Clickjacking | ✅ `X-Frame-Options: DENY` |
-| Anti-MIME Sniffing | ✅ `X-Content-Type-Options: nosniff` |
-| CSP | ✅ Whitelist stricte |
-| Permissions-Policy | ✅ Camera/micro/payment bloqués |
-| Firewall UFW | ✅ Ports 22, 80, 443 uniquement |
-| Container non-root | ✅ `USER nginx` |
-| Filesystem read-only | ✅ `read_only: true` |
-| Healthcheck Docker | ✅ Toutes les 30s |
+| Protection           | État                                       |
+| -------------------- | ------------------------------------------ |
+| HTTPS (TLS 1.2+)    | ✅ Certbot auto-renew                       |
+| HSTS (2 ans)         | ✅ `Strict-Transport-Security`              |
+| Anti-Clickjacking    | ✅ `X-Frame-Options: DENY`                  |
+| Anti-MIME Sniffing   | ✅ `X-Content-Type-Options: nosniff`        |
+| CSP                  | ✅ Whitelist stricte                         |
+| Permissions-Policy   | ✅ Camera/micro/payment bloqués             |
+| Firewall UFW         | ✅ Ports 22, 80, 443 uniquement             |
+| Container non-root   | ✅ `USER nginx`                              |
+| Filesystem read-only | ✅ `read_only: true`                         |
+| Healthcheck Docker   | ✅ Toutes les 30s                            |
 
 ---
 
@@ -146,32 +153,34 @@ sudo tail -f /var/log/nginx/error.log
 Pour activer le déploiement automatique, ajoutez ces secrets dans
 **GitHub → Settings → Secrets and variables → Actions** :
 
-| Secret | Valeur |
-|--------|--------|
-| `VPS_HOST` | `195.110.59.18` |
-| `VPS_USER` | `root` |
-| `VPS_SSH_KEY` | Clé privée SSH (contenu de `~/.ssh/id_rsa` ou `id_ed25519`) |
-| `VPS_PORT` | `22` (optionnel) |
+| Secret         | Valeur                                                        |
+| -------------- | ------------------------------------------------------------- |
+| `VPS_HOST`     | `195.110.59.18`                                               |
+| `VPS_USER`     | `root`                                                        |
+| `VPS_SSH_KEY`  | Clé privée SSH (contenu de `~/.ssh/id_rsa` ou `id_ed25519`)  |
 
 ---
 
 ## 🐛 Dépannage
 
 ### Le conteneur redémarre en boucle
+
 ```bash
 docker logs ekose-showcase-web --tail 50
 docker inspect --format='{{json .State}}' ekose-showcase-web | python3 -m json.tool
 ```
 
 ### Erreur 502 Bad Gateway
+
 ```bash
 # Vérifier que le conteneur tourne
 docker ps
-# Vérifier que le port 3000 est bien exposé
-curl http://127.0.0.1:3000/health
+# Vérifier que le port 8081 est bien exposé
+curl http://127.0.0.1:8081/health
 ```
 
 ### Renouvellement SSL
+
 ```bash
 sudo certbot renew --dry-run
 ```
