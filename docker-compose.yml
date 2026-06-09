@@ -32,8 +32,8 @@ services:
         max-file: "3"
         tag: "ekose-web"
     networks:
-      - ekose-network
+      - ekose-rx_ekose-net
 
 networks:
-  ekose-network:
-    driver: bridge
+  ekose-rx_ekose-net:
+    external: true
