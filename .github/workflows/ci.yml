@@ -1,31 +1,66 @@
-name: Continuous Integration
+name: CI/CD — Ekose RX
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
+  # ─── Validation (lint + typecheck + build) ────────────────────────
   validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
         with:
           node-version: 20
           cache: 'npm'
-          
+
       - name: Install dependencies
         run: npm ci
-        
+
       - name: Code Quality (Lint)
         run: npm run lint
-        
+
       - name: Type Checking (TypeScript)
         run: npx tsc --noEmit
-        
+
       - name: Build Application
         run: npm run build
+
+  # ─── Déploiement sur VPS (uniquement sur push vers main) ─────────
+  deploy:
+    needs: validate
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    environment: production
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: false
+    steps:
+      - name: Deploy to VPS via SSH
+        uses: appleboy/ssh-action@029f5b4aeeeb58fdfe1410a5d17f801b2d3e846c # v1.2.0
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_PORT || 22 }}
+          script: |
+            set -e
+            cd /var/www/ekose-rx-vitrine/site
+            echo "📥 Pulling latest code..."
+            git pull origin main
+            echo "🐳 Rebuilding container..."
+            docker compose up --build -d
+            echo "⏳ Waiting for healthcheck..."
+            sleep 10
+            if curl -sf http://127.0.0.1:3000/health > /dev/null; then
+              echo "✅ Deployment successful!"
+            else
+              echo "❌ Health check failed"
+              docker logs ekose-showcase-web --tail 20
+              exit 1
+            fi

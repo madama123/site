@@ -8,9 +8,7 @@
     "types": ["@testing-library/react", "vitest/globals", "react", "react-dom"],
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./src",
-    "paths": {
-      "app/*": ["../App/src/*"]
-    },
+    "paths": {},
 
     /* Bundler mode */
     "moduleResolution": "bundler",

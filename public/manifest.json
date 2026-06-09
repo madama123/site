@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Ekose RX",
+  "name": "Ekose RX — Santé Connectée",
+  "description": "Plateforme de santé numérique : téléconsultation, rendez-vous, pharmacie de garde et urgences médicales.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +19,11 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#134888",
+  "background_color": "#E8F1FF",
+  "lang": "fr",
+  "orientation": "portrait-primary",
+  "categories": ["health", "medical"]
 }
