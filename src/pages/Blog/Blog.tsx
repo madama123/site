@@ -13,6 +13,11 @@ const Blog: React.FC = () => {
       <Helmet>
         <title>{t('seo.blog.title')}</title>
         <meta name="description" content={t('seo.blog.description')} />
+        <link rel="canonical" href="https://ekose-rx.com/blog" />
+        <meta property="og:title" content={t('seo.blog.title')} />
+        <meta property="og:description" content={t('seo.blog.description')} />
+        <meta property="og:url" content="https://ekose-rx.com/blog" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <BlogHeroSection />
       <div className="max-w-7xl mx-auto">

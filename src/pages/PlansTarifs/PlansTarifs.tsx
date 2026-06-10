@@ -78,6 +78,12 @@ const PlansTarifs = () => {
       <Helmet>
         <title>{t('seo.plans.title')}</title>
         <meta name="description" content={t('seo.plans.description')} />
+        <link rel="canonical" href="https://ekose-rx.com/plans-tarifs" />
+        <meta property="og:title" content={t('seo.plans.title')} />
+        <meta property="og:description" content={t('seo.plans.description')} />
+        <meta property="og:image" content="https://ekose-rx.com/assets/images/HomePage/security-doctor.png" />
+        <meta property="og:url" content="https://ekose-rx.com/plans-tarifs" />
+        <meta property="og:type" content="website" />
       </Helmet>
       {/* Espace entre nav et bannière */}
       <div className="h-12 md:h-16 lg:h-20" aria-hidden="true"></div>

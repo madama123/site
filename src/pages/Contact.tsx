@@ -29,6 +29,11 @@ const Contact: React.FC = () => {
       <Helmet>
         <title>{t('seo.contact.title')}</title>
         <meta name="description" content={t('seo.contact.description')} />
+        <link rel="canonical" href="https://ekose-rx.com/contact" />
+        <meta property="og:title" content={t('seo.contact.title')} />
+        <meta property="og:description" content={t('seo.contact.description')} />
+        <meta property="og:url" content="https://ekose-rx.com/contact" />
+        <meta property="og:type" content="website" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-blue-50 via-white to-sky-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900/20 text-center overflow-hidden">

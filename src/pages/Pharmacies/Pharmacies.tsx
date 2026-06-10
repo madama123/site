@@ -18,6 +18,27 @@ const Pharmacies: React.FC = () => {
       <Helmet>
         <title>{t('seo.pharmacies.title')}</title>
         <meta name="description" content={t('seo.pharmacies.description')} />
+        <link rel="canonical" href="https://ekose-rx.com/pharmacies" />
+        <meta property="og:title" content={t('seo.pharmacies.title')} />
+        <meta property="og:description" content={t('seo.pharmacies.description')} />
+        <meta property="og:image" content="https://ekose-rx.com/assets/images/pharmacy/hero.png" />
+        <meta property="og:url" content="https://ekose-rx.com/pharmacies" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "serviceType": "Pharmacy Locator",
+              "provider": {
+                "@type": "MedicalOrganization",
+                "name": "Ekose RX"
+              },
+              "areaServed": "Africa",
+              "description": "Trouvez facilement une pharmacie de garde ou à proximité ouverte 24h/24 et 7j/7 avec Ekose RX."
+            }
+          `}
+        </script>
       </Helmet>
       {/* Hero section */}
       <section className="w-full flex flex-col md:flex-row items-center justify-between gap-8 pt-32 pb-8 px-4 sm:px-8 lg:px-16 relative z-10">

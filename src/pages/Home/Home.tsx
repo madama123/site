@@ -64,11 +64,16 @@ const Home = () => {
       <Helmet>
         <title>Ekose RX - {t('HomePage.meta.title')}</title>
         <meta name="description" content={t('HomePage.meta.description')} />
+        <link rel="canonical" href="https://ekose-rx.com/" />
         <meta property="og:title" content="Ekose RX - Plateforme de santé moderne" />
         <meta property="og:description" content="Gérez tout votre parcours de santé depuis une seule application." />
-        <meta property="og:image" content="/assets/images/HomePage/og-image.jpg" />
+        <meta property="og:image" content="https://ekose-rx.com/assets/images/HomePage/Hero.png" />
+        <meta property="og:url" content="https://ekose-rx.com/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ekose RX - Plateforme de santé moderne" />
+        <meta name="twitter:description" content="Gérez tout votre parcours de santé depuis une seule application." />
+        <meta name="twitter:image" content="https://ekose-rx.com/assets/images/HomePage/Hero.png" />
         <script type="application/ld+json">
           {`
             {

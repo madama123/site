@@ -12,6 +12,7 @@ const Legal: React.FC = () => {
       <Helmet>
         <title>{t('seo.legal.title')}</title>
         <meta name="description" content={t('seo.legal.description')} />
+        <link rel="canonical" href="https://ekose-rx.com/legal" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-blue-50 via-white to-sky-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900/20 text-center overflow-hidden">

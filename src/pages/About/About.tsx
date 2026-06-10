@@ -34,6 +34,26 @@ const About = () => {
       <Helmet>
         <title>{t('seo.about.title')}</title>
         <meta name="description" content={t('seo.about.description')} />
+        <link rel="canonical" href="https://ekose-rx.com/about" />
+        <meta property="og:title" content={t('seo.about.title')} />
+        <meta property="og:description" content={t('seo.about.description')} />
+        <meta property="og:image" content="https://ekose-rx.com/assets/images/AboutUs/hero.png" />
+        <meta property="og:url" content="https://ekose-rx.com/about" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "AboutPage",
+              "mainEntity": {
+                "@type": "MedicalOrganization",
+                "name": "Ekose RX",
+                "description": "Ekose-Rx est une entreprise de technologie de la santé numérique qui comble le fossé entre les patients, les prestataires de soins et les systèmes de santé à travers l'Afrique.",
+                "url": "https://ekose-rx.com"
+              }
+            }
+          `}
+        </script>
       </Helmet>
       {/* Hero Title */}
       <motion.section

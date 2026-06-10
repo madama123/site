@@ -45,6 +45,26 @@ const Urgences = () => {
       <Helmet>
         <title>{t('seo.urgences.title')}</title>
         <meta name="description" content={t('seo.urgences.description')} />
+        <link rel="canonical" href="https://ekose-rx.com/urgences" />
+        <meta property="og:title" content={t('seo.urgences.title')} />
+        <meta property="og:description" content={t('seo.urgences.description')} />
+        <meta property="og:image" content="https://ekose-rx.com/assets/images/urgences/hero.png" />
+        <meta property="og:url" content="https://ekose-rx.com/urgences" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "serviceType": "Emergency Medical Service",
+              "provider": {
+                "@type": "MedicalOrganization",
+                "name": "Ekose RX"
+              },
+              "description": "Accédez rapidement aux numéros d'urgence et commandez une ambulance en cas de besoin critique avec Ekose RX."
+            }
+          `}
+        </script>
       </Helmet>
       <motion.section
         initial={{ opacity: 0 }}

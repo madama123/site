@@ -61,6 +61,26 @@ const Teleconsultation = () => {
       <Helmet>
         <title>{t('seo.teleconsultation.title')}</title>
         <meta name="description" content={t('seo.teleconsultation.description')} />
+        <link rel="canonical" href="https://ekose-rx.com/teleconsultation" />
+        <meta property="og:title" content={t('seo.teleconsultation.title')} />
+        <meta property="og:description" content={t('seo.teleconsultation.description')} />
+        <meta property="og:image" content="https://ekose-rx.com/assets/images/Teleconsultation/doctor_teleconsult.jpg" />
+        <meta property="og:url" content="https://ekose-rx.com/teleconsultation" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "serviceType": "Telemedicine",
+              "provider": {
+                "@type": "MedicalOrganization",
+                "name": "Ekose RX"
+              },
+              "description": "Consultez des médecins généralistes ou spécialistes en visio sans vous déplacer avec Ekose RX."
+            }
+          `}
+        </script>
       </Helmet>
       {/* Section Hero */}
       <motion.section
