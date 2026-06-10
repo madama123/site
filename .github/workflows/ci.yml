@@ -32,11 +32,14 @@ jobs:
       - name: Build Application
         run: npm run build
 
-  # ─── Déploiement sur VPS (uniquement sur push vers main) ─────────
+  # ─── Déploiement sur VPS (uniquement sur push vers main ou manuel) ─────────
   deploy:
     needs: validate
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    environment:
+      name: production
+      url: https://ekose-rx.com
     concurrency:
       group: deploy-production
       cancel-in-progress: false
